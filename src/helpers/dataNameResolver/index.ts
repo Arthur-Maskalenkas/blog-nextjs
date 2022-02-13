@@ -4,8 +4,12 @@
  *
  */
 
-function dataNameResolved(dataName: string) {
-  return { [`data-${dataName}`]: true }
+function dataNameResolved(dataName?: string) {
+  if (dataName) {
+    return { [`data-${dataName}`]: true }
+  }
+
+  return {}
 }
 
 export default dataNameResolved
