@@ -1,7 +1,3 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
-export const Button = styled.button`
-  ${({ theme }) => css`
-    height: 10px;
-  `}
-`
+export const Button = styled.button``

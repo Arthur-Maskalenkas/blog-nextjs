@@ -9,7 +9,7 @@ export default {
   title: 'Button',
   component: Button,
   args: {
-    children: 'teste'
+    children: 'Clique aqui'
   }
 } as Meta<IButtonProps>
 
