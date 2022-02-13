@@ -6,42 +6,59 @@ export default {
   border: {
     radius: '0.4rem'
   },
-  font: {
-    family:
-      "Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
-    light: 300,
-    normal: 400,
-    bold: 600,
-    sizes: {
-      xsmall: '1.2rem',
-      small: '1.4rem',
-      medium: '1.6rem',
-      large: '1.8rem',
-      xlarge: '2.0rem',
-      xxlarge: '2.8rem',
-      huge: '5.2rem'
-    }
-  },
   colors: {
-    primary: '#F231A5',
-    secondary: '#3CD3C1',
-    mainBg: '#ffffff',
-    lightBg: '#F2F2F2',
-    white: '#FAFAFA',
-    black: '#030517',
-    lightGray: '#EAEAEA',
-    gray: '#8F8F8F',
-    darkGray: '#2E2F42',
-    red: '#FF6347'
+    borders: '#38444d',
+    texts: '#8899a6',
+    postColor: '#fff',
+    highlight: '#F231A5',
+    mediumBackground: '#0a0c21',
+    background: '#030518',
+    white: '#fff',
+    black: '#222'
   },
   spacings: {
-    xxsmall: '0.8rem',
-    xsmall: '1.6rem',
-    small: '2.4rem',
-    medium: '3.2rem',
-    large: '4.0rem',
-    xlarge: '4.8rem',
-    xxlarge: '5.6rem'
+    sp1: {
+      s1: '.2rem',
+      s2: '.4rem',
+      s3: '.6rem',
+      s4: '.8rem',
+      s5: '1rem'
+    },
+    sp2: {
+      s1: '1.2rem',
+      s2: '1.4rem',
+      s3: '1.6rem',
+      s4: '1.8rem',
+      s5: '2rem'
+    },
+    sp3: {
+      s1: '2.2rem',
+      s2: '2.4rem',
+      s3: '2.6rem',
+      s4: '2.8rem',
+      s5: '3rem'
+    },
+    sp4: {
+      s1: '3.2rem',
+      s2: '3.4rem',
+      s3: '3.6rem',
+      s4: '3.8rem',
+      s5: '4rem'
+    },
+    sp5: {
+      s1: '4.2rem',
+      s2: '4.4rem',
+      s3: '4.6rem',
+      s4: '4.8rem',
+      s5: '5rem'
+    },
+    sp6: {
+      s1: '5.2rem',
+      s2: '5.4rem',
+      s3: '5.6rem',
+      s4: '5.8rem',
+      s5: '6rem'
+    }
   },
   layers: {
     base: 10,
@@ -49,9 +66,5 @@ export default {
     overlay: 30,
     modal: 40,
     alwaysOnTop: 50
-  },
-  transition: {
-    default: '0.3s ease-in-out',
-    fast: '0.1s ease-in-out'
   }
 } as const
