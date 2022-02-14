@@ -14,7 +14,8 @@ export default {
     icon: <Zap />,
     iconStyles: {
       color: '#000000',
-      size: '2'
+      size: '2',
+      colorOnHover: 'red'
     }
   }
 } as Meta<IIconsProps>

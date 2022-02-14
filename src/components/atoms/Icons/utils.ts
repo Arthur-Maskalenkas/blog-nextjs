@@ -2,5 +2,6 @@ import { IIconStyle } from 'types/globald'
 
 export const iconPropsDefault: IIconStyle = {
   color: 'black',
-  size: '2rem'
+  size: '2rem',
+  colorOnHover: 'red'
 }
