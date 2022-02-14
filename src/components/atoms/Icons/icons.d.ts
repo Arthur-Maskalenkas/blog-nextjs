@@ -5,6 +5,7 @@ export interface IIconsProps {
   icon: ReactNode
 
   iconStyles?: IIconStyle
+  href?: string
 
   ariaLabel?: string
   dataName?: string
