@@ -18,11 +18,13 @@ export const IconListSideBar: IIconGroupProps = {
     {
       icon: <Github />,
       ariaLabel: 'Github icon',
+      href: 'https://github.com/Arthur-Maskalenkas',
       ...IconListSideBarStylesDefault
     },
     {
       icon: <Linkedin />,
       ariaLabel: 'Linkedin icon',
+      href: 'https://www.linkedin.com/in/arthur-maskalenkas-915431214/',
       ...IconListSideBarStylesDefault
     }
   ]
