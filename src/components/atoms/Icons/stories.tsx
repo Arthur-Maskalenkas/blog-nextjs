@@ -20,4 +20,10 @@ export default {
   }
 } as Meta<IIconsProps>
 
-export const Default: Story<IIconsProps> = (args) => <Icons {...args} />
+export const withoutLink: Story<IIconsProps> = (args) => <Icons {...args} />
+
+export const withLink: Story<IIconsProps> = (args) => <Icons {...args} />
+
+withLink.args = {
+  href: 'um link'
+}
