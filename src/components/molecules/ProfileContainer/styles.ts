@@ -1,6 +1,5 @@
 import { customMedia } from 'helpers/dataNameResolver/customMedia'
 import styled from 'styled-components'
-import media from 'styled-media-query'
 import { textWithHighlightGlobalStyle } from 'styles/globa'
 
 export const Wrapper = styled.a`
@@ -51,6 +50,9 @@ export const ProfileAuthor = styled(textWithHighlightGlobalStyle).attrs({
     font-size: 1.28rem;
     line-height: 1.28rem;
     font-weight: 300;
+
+    display: inline-block;
+    margin-top: 0.32rem;
   }
 
   ${customMedia.greaterThan('desktop')`
