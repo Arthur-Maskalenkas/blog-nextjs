@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import { textWithHighlightGlobalStyle } from 'styles/globa'
 
+import { customMedia } from 'helpers/dataNameResolver/customMedia'
+
 export const MenuLinkGroupWrapper = styled.ul``
 
 export const MenuLink = styled(textWithHighlightGlobalStyle).attrs({
@@ -9,4 +11,9 @@ export const MenuLink = styled(textWithHighlightGlobalStyle).attrs({
   font-size: 2.88rem;
   line-height: 2.88rem;
   font-weight: 300;
+
+  ${customMedia.greaterThan('desktop')`
+    font-size: 1.92rem;
+    line-height: 1.92rem;
+  `}
 `
