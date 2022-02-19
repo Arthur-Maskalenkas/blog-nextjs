@@ -16,6 +16,7 @@ const Icons = ({
 }: IIconsProps) => (
   // @ts-ignore
   <S.Wrapper
+    data-component-icons
     aria-label={ariaLabel}
     {...tagWrapperResolved(href)}
     {...dataNameResolved(dataName)}
