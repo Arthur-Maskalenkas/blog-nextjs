@@ -11,7 +11,7 @@ const customViewports = {
     name: 'Mobile min',
     styles: {
       width: '280px',
-      height: '653px'
+      height: '453px'
     }
   }
 }
