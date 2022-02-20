@@ -32,6 +32,7 @@ export const ImageWrapper = styled.div`
   ${customMedia.greaterThan('desktop')`
     width: 6.4rem;
     height: 6.4rem;
+    margin-bottom: .8rem;
   `}
 `
 
