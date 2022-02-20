@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-export const FooterWrapper = styled.footer`
+export const FooterMobileWrapper = styled.footer`
   ${({ theme }) => css`
     padding: ${theme.spacings.sp2.s2};
 

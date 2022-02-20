@@ -12,8 +12,8 @@ import { Button } from 'components/atoms/Button/styles'
 import theme from 'styles/theme'
 import { ArrowUpShort } from 'styled-icons/bootstrap'
 
-const Footer = () => (
-  <S.FooterWrapper data-component-footer>
+const FooterMobile = () => (
+  <S.FooterMobileWrapper data-component-footerMobile>
     <S.ListIcons>
       <li>
         <Button aria-label="Ir para a home">
@@ -78,7 +78,7 @@ const Footer = () => (
         </Button>
       </li>
     </S.ListIcons>
-  </S.FooterWrapper>
+  </S.FooterMobileWrapper>
 )
 
-export default Footer
+export default FooterMobile

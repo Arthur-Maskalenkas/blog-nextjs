@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-export const HeaderWrapper = styled.div`
+export const HeaderMobileWrapper = styled.header`
   ${({ theme }) => css`
     padding: ${theme.spacings.sp2.s3};
 

@@ -2,10 +2,10 @@ import * as S from './styles'
 import React from 'react'
 import ProfileContainer from 'components/molecules/ProfileContainer'
 
-const Header = () => (
-  <S.HeaderWrapper data-component-header>
+const HeaderMobile = () => (
+  <S.HeaderMobileWrapper data-component-headerMobile>
     <ProfileContainer />
-  </S.HeaderWrapper>
+  </S.HeaderMobileWrapper>
 )
 
-export default Header
+export default HeaderMobile
