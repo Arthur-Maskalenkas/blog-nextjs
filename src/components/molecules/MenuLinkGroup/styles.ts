@@ -3,7 +3,9 @@ import { textWithHighlightGlobalStyle } from 'styles/globa'
 
 import { customMedia } from 'helpers/dataNameResolver/customMedia'
 
-export const MenuLinkGroupWrapper = styled.ul``
+export const MenuLinkGroupWrapper = styled.nav`
+  display: flex;
+`
 
 export const MenuLink = styled(textWithHighlightGlobalStyle).attrs({
   as: 'a'
