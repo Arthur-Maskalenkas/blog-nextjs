@@ -6,11 +6,9 @@ import Link from 'next/link'
 const MenuLinkGroup = () => (
   <S.MenuLinkGroupWrapper data-component-menu-link-group>
     {linkListSideBar.map((item, index) => (
-      <li key={index}>
-        <Link href={item.href} passHref>
-          <S.MenuLink>{item.textLink}</S.MenuLink>
-        </Link>
-      </li>
+      <Link key={index} href={item.href} passHref>
+        <S.MenuLink>{item.textLink}</S.MenuLink>
+      </Link>
     ))}
   </S.MenuLinkGroupWrapper>
 )
