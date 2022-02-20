@@ -9,8 +9,4 @@ export default {
   component: AsideLeftDesktop
 } as Meta
 
-export const Desktop: Story = (args) => (
-  <div style={{ width: '32rem' }}>
-    <AsideLeftDesktop {...args} />
-  </div>
-)
+export const Desktop: Story = (args) => <AsideLeftDesktop {...args} />

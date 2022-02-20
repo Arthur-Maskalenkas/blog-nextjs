@@ -5,6 +5,11 @@ export const AsideLeftDesktopWrapper = styled.div`
     background-color: ${theme.colors.mediumBackground};
     padding: ${theme.spacings.sp4.s1};
 
+    width: 32rem;
+
+    position: fixed;
+    left: 0;
+
     height: 100vh;
 
     border-right: 1px solid ${theme.colors.borders};
