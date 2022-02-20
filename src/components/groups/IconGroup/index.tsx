@@ -6,7 +6,11 @@ import dataNameResolved from 'helpers/dataNameResolver'
 import Icons from 'components/atoms/Icons'
 
 const IconGroup = ({ items, ariaLabel, dataName }: IIconGroupProps) => (
-  <S.Wrapper aria-label={ariaLabel} {...dataNameResolved(dataName)}>
+  <S.Wrapper
+    aria-label={ariaLabel}
+    {...dataNameResolved(dataName)}
+    data-component-icon-group
+  >
     {items?.map((item, index) => (
       <Icons {...item} key={index} />
     ))}
