@@ -2,13 +2,15 @@ import { customMedia } from 'helpers/dataNameResolver/customMedia'
 import styled from 'styled-components'
 import { textWithHighlightGlobalStyle } from 'styles/globa'
 
-export const Wrapper = styled.a`
+export const ProfileContainerWrapper = styled.a`
   display: flex;
 
   width: max-content;
 
   ${customMedia.greaterThan('desktop')`
     flex-direction: column;
+    align-items: center;
+    width: 100%;
   `}
 `
 
@@ -30,9 +32,6 @@ export const ImageWrapper = styled.div`
   ${customMedia.greaterThan('desktop')`
     width: 6.4rem;
     height: 6.4rem;
-
-    margin-right: auto;
-    margin-left: auto;
   `}
 `
 
