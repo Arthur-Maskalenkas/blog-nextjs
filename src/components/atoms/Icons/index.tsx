@@ -7,6 +7,8 @@ import { IIconsProps } from './icons'
 import dataNameResolved from 'helpers/dataNameResolver'
 import { iconPropsDefault, tagWrapperResolved } from './utils'
 
+import { IconsCollection } from './iconsCollection'
+
 const Icons = ({
   icon,
   iconStyles = iconPropsDefault,
@@ -22,7 +24,7 @@ const Icons = ({
     {...dataNameResolved(dataName)}
     {...iconStyles}
   >
-    {icon}
+    {IconsCollection[icon]}
   </S.Wrapper>
 )
 

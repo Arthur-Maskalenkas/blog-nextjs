@@ -1,16 +1,10 @@
 import * as S from './styles'
 import React from 'react'
 
-import { Home } from '@styled-icons/boxicons-solid/Home'
-import { Search } from '@styled-icons/boxicons-regular/Search'
-import { Menu } from '@styled-icons/heroicons-outline/Menu'
-import { LightBulb } from '@styled-icons/entypo/LightBulb'
-
 import Icons from 'components/atoms/Icons'
 
 import { Button } from 'components/atoms/Button/styles'
 import theme from 'styles/theme'
-import { ArrowUpShort } from 'styled-icons/bootstrap'
 
 const FooterMobile = () => (
   <S.FooterMobileWrapper data-component-footerMobile>
@@ -18,7 +12,7 @@ const FooterMobile = () => (
       <li>
         <Button aria-label="Ir para a home">
           <Icons
-            icon={<Home />}
+            icon="home"
             iconStyles={{
               size: '2.24',
               color: theme.colors.texts,
@@ -31,7 +25,7 @@ const FooterMobile = () => (
       <li>
         <Button aria-label="Pesquisar no blog">
           <Icons
-            icon={<Search />}
+            icon="search"
             iconStyles={{
               size: '2.24',
               color: theme.colors.texts,
@@ -43,7 +37,7 @@ const FooterMobile = () => (
       <li>
         <Button aria-label="Abrir o menu">
           <Icons
-            icon={<Menu />}
+            icon="menu"
             iconStyles={{
               size: '2.24',
               color: theme.colors.texts,
@@ -55,7 +49,7 @@ const FooterMobile = () => (
       <li>
         <Button aria-label="Mudar o tema">
           <Icons
-            icon={<LightBulb />}
+            icon="changeTheme"
             iconStyles={{
               size: '2.24',
               color: theme.colors.texts,
@@ -68,7 +62,7 @@ const FooterMobile = () => (
       <li>
         <Button aria-label="ir para o topo">
           <Icons
-            icon={<ArrowUpShort />}
+            icon="goToTopPage"
             iconStyles={{
               size: '3.34',
               color: theme.colors.texts,

@@ -11,7 +11,7 @@ export default {
   title: 'Icons',
   component: Icons,
   args: {
-    icon: <Zap />,
+    icon: 'github',
     iconStyles: {
       color: '#000000',
       size: '2',
