@@ -2,11 +2,6 @@ import styled, { css } from 'styled-components'
 
 export const AsideRightDesktopWrapper = styled.aside`
   ${({ theme }) => css`
-    width: 6.4rem;
-
-    position: fixed;
-    right: 0;
-
     background-color: ${theme.colors.mediumBackground};
     border-left: 1px solid ${theme.colors.borders};
 
