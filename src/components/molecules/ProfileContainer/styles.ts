@@ -1,4 +1,4 @@
-import { customMedia } from 'helpers/dataNameResolver/customMedia'
+import { customMedia } from 'helpers/customMedia'
 import styled from 'styled-components'
 import { textWithHighlightGlobalStyle } from 'styles/globa'
 
