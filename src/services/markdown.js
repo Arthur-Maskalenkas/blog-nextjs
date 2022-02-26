@@ -1,10 +1,4 @@
-/**
- * Importamos os módulos que instalamos
- * pelo NPM.
- */
-// Processador para parsear markdown
-import remark from 'remark'
-// Serializador de markdown para string
+import { remark } from 'remark'
 import html from 'remark-html'
 
 /**
@@ -20,10 +14,6 @@ export async function toHTML(markdown) {
   // Processamos nosso conteúdo Markdown
   const result = await remark().use(html).process(markdown)
 
-  /**
-   * Retornamos ele de volta em formato
-   * de String.
-   */
   return result.toString()
 }
 

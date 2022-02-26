@@ -65,8 +65,6 @@ export const LayoutWrapper = styled.div`
   ${LayoutModifier.resolvePositionInMobileScreen()}
   ${LayoutModifier.excludeAllELementsDesktopInMobileScreen()}
 
-  height: 200vh;
-
   ${customMedia.greaterThan('desktop')`
     ${LayoutModifier.resolvePositionInDesktopScreen()}
     ${LayoutModifier.excludeAllELementsMobileInDesktopScreen()}

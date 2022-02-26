@@ -20,3 +20,11 @@ export interface IGlobalDate {
   month: number
   year: number
 }
+
+export interface IGlobalPost {
+  title: string
+  author: stirng
+  date: string
+  slug?: string
+  content: any
+}

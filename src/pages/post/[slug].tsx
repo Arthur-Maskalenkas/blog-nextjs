@@ -1,39 +1,14 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 // Importamos nossa função de buscar posts
 import { getPost, getAllPosts } from 'services/api.js'
 import markdown from 'services/markdown.js'
+import PostTemplate from 'templates/PostTemplate'
+import { IPostTemplateProps } from 'templates/PostTemplate/postTemplate'
 
-export default function Page({ post }: any) {
-  return (
-    <>
-      <div
-        style={{
-          margin: 'auto',
-          maxWidth: '600px',
-          fontFamily: 'sans-serif'
-        }}
-      >
-        <h1>{post.title}</h1>
-        <p>
-          {post.author} · {post.date}
-        </p>
-        {/*
-      Inserimos nosso na String HTML com
-      dangerouslySetInnerHTML, para o React.js
-      a interpretar como HTML.
-      */}
-        <div dangerouslySetInnerHTML={{ __html: post.content }} />
-      </div>
-    </>
-  )
+export default function Page({ post }: IPostTemplateProps) {
+  return <PostTemplate post={post} />
 }
 
-/**
- * A função getStaticProps nos traz os
- * parâmetros que foram utilizados para
- * fazer a requisição, com ele conseguimos
- * usar o nosso slug que foi trazido para
- * nós a partir da URL.
- */
 export async function getStaticProps({ params }: any) {
   /**
    * Utilizamos a função de buscar postagem
@@ -48,6 +23,8 @@ export async function getStaticProps({ params }: any) {
     'content'
   ])
 
+  //{/*
+  // @ts-ignore */}
   post.content = await markdown.toHTML(post.content)
 
   return {
@@ -57,6 +34,8 @@ export async function getStaticProps({ params }: any) {
 
 export function getStaticPaths() {
   const posts = getAllPosts(['slug', 'date'])
+  //{/*
+  // @ts-ignore */}
   const paths = posts.map(({ slug }) => ({
     params: {
       slug

@@ -26,28 +26,15 @@ export function getPost(slugOrFilename, fields = []) {
   const directory = join(postsDirectory, `${slug}.md`)
   // Ler o conteúdo do arquivo markdown
   const fileContents = fs.readFileSync(directory, 'utf8')
-  /**
-   * Buscar o seu conteúdo
-   * Com o matter, o cabeçalho do Markdown
-   * vem na chave data, e o conteúdo, dentro
-   * do content.
-   */
+
+  // cabeçalho == data e conteudo == content
   const { data, content } = matter(fileContents)
 
-  /**
-   * Recebendo o campo fields, podemos criar nossa
-   * postagem filtrada
-   */
   const post = {}
 
-  /**
-   * Faremos um loop dentro dos campos necessários
-   * para preencher nosso objeto post.
-   */
+  // O campo post precisa ser preenchido, e vamos preencher atraves dos loops
   fields.forEach((field) => {
-    // Se houver o campo conteúdo, o adicionamos
     if (field === 'content') post[field] = content
-    // Se houver o campo slug, o adicionamos
     if (field === 'slug') post[field] = slug
     /**
      * Se houver o campo dentro do cabeçalho do
@@ -63,12 +50,6 @@ export function getPost(slugOrFilename, fields = []) {
   return post
 }
 
-/**
- * Criamos uma função para buscar
- * todos os posts. Exportamos também
- * para consegir buscar de dentro da página
- * de listagem de posts
- */
 export function getAllPosts(fields) {
   const slugs = getMarkdownsFiles()
 
