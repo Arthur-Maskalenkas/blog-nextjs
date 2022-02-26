@@ -36,17 +36,11 @@ export function getPost(slugOrFilename, fields = []) {
   fields.forEach((field) => {
     if (field === 'content') post[field] = content
     if (field === 'slug') post[field] = slug
-    /**
-     * Se houver o campo dentro do cabeçalho do
-     * markdown, o adicionamos no post
-     */
+
+    // Pegando o restante do header
     if (data[field]) post[field] = data[field]
   })
 
-  /**
-   * Retornamos todo o conteúdo do markdown
-   * junto com o slug.
-   */
   return post
 }
 
@@ -56,8 +50,6 @@ export function getAllPosts(fields) {
   const posts = slugs
     .map((slug) => getPost(slug, fields))
     .sort((a, b) => new Date(b.date) - new Date(a.date))
-
-  console.log(slugs)
 
   return posts
 }

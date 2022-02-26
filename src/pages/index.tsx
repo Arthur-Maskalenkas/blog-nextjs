@@ -4,7 +4,6 @@ import HomeTemplate from 'templates/HomeTemplate'
 import { IHomeTemplateProps } from 'templates/HomeTemplate/homeTemplate'
 
 export default function Page({ posts }: IHomeTemplateProps) {
-  console.log(posts)
   return <HomeTemplate posts={posts} />
 }
 
