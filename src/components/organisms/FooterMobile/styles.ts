@@ -4,11 +4,6 @@ export const FooterMobileWrapper = styled.footer`
   ${({ theme }) => css`
     padding: ${theme.spacings.sp2.s2};
 
-    position: fixed;
-    bottom: 0;
-
-    width: 100vw;
-
     background-color: ${theme.colors.mediumBackground};
 
     border-top: 1px solid ${theme.colors.borders};
