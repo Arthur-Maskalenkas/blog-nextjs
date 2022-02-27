@@ -2,18 +2,20 @@ import * as S from './styles'
 import React from 'react'
 import Layout from 'components/organisms/Layout'
 import { IHomeTemplateProps } from './homeTemplate'
+import Post from 'components/molecules/Post'
 
 const HomeTemplate = ({ posts }: IHomeTemplateProps) => (
   <Layout>
     <S.HomeWrapper data-component-home>
-      <h1>Meu blog!</h1>
-      <p>Listagem de posts:</p>
-      {posts.map((post) => (
-        <>
-          <p>{post.title}</p>
-          <p>{post.author}</p>
-          <div dangerouslySetInnerHTML={{ __html: post.content }} />
-        </>
+      {posts.map((post, index) => (
+        <Post
+          key={index}
+          tag={{ title: 'misc', colorText: 'white', colorBackground: 'green' }}
+          date={{ day: post.dia, month: post.mes, year: post.ano }}
+          slug={post.slug}
+          shortText={post.shortText}
+          title={post.title}
+        />
       ))}
     </S.HomeWrapper>
   </Layout>
