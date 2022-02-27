@@ -69,8 +69,6 @@ export const PostSubtitle = styled.h2`
     font-weight: 200;
     color: ${theme.colors.postColor};
 
-    margin-bottom: 7rem;
-
     ${customMedia.greaterThan('desktop')`
       font-size: 3.2rem;
       line-height: 3.2rem;
@@ -80,19 +78,44 @@ export const PostSubtitle = styled.h2`
 
 export const Content = styled.section`
   ${({ theme }) => css`
-    h2 {
+    h2,
+    h2 a {
       font-size: 2.2rem;
       line-height: 3rem;
       font-weight: 800;
       color: ${theme.colors.postColor};
 
+      margin-top: 3.8rem;
       margin-bottom: 1.6rem;
 
       letter-spacing: 0.3rem;
 
+      border: none;
+
       ${customMedia.greaterThan('desktop')`
         font-size: 3.3rem;
         line-height: 4.7rem;
+      `}
+    }
+
+    ,
+    h3,
+    h3 a {
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      font-weight: 800;
+      color: ${theme.colors.postColor};
+
+      margin-top: 3.8rem;
+      margin-bottom: 1.6rem;
+
+      letter-spacing: 0.3rem;
+
+      border: none;
+
+      ${customMedia.greaterThan('desktop')`
+        font-size: 2.5rem;
+        line-height: 3.5rem;
       `}
     }
 
