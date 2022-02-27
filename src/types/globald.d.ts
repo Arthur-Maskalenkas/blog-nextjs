@@ -25,6 +25,11 @@ export interface IGlobalPost {
   title: string
   author: stirng
   date: string
-  slug?: string
+  slug: string
+  shortText: string
+  dia: number
+  mes: number
+  ano: number
+  tag: string
   content: any
 }
