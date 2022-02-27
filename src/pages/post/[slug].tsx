@@ -24,6 +24,7 @@ export async function getStaticProps({ params }: any) {
   ])
   //{/*
   // @ts-ignore */}
+  post.content = await markdown.toHTML(post.content)
 
   return {
     props: { post }
