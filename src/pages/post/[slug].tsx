@@ -15,7 +15,13 @@ export async function getStaticProps({ params }: any) {
    * passando o nome da rota (ola-mundo, nesse caso)
    * e os campos que queremos.
    */
-  const post = getPost(params.slug, ['title', 'date', 'slug', 'content'])
+  const post = getPost(params.slug, [
+    'title',
+    'title',
+    'date',
+    'shortText',
+    'content'
+  ])
   //{/*
   // @ts-ignore */}
 

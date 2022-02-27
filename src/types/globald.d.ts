@@ -27,9 +27,5 @@ export interface IGlobalPost {
   date: string
   slug: string
   shortText: string
-  dia: number
-  mes: number
-  ano: number
-  tag: string
   content: any
 }
