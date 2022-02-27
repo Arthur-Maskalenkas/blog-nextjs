@@ -10,4 +10,4 @@ mes: 02
 ano: 2022
 ---
 
-<h2 class="teste">testando o post</h2>
+<h2>testando o post</h2>
