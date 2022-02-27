@@ -6,5 +6,5 @@ export interface IPostProps {
   title: string
   shortText: string
 
-  href: string
+  slug: string
 }

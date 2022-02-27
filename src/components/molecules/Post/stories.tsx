@@ -14,7 +14,7 @@ export default {
     title: 'Meu ano de 2021',
     shortText:
       'Ano passado ja foi complicado para mim, mas esse ano foi mais ainda.',
-    href: '/'
+    slug: '/'
   }
 } as Meta<IPostProps>
 

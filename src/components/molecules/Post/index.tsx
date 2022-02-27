@@ -4,8 +4,8 @@ import React from 'react'
 import { IPostProps } from './post'
 import Link from 'next/link'
 
-const Post = ({ date, shortText, tag, title, href }: IPostProps) => (
-  <Link href={href} passHref>
+const Post = ({ date, shortText, tag, title, slug }: IPostProps) => (
+  <Link href={`post/${slug}`} passHref>
     <S.Link>
       <S.PostWrapper data-component-post>
         <S.TagWrapper colorBackground={tag.colorBackground}>
