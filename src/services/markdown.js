@@ -1,11 +1,18 @@
-/**
- * Importamos os módulos que instalamos
- * pelo NPM.
- */
-// Processador para parsear markdown
-import { remark } from 'remark'
-// Serializador de markdown para string
-import html from 'remark-html'
+import { unified } from 'unified'
+
+/*
+ * Transformando em html
+ * */
+import remarkParse from 'remark-parse'
+import remarkRehype from 'remark-rehype'
+import rehypeSanitize from 'rehype-sanitize'
+import rehypeStringify from 'rehype-stringify'
+
+/*
+ * adicionadno link nos headings
+ * */
+import rehypeSlug from 'rehype-slug'
+import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 
 /**
  * Criamos nossa função de transformar
@@ -18,7 +25,19 @@ import html from 'remark-html'
  */
 export async function toHTML(markdown) {
   // Processamos nosso conteúdo Markdown
-  const result = await remark().use(html).process(markdown)
+  const result = await unified()
+    .use(remarkParse)
+    .use(remarkRehype)
+    .use(rehypeSanitize)
+    .use(rehypeStringify)
+    .use(rehypeSlug)
+    .use(rehypeAutolinkHeadings, {
+      behavior: 'wrap',
+      properties: {
+        className: 'anchor'
+      }
+    })
+    .process(markdown)
 
   /**
    * Retornamos ele de volta em formato
