@@ -9,7 +9,7 @@ import { IMenuMobileProps, IMenuMobileProviderProps } from './menuMobile'
 
 export const MenuMobileDefaultValues: IMenuMobileProps = {
   isOpen: false,
-  setIsOpen: () => null
+  changeMenuVisibility: () => null
 }
 
 /**
@@ -46,9 +46,14 @@ const MenuMobileProvider = ({ children }: IMenuMobileProviderProps) => {
   /*
    * Disponiblizando as funções
    * */
+
+  const changeMenuVisibility = () => {
+    setIsOpen(!isOpen)
+  }
+
   return (
     <MenuMobileContext.Provider
-      value={{ isOpen: isOpen, setIsOpen: setIsOpen }}
+      value={{ isOpen: isOpen, changeMenuVisibility: changeMenuVisibility }}
     >
       {children}
     </MenuMobileContext.Provider>

@@ -4,6 +4,11 @@ import GlobalStyles from 'styles/global'
 
 import theme from 'styles/theme'
 
+import {
+  MenuMobileContext,
+  MenuMobileDefaultValues
+} from '../src/context/useMenuMobile'
+
 import { MINIMAL_VIEWPORTS } from '@storybook/addon-viewport'
 
 const customViewports = {
@@ -30,10 +35,18 @@ export const parameters = {
 }
 
 export const decorators = [
-  (Story) => (
+  (Story, context) => (
     <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <Story />
+      <MenuMobileContext.Provider
+        value={{
+          ...MenuMobileDefaultValues,
+          ...(context?.args?.MenuMobileContextValue || {}),
+          ...context.args
+        }}
+      >
+        <GlobalStyles />
+        <Story />
+      </MenuMobileContext.Provider>
     </ThemeProvider>
   )
 ]
