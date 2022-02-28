@@ -91,6 +91,20 @@ pre[class*=language-].line-numbers {
       margin: 0.5em 0;
       overflow: auto;
     }
+
+    pre[class*='language-']::-webkit-scrollbar-thumb {
+      background-color: ${theme.colors.highlight};
+      border-radius: 4px;
+    }
+    pre[class*='language-']::-webkit-scrollbar-track {
+      border-radius: 7px;
+      background-color: ${theme.colors.background};
+    }
+    pre[class*='language-']::-webkit-scrollbar {
+      border-radius: 4px;
+      height: 10px;
+    }
+
     :not(pre) > code[class*='language-'],
     pre[class*='language-'] {
       background: #2d2d2d;
@@ -180,7 +194,7 @@ pre[class*=language-].line-numbers {
  */
     .code-highlight {
       float: left; /* 1 */
-      min-width: 100%; /* 2 */
+      width: 99.5%; /* 2 */
     }
 
     .code-line {
