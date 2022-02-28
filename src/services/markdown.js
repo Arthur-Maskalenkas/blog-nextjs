@@ -14,6 +14,9 @@ import rehypeStringify from 'rehype-stringify'
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 
+/*
+ * Implementando codigo no markdown
+ * */
 import rehypePrism from 'rehype-prism-plus'
 
 /**
