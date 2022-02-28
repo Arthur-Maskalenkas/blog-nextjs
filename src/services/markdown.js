@@ -14,6 +14,8 @@ import rehypeStringify from 'rehype-stringify'
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 
+import rehypePrism from 'rehype-prism-plus'
+
 /**
  * Criamos nossa função de transformar
  * string em HTML.
@@ -31,6 +33,7 @@ export async function toHTML(markdown) {
     .use(rehypeSanitize)
     .use(rehypeStringify)
     .use(rehypeSlug)
+    .use(rehypePrism)
     .use(rehypeAutolinkHeadings, {
       behavior: 'wrap',
       properties: {
