@@ -71,8 +71,8 @@ pre[class*=language-].line-numbers {
     pre[class*='language-'] {
       color: #ccc;
       background: none;
-      font-family: 'consolas'
-      font-size: 1.6rem;
+      font-family: 'Inconsolata', monospace;
+      font-size: 1.5rem;
       text-align: left;
       white-space: pre;
       word-spacing: normal;
