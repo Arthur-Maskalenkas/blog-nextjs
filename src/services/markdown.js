@@ -30,7 +30,6 @@ export async function toHTML(markdown) {
   const result = await unified()
     .use(remarkParse)
     .use(remarkRehype)
-    .use(rehypeSanitize)
     .use(rehypeStringify)
     .use(rehypeSlug)
     .use(rehypePrism)
