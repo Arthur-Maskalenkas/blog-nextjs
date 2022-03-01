@@ -7,14 +7,14 @@ export default {
     radius: '0.4rem'
   },
   colors: {
-    borders: '#38444d',
-    texts: '#8899a6',
-    postColor: '#fff',
-    highlight: '#F231A5',
-    mediumBackground: '#0a0c21',
-    background: '#030518',
-    white: '#fff',
-    black: '#222'
+    borders: '',
+    texts: '',
+    postColor: '',
+    highlight: '',
+    mediumBackground: '',
+    background: '',
+    white: '',
+    black: ''
   },
   heightContainerAroundScreens: {
     footerMobile: '6.239rem',
