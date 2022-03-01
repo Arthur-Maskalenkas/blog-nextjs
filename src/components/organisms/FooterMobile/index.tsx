@@ -6,9 +6,11 @@ import Icons from 'components/atoms/Icons'
 import { Button } from 'components/atoms/Button/styles'
 import theme from 'styles/theme'
 import { useMenuMobile } from 'context/useMenuMobile'
+import { useChangeTheme } from 'context/useChangeTheme'
 
 const FooterMobile = () => {
   const { changeMenuVisibility } = useMenuMobile()
+  const { toggleTheme } = useChangeTheme()
 
   return (
     <S.FooterMobileWrapper data-component-footerMobile>
@@ -54,7 +56,7 @@ const FooterMobile = () => {
           </Button>
         </li>
         <li>
-          <Button aria-label="Mudar o tema">
+          <Button aria-label="Mudar o tema" onClick={() => toggleTheme()}>
             <Icons
               icon="changeTheme"
               iconStyles={{
