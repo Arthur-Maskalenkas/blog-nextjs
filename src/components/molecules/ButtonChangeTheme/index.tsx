@@ -6,7 +6,6 @@ import { useChangeTheme } from 'hooks/useChangeTheme'
 
 const ButtonChangeTheme = () => {
   const { toggleTheme } = useChangeTheme()
-  console.log(theme.colors)
   return (
     <S.ButtonChangeThemeWrapper
       data-component-button-change-theme
