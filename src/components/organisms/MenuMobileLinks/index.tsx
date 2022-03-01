@@ -4,6 +4,8 @@ import { useMenuMobile } from 'hooks/useMenuMobile'
 import MenuLinkGroup from 'components/molecules/MenuLinkGroup'
 import Icons from 'components/atoms/Icons'
 import theme from 'styles/theme'
+import ButtonGithub from 'components/molecules/ButtonGithub'
+import ButtonLinkedin from 'components/molecules/ButtonLinkedin'
 
 const MenuMobileLinks = () => {
   const { isOpen } = useMenuMobile()
@@ -16,24 +18,8 @@ const MenuMobileLinks = () => {
     >
       <MenuLinkGroup />
       <S.IconsGroup>
-        <Icons
-          icon="github"
-          href="google.com.br"
-          iconStyles={{
-            color: theme.colors.texts,
-            size: '3',
-            colorOnHover: theme.colors.highlight
-          }}
-        />
-        <Icons
-          icon="linkedin"
-          href="google.com.br"
-          iconStyles={{
-            color: theme.colors.texts,
-            size: '3',
-            colorOnHover: theme.colors.highlight
-          }}
-        />
+        <ButtonGithub />
+        <ButtonLinkedin />
       </S.IconsGroup>
     </S.MenuMobileLinksWrapper>
   )

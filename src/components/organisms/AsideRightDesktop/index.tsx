@@ -3,88 +3,36 @@ import React from 'react'
 import { Button } from 'components/atoms/Button/styles'
 import Icons from 'components/atoms/Icons'
 import theme from 'styles/theme'
+import ButtonGithub from 'components/molecules/ButtonGithub'
+import ButtonLinkedin from 'components/molecules/ButtonLinkedin'
+import ButtonGoToHome from 'components/molecules/ButtonGoToHome'
+import ButtonSearch from 'components/molecules/ButtonSearch'
+import ButtonChangeTheme from 'components/molecules/ButtonChangeTheme'
+import ButtonGoToTopPage from 'components/molecules/ButtonGoToTopPage'
 
 const AsideRightDesktop = () => (
   <S.AsideRightDesktopWrapper data-component-aside-right-desktop>
     <S.FirstColumn>
       <li>
-        <Button aria-label="Ir para a home">
-          <Icons
-            icon="home"
-            iconStyles={{
-              color: theme.colors.texts,
-              colorOnHover: theme.colors.highlight,
-              size: '2.5'
-            }}
-          />
-        </Button>
+        <ButtonGoToHome />
       </li>
-
       <li>
-        <Button aria-label="Pesquisar no blog">
-          <Icons
-            icon="search"
-            iconStyles={{
-              size: '2.5',
-              color: theme.colors.texts,
-              colorOnHover: theme.colors.highlight
-            }}
-          />
-        </Button>
+        <ButtonSearch />
       </li>
-
       <li>
-        <Button aria-label="Ir para o meu Linkedin">
-          <Icons
-            icon="linkedin"
-            iconStyles={{
-              color: theme.colors.texts,
-              colorOnHover: theme.colors.highlight,
-              size: '2.5'
-            }}
-          />
-        </Button>
+        <ButtonLinkedin />
       </li>
-
       <li>
-        <Button aria-label="Ir para o meu Github">
-          <Icons
-            icon="github"
-            iconStyles={{
-              color: theme.colors.texts,
-              colorOnHover: theme.colors.highlight,
-              size: '2.5'
-            }}
-          />
-        </Button>
+        <ButtonGithub />
       </li>
     </S.FirstColumn>
 
     <S.SecondColumn>
       <li>
-        <Button aria-label="Mudar o tema">
-          <Icons
-            icon="changeTheme"
-            iconStyles={{
-              size: '2.5',
-              color: theme.colors.texts,
-              colorOnHover: theme.colors.highlight
-            }}
-          />
-        </Button>
+        <ButtonChangeTheme />
       </li>
-
       <li>
-        <Button aria-label="ir para o topo">
-          <Icons
-            icon="goToTopPage"
-            iconStyles={{
-              size: '2.5',
-              color: theme.colors.texts,
-              colorOnHover: theme.colors.highlight
-            }}
-          />
-        </Button>
+        <ButtonGoToTopPage />
       </li>
     </S.SecondColumn>
   </S.AsideRightDesktopWrapper>
