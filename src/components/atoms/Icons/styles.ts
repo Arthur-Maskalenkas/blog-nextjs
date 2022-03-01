@@ -10,30 +10,27 @@ const WrapperModifier = {
       width: ${sizeInDesktop}
     `}
   `,
-  colorResolved: (theme: DefaultTheme, color: string) => css`
-    color: ${color};
-  `,
-  colorOnHoverResolved: (color: string) => css`
+  defaultStyleResolved: (theme: DefaultTheme) => css`
+    color: ${theme.colors.texts};
+
     &:hover {
-      color: ${color};
+      color: ${theme.colors.highlight};
     }
   `
 }
 
 interface IWrapperStyleProps {
-  color?: string
-  colorOnHover?: string
   size?: string
   sizeInDesktop?: string
+  defaultStyle?: boolean
 }
 
 export const Wrapper = styled.span<IWrapperStyleProps>`
-  ${({ theme, color, size, colorOnHover, sizeInDesktop }) => css`
+  ${({ theme, size, sizeInDesktop, defaultStyle }) => css`
     display: inline-block;
 
-    ${!!color && WrapperModifier.colorResolved(theme, color)}
-    ${!!colorOnHover && WrapperModifier.colorOnHoverResolved(colorOnHover)}
     ${!!size && WrapperModifier.sizeResolved(theme, `${size}rem`)}
     ${!!sizeInDesktop && WrapperModifier.sizeInDesktop(`${sizeInDesktop}rem`)}
+    ${!!defaultStyle && WrapperModifier.defaultStyleResolved(theme)}
   `}
 `

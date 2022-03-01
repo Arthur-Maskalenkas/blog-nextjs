@@ -1,9 +1,7 @@
 import { IIconStyle } from 'types/globald'
 
 export const iconPropsDefault: IIconStyle = {
-  color: 'black',
-  size: '2rem',
-  colorOnHover: 'red'
+  size: '2rem'
 }
 
 export function tagWrapperResolved(href?: string) {
