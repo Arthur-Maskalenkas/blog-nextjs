@@ -46,9 +46,16 @@ const MenuMobileProvider = ({ children }: IMenuMobileProviderProps) => {
   /*
    * Disponiblizando as funções
    * */
+  const changeMenuVisibility = (msToChangeStateOnClose = 0) => {
+    if (isOpen) {
+      setTimeout(() => {
+        setIsOpen(false)
+      }, msToChangeStateOnClose)
 
-  const changeMenuVisibility = () => {
-    setIsOpen(!isOpen)
+      return
+    }
+
+    setIsOpen(true)
   }
 
   return (
