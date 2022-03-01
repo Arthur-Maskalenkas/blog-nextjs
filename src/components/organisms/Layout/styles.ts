@@ -3,11 +3,8 @@ import styled, { css, DefaultTheme } from 'styled-components'
 
 const LayoutModifier = {
   resolvePositionInMobileScreen: (theme: DefaultTheme, isOpen: boolean) => css`
-    ${!isOpen &&
-    css`
-      padding-top: ${theme.heightContainerAroundScreens.headerMobile};
-      padding-bottom: ${theme.heightContainerAroundScreens.footerMobile};
-    `}
+    padding-top: ${theme.heightContainerAroundScreens.headerMobile};
+    padding-bottom: ${theme.heightContainerAroundScreens.footerMobile};
 
     [data-component-footerMobile] {
       position: fixed;

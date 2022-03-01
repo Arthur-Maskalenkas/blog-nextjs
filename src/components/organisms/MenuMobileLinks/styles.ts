@@ -3,11 +3,25 @@ import styled, { css } from 'styled-components'
 const MenuMobileLinksWrapperModifier = {
   close: () => css`
     pointer-events: none;
-    display: none;
+    opacity: 0;
   `,
   open: () => css`
+    opacity: 1;
     pointer-events: all;
-    display: flex;
+
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+
+    @keyframes slideInLeft {
+      0% {
+        transform: translateX(-100%);
+        visibility: visible;
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
   `
 }
 
@@ -19,14 +33,16 @@ export const MenuMobileLinksWrapper = styled.div<IMenuMobileLinksWrapperStylePro
   ${({ theme, isOpen }) => css`
     position: fixed;
 
+    display: flex;
+
     z-index: ${theme.layers.menuMobile};
 
     background-color: ${theme.colors.background};
 
-    padding-top: ${theme.heightContainerAroundScreens.headerMobile};
-    padding-bottom: ${theme.heightContainerAroundScreens.footerMobile};
-
-    height: 100vh;
+    /*
+    * height footer mobike + height header mobile
+    * */
+    height: calc(100vh - 13.056rem);
     width: 100%;
 
     display: flex;
