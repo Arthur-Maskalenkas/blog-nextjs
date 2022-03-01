@@ -10,7 +10,7 @@ export default {
   component: Post,
   args: {
     tag: { title: 'misc', colorText: 'white', colorBackground: 'green' },
-    date: { day: 15, month: 5, year: 2000 },
+    date: '2022-02-26 22:50:35',
     title: 'Meu ano de 2021',
     shortText:
       'Ano passado ja foi complicado para mim, mas esse ano foi mais ainda.',

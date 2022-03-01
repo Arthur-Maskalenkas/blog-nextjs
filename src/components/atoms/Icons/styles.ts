@@ -1,31 +1,36 @@
+import { customMedia } from 'helpers/customMedia'
 import styled, { css, DefaultTheme } from 'styled-components'
 
 const WrapperModifier = {
-  sizeResolved: (theme: DefaultTheme, size: string) => css`
+  sizeResolved: (theme: DefaultTheme, size: string, sizeMedia?: string) => css`
     width: ${size};
   `,
-  colorResolved: (theme: DefaultTheme, color: string) => css`
-    color: ${color};
+  sizeInDesktop: (sizeInDesktop: string) => css`
+    ${customMedia.greaterThan('desktop')`
+      width: ${sizeInDesktop}
+    `}
   `,
-  colorOnHoverResolved: (color: string) => css`
+  defaultStyleResolved: (theme: DefaultTheme) => css`
+    color: ${theme.colors.texts};
+
     &:hover {
-      color: ${color};
+      color: ${theme.colors.highlight};
     }
   `
 }
 
 interface IWrapperStyleProps {
-  color?: string
-  colorOnHover?: string
   size?: string
+  sizeInDesktop?: string
+  defaultStyle?: boolean
 }
 
 export const Wrapper = styled.span<IWrapperStyleProps>`
-  ${({ theme, color, size, colorOnHover }) => css`
+  ${({ theme, size, sizeInDesktop, defaultStyle }) => css`
     display: inline-block;
 
-    ${!!color && WrapperModifier.colorResolved(theme, color)}
-    ${!!colorOnHover && WrapperModifier.colorOnHoverResolved(colorOnHover)}
     ${!!size && WrapperModifier.sizeResolved(theme, `${size}rem`)}
+    ${!!sizeInDesktop && WrapperModifier.sizeInDesktop(`${sizeInDesktop}rem`)}
+    ${!!defaultStyle && WrapperModifier.defaultStyleResolved(theme)}
   `}
 `

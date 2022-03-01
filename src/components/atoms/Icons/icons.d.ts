@@ -10,4 +10,6 @@ export interface IIconsProps {
 
   ariaLabel?: string
   dataName?: string
+
+  defaultStyle?: boolean
 }

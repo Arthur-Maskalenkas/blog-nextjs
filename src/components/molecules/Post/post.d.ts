@@ -1,8 +1,8 @@
-import { IGlobalDate, IGlobalTag } from 'types/globald'
+import { IGlobalTag } from 'types/globald'
 
 export interface IPostProps {
   tag: IGlobalTag
-  date: IGlobalDate
+  date: string
   title: string
   shortText: string
 

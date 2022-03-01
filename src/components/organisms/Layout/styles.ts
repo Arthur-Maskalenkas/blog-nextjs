@@ -6,13 +6,13 @@ const LayoutModifier = {
     padding-top: ${theme.heightContainerAroundScreens.headerMobile};
     padding-bottom: ${theme.heightContainerAroundScreens.footerMobile};
 
-    [data-component-footerMobile] {
+    [data-component-footer-mobile] {
       position: fixed;
       bottom: 0;
       width: 100vw;
     }
 
-    [data-component-headerMobile] {
+    [data-component-header-mobile] {
       position: fixed;
       top: 0;
       width: 100vw;
@@ -55,8 +55,8 @@ const LayoutModifier = {
   `,
 
   excludeAllELementsMobileInDesktopScreen: () => css`
-    [data-component-headermobile],
-    [data-component-footermobile] {
+    [data-component-header-mobile],
+    [data-component-footer-mobile] {
       display: none;
     }
   `

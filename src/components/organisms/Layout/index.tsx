@@ -6,7 +6,7 @@ import HeaderMobile from '../HeaderMobile'
 import FooterMobile from '../FooterMobile'
 import { ILayoutProps } from './Layout'
 import MenuMobileLinks from '../MenuMobileLinks'
-import { useMenuMobile } from 'context/useMenuMobile'
+import { useMenuMobile } from 'hooks/useMenuMobile'
 
 const Layout = ({ children }: ILayoutProps) => {
   const { isOpen } = useMenuMobile()

@@ -14,7 +14,8 @@ const Icons = ({
   iconStyles = iconPropsDefault,
   ariaLabel,
   href,
-  dataName
+  dataName,
+  defaultStyle = true
 }: IIconsProps) => (
   // @ts-ignore
   <S.Wrapper
@@ -23,6 +24,7 @@ const Icons = ({
     {...tagWrapperResolved(href)}
     {...dataNameResolved(dataName)}
     {...iconStyles}
+    defaultStyle={defaultStyle}
   >
     {IconsCollection[icon]}
   </S.Wrapper>

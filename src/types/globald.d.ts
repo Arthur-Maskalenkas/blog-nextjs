@@ -1,7 +1,6 @@
 export interface IIconStyle {
-  color: string
   size: string
-  colorOnHover?: string
+  sizeInDesktop?: string
 }
 
 export interface ILink {
@@ -13,12 +12,6 @@ export interface IGlobalTag {
   colorBackground: string
   colorText: string
   title: string
-}
-
-export interface IGlobalDate {
-  day: number
-  month: number
-  year: number
 }
 
 export interface IGlobalPost {

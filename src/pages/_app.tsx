@@ -8,10 +8,10 @@ import { ThemeProvider } from 'styled-components'
 
 import GlobalStyles from 'styles/global'
 
-import { MenuMobileProvider } from 'context/useMenuMobile'
+import { MenuMobileProvider } from 'hooks/useMenuMobile'
 import theme, { themeColors } from 'styles/theme'
 import { useState } from 'react'
-import { ChangeThemeProvider } from 'context/useChangeTheme'
+import { ChangeThemeProvider } from 'hooks/useChangeTheme'
 
 function App({ Component, pageProps }: AppProps) {
   const [isDarkTheme, setIsDarkTheme] = useState<boolean>(false)
