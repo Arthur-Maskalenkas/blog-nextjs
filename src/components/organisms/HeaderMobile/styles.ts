@@ -9,5 +9,7 @@ export const HeaderMobileWrapper = styled.header`
     border-bottom: 1px solid ${theme.colors.borders};
 
     height: ${theme.heightContainerAroundScreens.headerMobile};
+
+    z-index: ${theme.layers.headerMobile};
   `}
 `

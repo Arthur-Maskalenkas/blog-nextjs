@@ -2,7 +2,7 @@ import { ReactNode } from 'react'
 
 export interface IMenuMobileProps {
   isOpen: boolean
-  changeMenuVisibility: (isOpen: boolean) => void
+  changeMenuVisibility: () => void
 }
 
 export interface IMenuMobileProviderProps {

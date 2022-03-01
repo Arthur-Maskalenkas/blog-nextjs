@@ -20,6 +20,15 @@ export default {
     footerMobile: '6.239rem',
     headerMobile: '6.817rem'
   },
+  layers: {
+    base: 10,
+    menuMobile: 20,
+    headerMobile: 21,
+    footerMobile: 21,
+    overlay: 30,
+    modal: 40,
+    alwaysOnTop: 50
+  },
   spacings: {
     sp1: {
       s1: '.2rem',
@@ -63,12 +72,5 @@ export default {
       s4: '5.8rem',
       s5: '6rem'
     }
-  },
-  layers: {
-    base: 10,
-    menu: 20,
-    overlay: 30,
-    modal: 40,
-    alwaysOnTop: 50
   }
 } as const

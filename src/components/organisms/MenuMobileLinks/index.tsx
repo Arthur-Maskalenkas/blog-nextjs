@@ -9,7 +9,11 @@ const MenuMobileLinks = () => {
   const { isOpen } = useMenuMobile()
 
   return (
-    <S.MenuMobileLinksWrapper data-component-menu-mobile isOpen={isOpen}>
+    <S.MenuMobileLinksWrapper
+      data-component-menu-mobile
+      aria-hidden={!isOpen}
+      isOpen={isOpen}
+    >
       <MenuLinkGroup />
       <S.IconsGroup>
         <Icons

@@ -19,6 +19,10 @@ export const MenuMobileLinksWrapper = styled.div<IMenuMobileLinksWrapperStylePro
   ${({ theme, isOpen }) => css`
     position: fixed;
 
+    z-index: ${theme.layers.menuMobile};
+
+    background-color: ${theme.colors.background};
+
     padding-top: ${theme.heightContainerAroundScreens.headerMobile};
     padding-bottom: ${theme.heightContainerAroundScreens.footerMobile};
 
@@ -49,9 +53,7 @@ export const MenuMobileLinksWrapper = styled.div<IMenuMobileLinksWrapperStylePro
 
 export const IconsGroup = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 
-  [data-component-icons]:not(:last-child) {
-    margin-right: 2rem;
-  }
+  padding-bottom: 1.6rem;
 `
