@@ -13,9 +13,7 @@ const Post = ({ date, shortText, tag, title, slug }: IPostProps) => (
         </S.TagWrapper>
 
         <div>
-          <S.Date>
-            {date.day} de dezembro de {date.year}
-          </S.Date>
+          <S.Date>{date}</S.Date>
 
           <S.Title>{title}</S.Title>
 

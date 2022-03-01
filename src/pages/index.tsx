@@ -8,7 +8,7 @@ export default function Page({ posts }: IHomeTemplateProps) {
 }
 
 export function getStaticProps() {
-  const posts = getAllPosts(['title', 'tag', 'shortText', 'slug'])
+  const posts = getAllPosts(['title', 'tag', 'shortText', 'slug', 'date'])
   return {
     props: { posts }
   }

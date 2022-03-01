@@ -15,12 +15,6 @@ export interface IGlobalTag {
   title: string
 }
 
-export interface IGlobalDate {
-  day: number
-  month: number
-  year: number
-}
-
 export interface IGlobalPost {
   title: string
   author: stirng
