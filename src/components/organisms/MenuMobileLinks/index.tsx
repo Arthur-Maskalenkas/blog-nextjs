@@ -1,6 +1,6 @@
 import * as S from './styles'
 import React from 'react'
-import { useMenuMobile } from 'context/useMenuMobile'
+import { useMenuMobile } from 'hooks/useMenuMobile'
 import MenuLinkGroup from 'components/molecules/MenuLinkGroup'
 import Icons from 'components/atoms/Icons'
 import theme from 'styles/theme'

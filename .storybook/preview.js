@@ -7,7 +7,7 @@ import theme from 'styles/theme'
 import {
   MenuMobileContext,
   MenuMobileDefaultValues
-} from '../src/context/useMenuMobile'
+} from '../src/hooks/useMenuMobile'
 
 import { MINIMAL_VIEWPORTS } from '@storybook/addon-viewport'
 

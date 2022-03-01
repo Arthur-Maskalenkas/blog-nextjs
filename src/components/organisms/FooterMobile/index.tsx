@@ -5,8 +5,8 @@ import Icons from 'components/atoms/Icons'
 
 import { Button } from 'components/atoms/Button/styles'
 import theme from 'styles/theme'
-import { useMenuMobile } from 'context/useMenuMobile'
-import { useChangeTheme } from 'context/useChangeTheme'
+import { useMenuMobile } from 'hooks/useMenuMobile'
+import { useChangeTheme } from 'hooks/useChangeTheme'
 
 const FooterMobile = () => {
   const { changeMenuVisibility } = useMenuMobile()
