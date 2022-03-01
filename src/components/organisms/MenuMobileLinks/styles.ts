@@ -1,3 +1,57 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
-export const MenuMobileLinksWrapper = styled.div``
+const MenuMobileLinksWrapperModifier = {
+  close: () => css`
+    pointer-events: none;
+    display: none;
+  `,
+  open: () => css`
+    pointer-events: all;
+    display: flex;
+  `
+}
+
+interface IMenuMobileLinksWrapperStyleProps {
+  isOpen: boolean
+}
+
+export const MenuMobileLinksWrapper = styled.div<IMenuMobileLinksWrapperStyleProps>`
+  ${({ isOpen }) => css`
+    position: fixed;
+
+    padding-top: 6.819rem;
+    padding-bottom: 6.24rem;
+
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    [data-component-menu-link-group] {
+      flex-direction: column;
+      align-items: center;
+
+      justify-content: center;
+
+      flex: 1;
+    }
+
+    [data-component-menu-link-group] > a:not(:last-child) {
+      margin-bottom: 3.2rem;
+    }
+
+    ${isOpen
+      ? MenuMobileLinksWrapperModifier.open()
+      : MenuMobileLinksWrapperModifier.close()}
+  `}
+`
+
+export const IconsGroup = styled.div`
+  display: flex;
+  justify-content: center;
+
+  [data-component-icons]:not(:last-child) {
+    margin-right: 2rem;
+  }
+`
