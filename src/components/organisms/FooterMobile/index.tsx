@@ -13,7 +13,7 @@ const FooterMobile = () => {
   const { toggleTheme } = useChangeTheme()
 
   return (
-    <S.FooterMobileWrapper data-component-footerMobile>
+    <S.FooterMobileWrapper data-component-footer-mobile>
       <S.ListIcons>
         <li>
           <Button aria-label="Ir para a home">
