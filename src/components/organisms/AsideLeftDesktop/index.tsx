@@ -25,8 +25,6 @@ const AsideLeftDesktop = () => (
           <Icons
             icon="github"
             iconStyles={{
-              color: theme.colors.texts,
-              colorOnHover: theme.colors.highlight,
               size: '3'
             }}
           />
@@ -38,8 +36,6 @@ const AsideLeftDesktop = () => (
           <Icons
             icon="linkedin"
             iconStyles={{
-              color: theme.colors.texts,
-              colorOnHover: theme.colors.highlight,
               size: '3'
             }}
           />

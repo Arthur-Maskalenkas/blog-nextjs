@@ -6,7 +6,7 @@ import { useChangeTheme } from 'hooks/useChangeTheme'
 
 const ButtonChangeTheme = () => {
   const { toggleTheme } = useChangeTheme()
-
+  console.log(theme.colors)
   return (
     <S.ButtonChangeThemeWrapper
       data-component-button-change-theme
@@ -15,10 +15,9 @@ const ButtonChangeTheme = () => {
     >
       <Icons
         icon="changeTheme"
+        defaultStyle
         iconStyles={{
           size: '2.24',
-          color: theme.colors.texts,
-          colorOnHover: theme.colors.highlight,
           sizeInDesktop: '2.5'
         }}
       />

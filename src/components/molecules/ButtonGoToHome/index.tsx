@@ -12,8 +12,6 @@ const ButtonGoToHome = () => (
       icon="home"
       iconStyles={{
         size: '2.24',
-        color: theme.colors.texts,
-        colorOnHover: theme.colors.highlight,
         sizeInDesktop: '2.5'
       }}
     />

@@ -12,8 +12,6 @@ const ButtonGoToTopPage = () => (
       icon="goToTopPage"
       iconStyles={{
         size: '3.34',
-        color: theme.colors.texts,
-        colorOnHover: theme.colors.highlight,
         sizeInDesktop: '2.5'
       }}
     />

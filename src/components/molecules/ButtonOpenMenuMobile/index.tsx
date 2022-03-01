@@ -15,9 +15,7 @@ const ButtonOpenMenuMobile = () => {
       <Icons
         icon="menu"
         iconStyles={{
-          size: '2.24',
-          color: theme.colors.texts,
-          colorOnHover: theme.colors.highlight
+          size: '2.24'
         }}
       />
     </S.ButtonOpenMenuMobileWrapper>

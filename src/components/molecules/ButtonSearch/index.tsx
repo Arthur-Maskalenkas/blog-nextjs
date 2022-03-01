@@ -12,8 +12,6 @@ const ButtonSearch = () => (
       icon="search"
       iconStyles={{
         size: '2.24',
-        color: theme.colors.texts,
-        colorOnHover: theme.colors.highlight,
         sizeInDesktop: '2.5'
       }}
     />
