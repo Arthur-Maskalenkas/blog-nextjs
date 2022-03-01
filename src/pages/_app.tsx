@@ -1,3 +1,6 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 
@@ -18,14 +21,13 @@ function App({ Component, pageProps }: AppProps) {
     colors: isDarkTheme ? themeColors.dark : themeColors.light
   }
 
-  console.log(colorsInThemeResolved)
-
   return (
     <>
       <ChangeThemeProvider
         currentThemeIsDark={isDarkTheme}
         toggleTheme={setIsDarkTheme}
       >
+        {/* @ts-nocehck */}
         <ThemeProvider theme={colorsInThemeResolved}>
           <MenuMobileProvider>
             <Head>
