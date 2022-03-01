@@ -16,11 +16,11 @@ interface IMenuMobileLinksWrapperStyleProps {
 }
 
 export const MenuMobileLinksWrapper = styled.div<IMenuMobileLinksWrapperStyleProps>`
-  ${({ isOpen }) => css`
+  ${({ theme, isOpen }) => css`
     position: fixed;
 
-    padding-top: 6.819rem;
-    padding-bottom: 6.24rem;
+    padding-top: ${theme.heightContainerAroundScreens.headerMobile};
+    padding-bottom: ${theme.heightContainerAroundScreens.footerMobile};
 
     height: 100vh;
     width: 100%;

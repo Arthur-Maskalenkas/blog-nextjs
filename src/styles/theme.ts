@@ -16,6 +16,10 @@ export default {
     white: '#fff',
     black: '#222'
   },
+  heightContainerAroundScreens: {
+    footerMobile: '6.239rem',
+    headerMobile: '6.817rem'
+  },
   spacings: {
     sp1: {
       s1: '.2rem',

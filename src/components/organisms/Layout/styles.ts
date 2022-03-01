@@ -1,9 +1,10 @@
 import { customMedia } from 'helpers/customMedia'
-import styled, { css } from 'styled-components'
+import styled, { css, DefaultTheme } from 'styled-components'
 
 const LayoutModifier = {
-  resolvePositionInMobileScreen: () => css`
-    padding-top: 6.817rem;
+  resolvePositionInMobileScreen: (theme: DefaultTheme) => css`
+    padding-top: ${theme.heightContainerAroundScreens.headerMobile};
+    padding-bottom: ${theme.heightContainerAroundScreens.footerMobile};
 
     [data-component-footerMobile] {
       position: fixed;
@@ -62,11 +63,13 @@ const LayoutModifier = {
 }
 
 export const LayoutWrapper = styled.div`
-  ${LayoutModifier.resolvePositionInMobileScreen()}
-  ${LayoutModifier.excludeAllELementsDesktopInMobileScreen()}
+  ${({ theme }) => css`
+    ${LayoutModifier.resolvePositionInMobileScreen(theme)}
+    ${LayoutModifier.excludeAllELementsDesktopInMobileScreen()}
 
   ${customMedia.greaterThan('desktop')`
     ${LayoutModifier.resolvePositionInDesktopScreen()}
     ${LayoutModifier.excludeAllELementsMobileInDesktopScreen()}
+`}
   `}
 `

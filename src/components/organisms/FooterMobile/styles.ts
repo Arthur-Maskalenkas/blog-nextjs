@@ -7,6 +7,8 @@ export const FooterMobileWrapper = styled.footer`
     background-color: ${theme.colors.mediumBackground};
 
     border-top: 1px solid ${theme.colors.borders};
+
+    height: ${theme.heightContainerAroundScreens.footerMobile};
   `}
 `
 
