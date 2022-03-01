@@ -3,14 +3,33 @@ import styled, { css } from 'styled-components'
 const MenuMobileLinksWrapperModifier = {
   close: () => css`
     pointer-events: none;
+
     opacity: 0;
+
+    /*
+    * Adiicionando opacidade para o efeito não aparecer em todas as paginas que forem abertas
+    * */
+    transition: opacity 1.5s;
+
+    animation-name: slideOutLeft;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+
+    @keyframes slideOutLeft {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        visibility: hidden;
+        transform: translateX(-100%);
+      }
+    }
   `,
   open: () => css`
     opacity: 1;
-    pointer-events: all;
 
     animation-name: slideInLeft;
-    animation-duration: 1s;
+    animation-duration: 0.3s;
     animation-fill-mode: both;
 
     @keyframes slideInLeft {

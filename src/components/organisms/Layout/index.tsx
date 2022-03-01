@@ -1,5 +1,5 @@
 import * as S from './styles'
-import React from 'react'
+import React, { useEffect } from 'react'
 import AsideLeftDesktop from '../AsideLeftDesktop'
 import AsideRightDesktop from '../AsideRightDesktop'
 import HeaderMobile from '../HeaderMobile'
