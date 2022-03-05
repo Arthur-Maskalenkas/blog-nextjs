@@ -58,6 +58,24 @@ const GlobalStyles: GlobalStyleComponent<
       font-size: 62.5%;
     }
 
+    h1::selection,
+    h2::selection,
+    h3::selection,
+    h4::selection,
+    h5::selection,
+    p::selection,
+    a::selection,
+    code::selection,
+    span::selection,
+    small::selection {
+      background: ${theme.colors.highlight};
+      color: ${theme.colors.texts} !important;
+    }
+
+    a::selection {
+      color: #b4f231 !important;
+    }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
         Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
