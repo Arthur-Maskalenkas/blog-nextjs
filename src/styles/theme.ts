@@ -14,7 +14,8 @@ export default {
     mediumBackground: '',
     background: '',
     white: '',
-    black: ''
+    black: '',
+    withSelection: ''
   },
   heightContainerAroundScreens: {
     footerMobile: '6.239rem',
@@ -84,7 +85,8 @@ export const themeColors = {
     mediumBackground: '#f0f0f3',
     background: '#fff',
     white: '#fff',
-    black: '#222'
+    black: '#222',
+    withSelection: '#b4f231'
   },
   dark: {
     borders: '#38444d',
@@ -94,6 +96,7 @@ export const themeColors = {
     mediumBackground: '#0a0c21',
     background: '#030518',
     white: '#fff',
-    black: '#222'
+    black: '#222',
+    withSelection: '#b4f231'
   }
 }

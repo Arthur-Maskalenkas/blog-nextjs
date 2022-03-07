@@ -1,6 +1,6 @@
 ---
 title: Criando o efeito da chuva do Matrix com JavaScript puro
-date: '2022-02-26 22:50:35'
+date: '2021-01-01 22:50:35'
 tag: js
 
 shortText: Aprenda como criar esse efeito em poucas linhas manipulando o Canvas

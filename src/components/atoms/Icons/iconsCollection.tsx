@@ -6,6 +6,7 @@ import { ArrowUpShort, Lightbulb } from 'styled-icons/bootstrap'
 import { Github } from '@styled-icons/boxicons-logos/Github'
 import { LightbulbOff } from '@styled-icons/bootstrap/LightbulbOff'
 import { Linkedin } from '@styled-icons/boxicons-logos/Linkedin'
+import { Algolia } from '@styled-icons/fa-brands/Algolia'
 
 import { ReactNode } from 'react'
 
@@ -18,6 +19,7 @@ export interface IIconsList {
   github: ReactNode
   linkedin: ReactNode
   menu: ReactNode
+  algolia: ReactNode
 }
 
 export const IconsCollection: IIconsList = {
@@ -28,5 +30,6 @@ export const IconsCollection: IIconsList = {
   search: <Search />,
   github: <Github />,
   linkedin: <Linkedin />,
-  menu: <Menu />
+  menu: <Menu />,
+  algolia: <Algolia />
 }
