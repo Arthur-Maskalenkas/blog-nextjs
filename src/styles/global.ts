@@ -20,15 +20,17 @@ const GlobalStyles: GlobalStyleComponent<
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    ${({ theme }) => css`
-      transition: background ${theme.transition.fast},
-        color ${theme.transition.fast};
-    `}
-
     &::before,
     &::after {
       box-sizing: inherit;
     }
+  }
+
+  button, h1, h2, h3, h4, h5, a, header, footer, div {
+    ${({ theme }) => css`
+      transition: background ${theme.transition.fast},
+        color ${theme.transition.fast};
+    `}
   }
 
   a {
