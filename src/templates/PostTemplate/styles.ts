@@ -290,7 +290,7 @@ export const PostTitle = styled.h1`
 
     ${customMedia.greaterThan('desktop')`
       font-size: 6.4rem;
-      line-height: 6.4rem;
+      line-height: 7rem;
     `}
   `}
 `
@@ -304,7 +304,7 @@ export const PostSubtitle = styled.h2`
 
     ${customMedia.greaterThan('desktop')`
       font-size: 3.2rem;
-      line-height: 3.2rem;
+      line-height: 3.8rem;
     `}
   `}
 `
