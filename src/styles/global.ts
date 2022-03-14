@@ -20,6 +20,11 @@ const GlobalStyles: GlobalStyleComponent<
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
+    ${({ theme }) => css`
+      transition: background ${theme.transition.fast},
+        color ${theme.transition.fast};
+    `}
+
     &::before,
     &::after {
       box-sizing: inherit;
@@ -84,6 +89,7 @@ const GlobalStyles: GlobalStyleComponent<
 
       ${!removeBg &&
       css`
+        transition: background ${theme.transition.fast};
         background-color: ${theme.colors.background};
       `}
     }

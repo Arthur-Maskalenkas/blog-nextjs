@@ -6,6 +6,9 @@ export default {
   border: {
     radius: '0.4rem'
   },
+  transition: {
+    fast: '.2s'
+  },
   colors: {
     borders: '',
     texts: '',

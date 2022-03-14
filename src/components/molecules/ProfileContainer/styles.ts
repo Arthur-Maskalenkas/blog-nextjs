@@ -53,6 +53,8 @@ export const ProfileAuthor = styled(textWithHighlightGlobalStyle).attrs({
 
     display: inline-block;
     margin-top: 0.32rem;
+
+    transition: unset;
   }
 
   ${customMedia.greaterThan('desktop')`
