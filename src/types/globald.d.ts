@@ -14,6 +14,11 @@ export interface IGlobalTag {
   title: string
 }
 
+export interface IGlobalAlgoliaStats {
+  nbHits: number
+  timeSpentMS: number
+}
+
 export interface IGlobalPost {
   title: string
   author: stirng

@@ -2,10 +2,11 @@ import * as S from './styles'
 import React from 'react'
 
 import algoliasearch from 'algoliasearch/lite'
-import { InstantSearch, SearchBox, Hits, Stats } from 'react-instantsearch-dom'
+import { InstantSearch, SearchBox, Hits } from 'react-instantsearch-dom'
 
 import Hit from './components/Hit'
 import Icons from 'components/atoms/Icons'
+import Stats from './components/Stats'
 
 const Search = () => {
   const searchClient = algoliasearch(
@@ -24,15 +25,7 @@ const Search = () => {
             autoFocus={true}
           />
           <S.SearchStatsAndTitleWrapper>
-            <Stats
-              translations={{
-                stats(nbHits, timeSpentMS) {
-                  return nbHits === 1
-                    ? `${nbHits} resultado encontrado em ${timeSpentMS}ms`
-                    : `${nbHits} resultados encontrados em ${timeSpentMS}ms`
-                }
-              }}
-            />
+            <Stats />
             <S.PoweredByAlgoliaTextWrapper>
               <S.SearchTitle>Powered by Algolia</S.SearchTitle>
               <Icons icon="algolia" defaultStyle iconStyles={{ size: '1.6' }} />
