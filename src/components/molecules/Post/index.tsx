@@ -5,7 +5,7 @@ import { IPostProps } from './post'
 import Link from 'next/link'
 
 const Post = ({ date, shortText, tag, title, slug }: IPostProps) => (
-  <Link href={`post/${slug}`} passHref>
+  <Link href={`/post/${slug}`} passHref>
     <S.Link>
       <S.PostWrapper data-component-post>
         <S.TagWrapper colorBackground={tag.colorBackground}>
