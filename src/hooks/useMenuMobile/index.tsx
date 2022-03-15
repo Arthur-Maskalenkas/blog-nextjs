@@ -41,26 +41,18 @@ export const MenuMobileContext = createContext<IMenuMobileProps>(
  */
 
 const MenuMobileProvider = ({ children }: IMenuMobileProviderProps) => {
-  const [isOpen, setIsOpen] = useState<boolean>(false)
+  const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false)
 
   /*
    * Disponiblizando as funções
    * */
-  const changeMenuVisibility = (msToChangeStateOnClose = 0) => {
-    if (isOpen) {
-      setTimeout(() => {
-        setIsOpen(false)
-      }, msToChangeStateOnClose)
-
-      return
-    }
-
-    setIsOpen(true)
+  const changeMenuVisibility = (isOpen: boolean) => {
+    setMenuIsOpen(isOpen)
   }
 
   return (
     <MenuMobileContext.Provider
-      value={{ isOpen: isOpen, changeMenuVisibility: changeMenuVisibility }}
+      value={{ isOpen: menuIsOpen,changeMenuVisibility: changeMenuVisibility }}
     >
       {children}
     </MenuMobileContext.Provider>

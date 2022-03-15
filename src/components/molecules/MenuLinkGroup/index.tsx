@@ -11,7 +11,7 @@ const MenuLinkGroup = () => {
     <S.MenuLinkGroupWrapper data-component-menu-link-group>
       {linkListSideBar.map((item, index) => (
         <Link key={index} href={item.href} passHref>
-          <S.MenuLink onClick={() => changeMenuVisibility()}>
+          <S.MenuLink onClick={() => changeMenuVisibility(false)}>
             {item.textLink}
           </S.MenuLink>
         </Link>

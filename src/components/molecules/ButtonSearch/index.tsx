@@ -11,7 +11,7 @@ const ButtonSearch = () => {
     <Link href={`/search`}>
       <a
         aria-label="Pesquisar postagem no blog"
-        onClick={() => changeMenuVisibility()}
+        onClick={() => changeMenuVisibility(false)}
       >
         <S.ButtonSearchWrapper data-component-button-search>
           <Icons
