@@ -1,3 +1,4 @@
+import { customMedia } from 'helpers/customMedia'
 import styled, { css } from 'styled-components'
 
 const MenuMobileLinksWrapperModifier = {
@@ -84,6 +85,10 @@ export const MenuMobileLinksWrapper = styled.div<IMenuMobileLinksWrapperStylePro
       ? MenuMobileLinksWrapperModifier.open()
       : MenuMobileLinksWrapperModifier.close()}
   `}
+
+  ${customMedia.greaterThan('desktop')`
+      display: none;
+    `}
 `
 
 export const IconsGroup = styled.div`
