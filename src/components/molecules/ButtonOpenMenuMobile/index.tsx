@@ -5,7 +5,7 @@ import theme from 'styles/theme'
 import { useMenuMobile } from 'hooks/useMenuMobile'
 
 const ButtonOpenMenuMobile = () => {
-  const { isOpen ,changeMenuVisibility } = useMenuMobile()
+  const { isOpen, changeMenuVisibility } = useMenuMobile()
   return (
     <S.ButtonOpenMenuMobileWrapper
       data-component-button-open-menu-mobile

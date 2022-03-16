@@ -52,7 +52,7 @@ const MenuMobileProvider = ({ children }: IMenuMobileProviderProps) => {
 
   return (
     <MenuMobileContext.Provider
-      value={{ isOpen: menuIsOpen,changeMenuVisibility: changeMenuVisibility }}
+      value={{ isOpen: menuIsOpen, changeMenuVisibility: changeMenuVisibility }}
     >
       {children}
     </MenuMobileContext.Provider>
