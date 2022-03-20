@@ -10,8 +10,9 @@ import GlobalStyles from 'styles/global'
 
 import { MenuMobileProvider } from 'hooks/useMenuMobile'
 import theme, { themeColors } from 'styles/theme'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { ChangeThemeProvider } from 'hooks/useChangeTheme'
+import { getStorageItem } from 'helpers/localStorage'
 
 function App({ Component, pageProps }: AppProps) {
   const [isDarkTheme, setIsDarkTheme] = useState<boolean>(false)
@@ -20,6 +21,12 @@ function App({ Component, pageProps }: AppProps) {
     ...theme,
     colors: isDarkTheme ? themeColors.dark : themeColors.light
   }
+
+  useEffect(() => {
+    console.log(getStorageItem('theme'))
+    setIsDarkTheme(getStorageItem('theme')[0] == 'dark')
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [getStorageItem('theme')])
 
   return (
     <>

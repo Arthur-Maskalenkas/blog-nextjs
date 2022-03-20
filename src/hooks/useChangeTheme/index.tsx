@@ -1,6 +1,8 @@
 import { createContext, useContext } from 'react'
 import { IChangeThemeProps, IChangeThemeProviderProps } from './changeTheme'
 
+import { setStorageItem } from 'helpers/localStorage'
+
 /**
  *
  * * ASsiniatura dos metodos/inicio *
@@ -47,6 +49,8 @@ const ChangeThemeProvider = ({
 }: IChangeThemeProviderProps) => {
   const toggleThemeContext = () => {
     toggleTheme(!currentThemeIsDark)
+
+    setStorageItem('theme', !currentThemeIsDark ? ['dark'] : ['light'])
   }
 
   return (
