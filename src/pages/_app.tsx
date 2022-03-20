@@ -23,7 +23,6 @@ function App({ Component, pageProps }: AppProps) {
   }
 
   useEffect(() => {
-    console.log(getStorageItem('theme'))
     setIsDarkTheme(getStorageItem('theme')[0] == 'dark')
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [getStorageItem('theme')])
