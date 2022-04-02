@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
-// Importamos nossa função de buscar posts
 import { getPost, getAllPosts } from 'services/api.js'
 import markdown from 'services/markdown.js'
 import PostTemplate from 'templates/PostTemplate'
@@ -15,15 +13,14 @@ export async function getStaticProps({ params }: any) {
    * passando o nome da rota (ola-mundo, nesse caso)
    * e os campos que queremos.
    */
-  const post = getPost(params.slug, [
+  const post: any = getPost(params.slug, [
     'title',
     'title',
     'date',
     'shortText',
     'content'
   ])
-  //{/*
-  // @ts-ignore */}
+
   post.content = await markdown.toHTML(post.content)
 
   return {
@@ -33,9 +30,8 @@ export async function getStaticProps({ params }: any) {
 
 export function getStaticPaths() {
   const posts = getAllPosts(['slug', 'date'])
-  //{/*
-  // @ts-ignore */}
-  const paths = posts.map(({ slug }) => ({
+
+  const paths = posts.map(({ slug }: any) => ({
     params: {
       slug
     }
