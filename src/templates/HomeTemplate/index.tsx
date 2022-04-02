@@ -1,7 +1,7 @@
 import * as S from './styles'
 import React, { useState } from 'react'
 import Layout from 'components/organisms/Layout'
-import { IHomeTemplateProps } from './homeTemplate'
+import { ICount, IHomeTemplateProps } from './homeTemplate'
 import Post from 'components/molecules/Post'
 import DateFormat from 'helpers/dateFormat'
 import { NextSeo } from 'next-seo'
@@ -10,37 +10,33 @@ import InfiniteScroll from 'react-infinite-scroll-component'
 const HomeTemplate = ({ posts }: IHomeTemplateProps) => {
   const POSTS_PER_LOADING = 10
 
-  const sortedPosts = posts.sort((post1, post2) =>
-    new Date(post1.date) > new Date(post2.date) ? -1 : 1
-  )
-
-  const [count, setCount] = useState({
+  const [countPosts, setCountPosts] = useState<ICount>({
     prev: 0,
     next: POSTS_PER_LOADING
   })
-  const [hasMore, setHasMore] = useState(true)
-  const [current, setCurrent] = useState(
-    sortedPosts.slice(count.prev, count.next)
+
+  const [hasMorePosts, setHasMorePosts] = useState(true)
+
+  const [currentPostsToShow, setCurrentPostsToShow] = useState(
+    posts.slice(countPosts.prev, countPosts.next)
   )
 
   const getMoreData = () => {
-    console.log(current)
-
-    if (current.length === sortedPosts.length) {
-      setHasMore(false)
+    if (currentPostsToShow.length === posts.length) {
+      setHasMorePosts(false)
       return
     }
 
-    setCurrent(
-      current.concat(
-        sortedPosts.slice(
-          count.prev + POSTS_PER_LOADING,
-          count.next + POSTS_PER_LOADING
+    setCurrentPostsToShow(
+      currentPostsToShow.concat(
+        posts.slice(
+          countPosts.prev + POSTS_PER_LOADING,
+          countPosts.next + POSTS_PER_LOADING
         )
       )
     )
 
-    setCount((prevState: any) => ({
+    setCountPosts((prevState) => ({
       prev: prevState.prev + POSTS_PER_LOADING,
       next: prevState.next + POSTS_PER_LOADING
     }))
@@ -65,13 +61,12 @@ const HomeTemplate = ({ posts }: IHomeTemplateProps) => {
 
       <S.HomeWrapper data-component-home>
         <InfiniteScroll
-          dataLength={current.length}
+          dataLength={currentPostsToShow.length}
           next={getMoreData}
-          loader={<h4>loading...</h4>}
-          hasMore={hasMore}
-          endMessage={<p>voce chegou ao final</p>}
+          loader={<>.</>}
+          hasMore={hasMorePosts}
         >
-          {current.map((post, index) => {
+          {currentPostsToShow.map((post, index) => {
             return (
               <Post
                 key={index}
