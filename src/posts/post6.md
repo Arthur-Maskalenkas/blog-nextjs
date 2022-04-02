@@ -1,13 +1,12 @@
 ---
-title: um post
-date: '2020-08-30T16:53:22.171Z'
+title: "post 6"
+date: '2022-01-06 22:50:35'
 tag: js
 
-shortText: Um breve resumo do post
-
-dia: 26
-mes: 02
-ano: 2022
+shortText: "short text 6"
 ---
 
-<h2>testando o post</h2>
+
+## Introdução
+
+post 6
