@@ -9,7 +9,7 @@ export default {
   title: 'Post',
   component: Post,
   args: {
-    tag: { title: 'misc', colorText: 'white', colorBackground: 'green' },
+    tag: 'dev',
     date: '2022-02-26 22:50:35',
     title: 'Meu ano de 2021',
     shortText:

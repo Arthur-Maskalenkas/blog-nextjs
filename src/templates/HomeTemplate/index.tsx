@@ -70,11 +70,7 @@ const HomeTemplate = ({ posts }: IHomeTemplateProps) => {
             return (
               <Post
                 key={index}
-                tag={{
-                  title: 'misc',
-                  colorText: 'white',
-                  colorBackground: 'green'
-                }}
+                tag={post.tag}
                 date={DateFormat(post.date)}
                 slug={post.slug}
                 shortText={post.shortText}

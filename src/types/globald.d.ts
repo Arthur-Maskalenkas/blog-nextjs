@@ -33,4 +33,5 @@ export interface IGlobalPost {
   slug: string
   shortText: string
   content: any
+  tag: keyof IGlobalTags
 }

@@ -6,7 +6,7 @@ import { Highlight } from 'react-instantsearch-dom'
 
 const Hit = (props: any) => {
   const {
-    hit: { date, shortText, slug, tag, title }
+    hit: { date, slug, tag }
   } = props
 
   return (
@@ -19,7 +19,7 @@ const Hit = (props: any) => {
           ) as unknown as string
         }
         slug={slug}
-        tag={{ colorBackground: 'red', colorText: 'white', title: tag }}
+        tag={tag}
         title={
           (<Highlight hit={props.hit} attribute="title" />) as unknown as string
         }
