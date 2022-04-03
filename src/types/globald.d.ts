@@ -8,10 +8,17 @@ export interface ILink {
   textLink: string
 }
 
+export interface IGlobalTags {
+  js: ITag
+  dev: ITag
+  css: ITag
+  misc: ITag
+}
+
 export interface IGlobalTag {
-  colorBackground: string
-  colorText: string
-  title: string
+  color: string
+  text: string
+  background: string
 }
 
 export interface IGlobalAlgoliaStats {

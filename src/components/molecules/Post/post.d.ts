@@ -1,7 +1,7 @@
 import { IGlobalTag } from 'types/globald'
 
 export interface IPostProps {
-  tag: IGlobalTag
+  tag: keyof IGlobalTag
   date: string
   title: string
   shortText: string
