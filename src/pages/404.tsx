@@ -26,7 +26,7 @@ const ErrorPageWrapper = styled.div`
 
 const Description = styled.p`
   ${({ theme }) => css`
-    color: ${theme.colors.texts};
+    color: var(--texts);
     font-size: 3.5rem;
 
     text-align: center;

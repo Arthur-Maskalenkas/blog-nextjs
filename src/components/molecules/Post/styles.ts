@@ -16,7 +16,7 @@ export const Link = styled.a`
       ${Date},
       ${Title},
       ${ShortText} {
-        color: ${theme.colors.highlight};
+        color: var(--highlight);
       }
     }
   `}
@@ -26,7 +26,7 @@ export const PostWrapper = styled.article`
   ${({ theme }) => css`
     padding: 3.2rem 1.6rem;
 
-    border-bottom: 1px solid ${theme.colors.borders};
+    border-bottom: 1px solid var(--borders);
 
     ${customMedia.greaterThan('desktop')`
       padding: 3.2rem 4.8rem;
@@ -91,7 +91,7 @@ export const Date = styled.p`
     font-size: 1.4rem;
     line-height: 1.4rem;
     font-weight: 400;
-    color: ${theme.colors.texts};
+    color: var(--texts);
 
     margin-bottom: 0.32rem;
   `}
@@ -113,6 +113,6 @@ export const ShortText = styled.h2`
     font-size: 1.92rem;
     line-height: 2.3rem;
     font-weight: 300;
-    color: ${theme.colors.texts};
+    color: var(--texts);
   `}
 `

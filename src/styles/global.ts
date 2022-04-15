@@ -75,8 +75,8 @@ const GlobalStyles: GlobalStyleComponent<
     code::selection,
     span::selection,
     small::selection {
-      background: ${theme.colors.highlight};
-      color: ${theme.colors.texts} !important;
+      background: var(--highlight);
+      color: var(--texts) !important;
     }
 
     a::selection {
@@ -92,7 +92,7 @@ const GlobalStyles: GlobalStyleComponent<
       ${!removeBg &&
       css`
         transition: background ${theme.transition.fast};
-        background-color: ${theme.colors.background};
+        background-color: var(--background);
       `}
     }
   `}
@@ -106,6 +106,7 @@ const GlobalStyles: GlobalStyleComponent<
     --background: #030518;
     --white: #fff;
     --black: #222;
+    --withSelection: '#b4f231'
   }
 
   body.light {
@@ -117,6 +118,7 @@ const GlobalStyles: GlobalStyleComponent<
     --background: #fff;
     --white: #fff;
     --black: #222;
+    --withSelection: '#b4f231'
   }
 
 `

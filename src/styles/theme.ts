@@ -81,8 +81,6 @@ export default {
 
 export const themeColors = {
   light: {
-    borders: '#dedede',
-    postColor: '#111',
     texts: '#555555',
     highlight: '#F231A5',
     mediumBackground: '#f0f0f3',
@@ -92,9 +90,7 @@ export const themeColors = {
     withSelection: '#b4f231'
   },
   dark: {
-    borders: '#38444d',
     texts: '#8899a6',
-    postColor: '#fff',
     highlight: '#F231A5',
     mediumBackground: '#0a0c21',
     background: '#030518',

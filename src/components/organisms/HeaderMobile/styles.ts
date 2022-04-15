@@ -4,9 +4,9 @@ export const HeaderMobileWrapper = styled.header`
   ${({ theme }) => css`
     padding: ${theme.spacings.sp2.s3};
 
-    background-color: ${theme.colors.mediumBackground};
+    background-color: var(--mediumBackground);
 
-    border-bottom: 1px solid ${theme.colors.borders};
+    border-bottom: 1px solid var(--borders);
 
     height: ${theme.heightContainerAroundScreens.headerMobile};
 

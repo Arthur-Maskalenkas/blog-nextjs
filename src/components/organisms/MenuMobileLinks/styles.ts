@@ -57,7 +57,7 @@ export const MenuMobileLinksWrapper = styled.div<IMenuMobileLinksWrapperStylePro
 
     z-index: ${theme.layers.menuMobile};
 
-    background-color: ${theme.colors.background};
+    background-color: var(--background);
 
     /*
     * height footer mobike + height header mobile

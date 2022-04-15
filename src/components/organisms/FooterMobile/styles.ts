@@ -6,9 +6,9 @@ export const FooterMobileWrapper = styled.footer`
 
     z-index: ${theme.layers.footerMobile};
 
-    background-color: ${theme.colors.mediumBackground};
+    background-color: var(--mediumBackground);
 
-    border-top: 1px solid ${theme.colors.borders};
+    border-top: 1px solid var(--borders);
 
     height: ${theme.heightContainerAroundScreens.footerMobile};
   `}
@@ -35,7 +35,7 @@ export const ListIcons = styled.ul`
 
     & > li > button:hover {
       & [data-component-icons] {
-        color: ${theme.colors.highlight};
+        color: var(--highlight);
       }
     }
   `}

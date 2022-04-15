@@ -3,11 +3,11 @@ import styled, { css } from 'styled-components'
 
 export const textWithHighlightGlobalStyle = styled.p`
   ${({ theme }) => css`
-    color: ${theme.colors.texts};
+    color: var(--texts);
     cursor: pointer;
 
     &:hover {
-      color: ${theme.colors.highlight};
+      color: var(--highlight);
     }
   `}
 `
@@ -34,7 +34,7 @@ export const ContainerContentPageBlogGlobalStyle = styled.section`
       font-size: 2.2rem;
       line-height: 3rem;
       font-weight: 800;
-      color: ${theme.colors.postColor};
+      color: var(--postColor);
 
       margin-top: 3.8rem;
       margin-bottom: 1.6rem;
@@ -55,7 +55,7 @@ export const ContainerContentPageBlogGlobalStyle = styled.section`
       font-size: 1.8rem;
       line-height: 2.5rem;
       font-weight: 800;
-      color: ${theme.colors.postColor};
+      color: var(--postColor);
 
       margin-top: 3.8rem;
       margin-bottom: 1.6rem;
@@ -74,7 +74,7 @@ export const ContainerContentPageBlogGlobalStyle = styled.section`
       font-size: 2rem;
       line-height: 3.4rem;
       font-weight: 300;
-      color: ${theme.colors.postColor};
+      color: var(--postColor);
 
       margin-bottom: 2.5rem;
     }
@@ -83,9 +83,9 @@ export const ContainerContentPageBlogGlobalStyle = styled.section`
       font-size: 2rem;
       line-height: 3.4rem;
       font-weight: 300;
-      color: ${theme.colors.highlight};
+      color: var(--highlight);
 
-      border-bottom: 1px dashed ${theme.colors.highlight};
+      border-bottom: 1px dashed var(--highlight);
     }
   `}
 `

@@ -2,10 +2,10 @@ import styled, { css } from 'styled-components'
 
 export const AsideLeftDesktopWrapper = styled.div`
   ${({ theme }) => css`
-    background-color: ${theme.colors.mediumBackground};
+    background-color: var(--mediumBackground);
     padding: ${theme.spacings.sp4.s1};
 
-    border-right: 1px solid ${theme.colors.borders};
+    border-right: 1px solid var(--borders);
 
     [data-component-profile-container] {
       margin-bottom: ${theme.spacings.sp3.s2};
@@ -38,7 +38,7 @@ export const ProfileDescription = styled.p`
 
     text-align: center;
 
-    color: ${theme.colors.texts};
+    color: var(--texts);
 
     margin-bottom: ${theme.spacings.sp4.s1};
   `}

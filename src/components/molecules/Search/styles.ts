@@ -20,7 +20,7 @@ export const SearchWrapper = styled.div`
       outline: none;
       border: none;
 
-      border-bottom: 1px solid ${theme.colors.borders};
+      border-bottom: 1px solid var(--borders);
       width: 100%;
       max-width: 100%;
 
@@ -28,7 +28,7 @@ export const SearchWrapper = styled.div`
       padding-right: 0.8rem;
       padding-bottom: 0.8rem;
 
-      color: ${theme.colors.texts};
+      color: var(--texts);
 
       font-size: 2.6rem;
       line-height: 2.6rem;
@@ -45,7 +45,7 @@ export const SearchWrapper = styled.div`
 
       color: red;
       font-size: 12px;
-      background-color: ${theme.colors.background};
+      background-color: var(--background);
 
       cursor: text;
 
@@ -70,7 +70,7 @@ export const SearchStatsAndTitleWrapper = styled.div`
       font-size: 1.6rem;
       line-height: 1.6rem;
       font-weight: 400;
-      color: ${theme.colors.texts};
+      color: var(--texts);
     }
   `}
 `
@@ -86,7 +86,7 @@ export const SearchTitle = styled.h1`
     font-size: 1.6rem;
     line-height: 1.6rem;
     font-weight: 700;
-    color: ${theme.colors.texts};
+    color: var(--texts);
 
     margin-right: 1rem;
   `}

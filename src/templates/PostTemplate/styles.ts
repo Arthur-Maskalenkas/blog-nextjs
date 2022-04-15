@@ -81,12 +81,12 @@ export const ThemeCodeWrapper = styled.div`
     }
 
     pre[class*='language-']::-webkit-scrollbar-thumb {
-      background-color: ${theme.colors.highlight};
+      background-color: var(--highlight);
       border-radius: 4px;
     }
     pre[class*='language-']::-webkit-scrollbar-track {
       border-radius: 7px;
-      background-color: ${theme.colors.background};
+      background-color: var(--background);
     }
     pre[class*='language-']::-webkit-scrollbar {
       border-radius: 4px;
@@ -243,7 +243,7 @@ export const LinkBack = styled(textWithHighlightGlobalStyle).attrs({ as: 'a' })`
     font-size: 1.6rem;
     line-height: 1.6rem;
     font-weight: 400;
-    color: ${theme.colors.texts};
+    color: var(--texts);
 
     margin-bottom: ${theme.spacings.sp3.s2};
 
@@ -256,7 +256,7 @@ export const PostDate = styled.p`
     font-size: 1.7rem;
     line-height: 1.7rem;
     font-weight: 100;
-    color: ${theme.colors.postColor};
+    color: var(--postColor);
 
     margin-bottom: ${theme.spacings.sp2.s3};
 
@@ -272,7 +272,7 @@ export const PostTitle = styled.h1`
     font-size: 4.4rem;
     line-height: 4.9rem;
     font-weight: 700;
-    color: ${theme.colors.postColor};
+    color: var(--postColor);
 
     margin-bottom: ${theme.spacings.sp2.s3};
 
@@ -288,7 +288,7 @@ export const PostSubtitle = styled.h2`
     font-size: 2.5rem;
     line-height: 3.3rem;
     font-weight: 200;
-    color: ${theme.colors.postColor};
+    color: var(--postColor);
 
     ${customMedia.greaterThan('desktop')`
       font-size: 3.2rem;

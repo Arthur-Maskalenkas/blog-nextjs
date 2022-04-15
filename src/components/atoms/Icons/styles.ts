@@ -11,10 +11,10 @@ const WrapperModifier = {
     `}
   `,
   defaultStyleResolved: (theme: DefaultTheme) => css`
-    color: ${theme.colors.texts};
+    color: var(--texts);
 
     &:hover {
-      color: ${theme.colors.highlight};
+      color: var(--highlight);
     }
   `
 }
