@@ -12,7 +12,7 @@ export const textWithHighlightGlobalStyle = styled.p`
   `}
 `
 
-export const ContentTemplateWrapper = styled.div`
+export const ContainerPageBlogGlobalStyle = styled.div`
   ${({ theme }) => css`
     padding: ${theme.spacings.sp5.s2} ${theme.spacings.sp2.s3} 6.239rem
       ${theme.spacings.sp2.s3};
@@ -24,238 +24,68 @@ export const ContentTemplateWrapper = styled.div`
       margin-left: auto;
       margin-right: auto;
     `}
+  `}
+`
 
-    /**
- * Dracula Theme originally by Zeno Rocha [@zenorocha]
- * https://draculatheme.com/
- *
- * Ported for PrismJS by Albert Vallverdu [@byverdu]
- */
+export const ContainerContentPageBlogGlobalStyle = styled.section`
+  ${({ theme }) => css`
+    h2,
+    h2 a {
+      font-size: 2.2rem;
+      line-height: 3rem;
+      font-weight: 800;
+      color: ${theme.colors.postColor};
 
-/**
-*
-* * Theme *
-*
-*/
+      margin-top: 3.8rem;
+      margin-bottom: 1.6rem;
 
+      letter-spacing: 0.3rem;
 
-    /**
-*
-* * --- --- --- --- Theme --- --- --- --- *
-*
-*/
-pre[class*=language-].line-numbers {
-      position: relative;
-      padding-left: 3.8em;
-      counter-reset: linenumber;
-    }
-    pre[class*='language-'].line-numbers > code {
-      position: relative;
-      white-space: inherit;
-    }
-    .line-numbers .line-numbers-rows {
-      position: absolute;
-      pointer-events: none;
-      top: 0;
-      font-size: 100%;
-      left: -3.8em;
-      width: 3em;
-      letter-spacing: -1px;
-      border-right: 1px solid #999;
-      -webkit-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-    .line-numbers-rows > span {
-      display: block;
-      counter-increment: linenumber;
-    }
-    .line-numbers-rows > span:before {
-      content: counter(linenumber);
-      color: #999;
-      display: block;
-      padding-right: 0.8em;
-      text-align: right;
-    }
-    code[class*='language-'],
-    pre[class*='language-'] {
-      color: #ccc;
-      background: none;
-      font-family: 'Inconsolata', monospace;
-      font-size: 1.5rem;
-      text-align: left;
-      white-space: pre;
-      word-spacing: normal;
-      word-break: normal;
-      word-wrap: normal;
-      line-height: 1.5;
-      -moz-tab-size: 4;
-      -webkit-tab-size: 4;
-      tab-size: 4;
-      -webkit-hyphens: none;
-      -ms-hyphens: none;
-      hyphens: none;
-    }
-    pre[class*='language-'] {
-      padding: 1em;
-      margin: 0.5em 0;
-      overflow: auto;
+      border: none;
+
+      ${customMedia.greaterThan('desktop')`
+        font-size: 3.3rem;
+        line-height: 4.7rem;
+      `}
     }
 
-    pre[class*='language-']::-webkit-scrollbar-thumb {
-      background-color: ${theme.colors.highlight};
-      border-radius: 4px;
-    }
-    pre[class*='language-']::-webkit-scrollbar-track {
-      border-radius: 7px;
-      background-color: ${theme.colors.background};
-    }
-    pre[class*='language-']::-webkit-scrollbar {
-      border-radius: 4px;
-      height: 10px;
+    ,
+    h3,
+    h3 a {
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      font-weight: 800;
+      color: ${theme.colors.postColor};
+
+      margin-top: 3.8rem;
+      margin-bottom: 1.6rem;
+
+      letter-spacing: 0.3rem;
+
+      border: none;
+
+      ${customMedia.greaterThan('desktop')`
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+      `}
     }
 
-    :not(pre) > code[class*='language-'],
-    pre[class*='language-'] {
-      background: #2d2d2d;
-    }
-    :not(pre) > code[class*='language-'] {
-      padding: 0.1em;
-      border-radius: 0.3em;
-      white-space: normal;
-    }
-    .token.block-comment,
-    .token.cdata,
-    .token.comment,
-    .token.doctype,
-    .token.prolog {
-      color: #999;
-    }
-    .token.punctuation {
-      color: #ccc;
-    }
-    .token.attr-name,
-    .token.deleted,
-    .token.namespace,
-    .token.tag {
-      color: #e2777a;
-    }
-    .token.function-name {
-      color: #6196cc;
-    }
-    .token.boolean,
-    .token.function,
-    .token.number {
-      color: #f08d49;
-    }
-    .token.class-name,
-    .token.constant,
-    .token.property,
-    .token.symbol {
-      color: #f8c555;
-    }
-    .token.atrule,
-    .token.builtin,
-    .token.important,
-    .token.keyword,
-    .token.selector {
-      color: #cc99cd;
-    }
-    .token.attr-value,
-    .token.char,
-    .token.regex,
-    .token.string,
-    .token.variable {
-      color: #7ec699;
-    }
-    .token.entity,
-    .token.operator,
-    .token.url {
-      color: #67cdcc;
-    }
-    .token.bold,
-    .token.important {
-      font-weight: 700;
-    }
-    .token.italic {
-      font-style: italic;
-    }
-    .token.entity {
-      cursor: help;
-    }
-    .token.inserted {
-      color: green;
+    p {
+      font-size: 2rem;
+      line-height: 3.4rem;
+      font-weight: 300;
+      color: ${theme.colors.postColor};
+
+      margin-bottom: 2.5rem;
     }
 
-    /**
- *
- * * no theme *
- *
- */
+    a {
+      font-size: 2rem;
+      line-height: 3.4rem;
+      font-weight: 300;
+      color: ${theme.colors.highlight};
 
-    pre {
-      overflow-x: auto;
+      border-bottom: 1px dashed ${theme.colors.highlight};
     }
-
-    /**
- * Inspired by gatsby remark prism - https://www.gatsbyjs.com/plugins/gatsby-remark-prismjs/
- * 1. Make the element just wide enough to fit its content.
- * 2. Always fill the visible space in .code-highlight.
- */
-    .code-highlight {
-      float: left; /* 1 */
-      width: 99.5%; /* 2 */
-    }
-
-    .code-line {
-      display: block;
-      padding-left: 16px;
-      padding-right: 16px;
-      margin-left: -16px;
-      margin-right: -16px;
-      border-left-width: 4px;
-      border-left-color: rgba(31, 41, 55, 0); /* Set code block color */
-    }
-
-    .code-line.inserted {
-      background-color: rgba(
-        16,
-        185,
-        129,
-        0.2
-      ); /* Set inserted line (+) color */
-    }
-
-    .code-line.deleted {
-      background-color: rgba(239, 68, 68, 0.2); /* Set deleted line (-) color */
-    }
-
-    .highlight-line {
-      margin-left: -16px;
-      margin-right: -16px;
-      background-color: rgba(55, 65, 81, 0.5); /* Set highlight bg color */
-      border-left-width: 4px;
-      border-left-color: rgb(
-        59,
-        130,
-        246
-      ); /* Set highlight accent border color */
-    }
-
-    .line-number::before {
-      display: inline-block;
-      width: 1rem;
-      text-align: right;
-      margin-right: 16px;
-      margin-left: -8px;
-      color: rgb(156, 163, 175); /* Line number color */
-      content: attr(line);
-    }
-
-    /**
- *
- * * --- --- --- --- no theme --- --- --- --- *
- *
- */
   `}
 `

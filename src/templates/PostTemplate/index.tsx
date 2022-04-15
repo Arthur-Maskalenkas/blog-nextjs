@@ -6,7 +6,10 @@ import Layout from 'components/organisms/Layout'
 import Link from 'next/link'
 import DateFormat from 'helpers/dateFormat'
 import { NextSeo } from 'next-seo'
-import { ContentTemplateWrapper } from 'styles/globa'
+import {
+  ContainerPageBlogGlobalStyle,
+  ContainerContentPageBlogGlobalStyle
+} from 'styles/globa'
 
 const PostTemplate = ({ post }: IPostTemplateProps) => {
   return (
@@ -27,15 +30,19 @@ const PostTemplate = ({ post }: IPostTemplateProps) => {
         }}
       />
 
-      <ContentTemplateWrapper data-component-post-template>
-        <Link href={'/'} passHref>
-          <S.LinkBack>← Voltar na listagem</S.LinkBack>
-        </Link>
-        <S.PostDate>{DateFormat(post.date)}</S.PostDate>
-        <S.PostTitle>{post.title}</S.PostTitle>
-        <S.PostSubtitle>{post.shortText}</S.PostSubtitle>
-        <S.Content dangerouslySetInnerHTML={{ __html: post.content }} />
-      </ContentTemplateWrapper>
+      <ContainerPageBlogGlobalStyle>
+        <S.ThemeCodeWrapper data-component-post-template>
+          <Link href={'/'} passHref>
+            <S.LinkBack>← Voltar na listagem</S.LinkBack>
+          </Link>
+          <S.PostDate>{DateFormat(post.date)}</S.PostDate>
+          <S.PostTitle>{post.title}</S.PostTitle>
+          <S.PostSubtitle>{post.shortText}</S.PostSubtitle>
+          <ContainerContentPageBlogGlobalStyle
+            dangerouslySetInnerHTML={{ __html: post.content }}
+          />
+        </S.ThemeCodeWrapper>
+      </ContainerPageBlogGlobalStyle>
     </Layout>
   )
 }
