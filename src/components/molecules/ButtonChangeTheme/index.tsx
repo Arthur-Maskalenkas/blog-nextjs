@@ -1,14 +1,27 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+
 import * as S from './styles'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Icons from 'components/atoms/Icons'
-import { useChangeTheme } from 'hooks/useChangeTheme'
 
 const ButtonChangeTheme = () => {
-  const { toggleTheme, currentThemeIsDark } = useChangeTheme()
+  const [theme, setTheme] = useState(null)
 
-  const currentIcon = currentThemeIsDark ? 'lightOff' : 'lightOn'
+  const isDarkMode = theme === 'dark'
 
-  const ariaLabelResolved = currentThemeIsDark
+  const toggleTheme = () => {
+    window.__setPreferredTheme(isDarkMode ? 'light' : 'dark')
+  }
+
+  useEffect(() => {
+    setTheme(window.__theme)
+    window.__onThemeChange = () => setTheme(window.__theme)
+  }, [])
+
+  const currentIcon = isDarkMode ? 'lightOff' : 'lightOn'
+
+  const ariaLabelResolved = isDarkMode
     ? { 'aria-label': 'Alterar o tema da pagina para claro' }
     : { 'aria-label': 'Alterar o tema da pagina para escuro' }
 

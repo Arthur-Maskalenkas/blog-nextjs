@@ -102,7 +102,7 @@ export const Title = styled.h1`
     font-size: 2.56rem;
     line-height: 2.56rem;
     font-weight: 700;
-    color: ${theme.colors.texts};
+    color: var(--postColor);
 
     margin-bottom: 0.8rem;
   `}
