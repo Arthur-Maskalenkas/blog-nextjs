@@ -2,6 +2,7 @@ import * as S from './styles'
 import React from 'react'
 import Icons from 'components/atoms/Icons'
 import theme from 'styles/theme'
+import { LINK_GITHUB } from 'helpers/links'
 
 const ButtonGithub = () => (
   <S.ButtonGithubWrapper
@@ -10,10 +11,9 @@ const ButtonGithub = () => (
   >
     <Icons
       icon="github"
-      href="google.com.br"
+      href={`/${LINK_GITHUB}`}
       iconStyles={{
-        size: '3',
-        sizeInDesktop: '2.5'
+        size: '3'
       }}
     />
   </S.ButtonGithubWrapper>

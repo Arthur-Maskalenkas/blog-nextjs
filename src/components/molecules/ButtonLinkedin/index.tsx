@@ -2,6 +2,7 @@ import * as S from './styles'
 import React from 'react'
 import Icons from 'components/atoms/Icons'
 import theme from 'styles/theme'
+import { LINK_LINKEDIN } from 'helpers/links'
 
 const ButtonLinkedin = () => (
   <S.ButtonLinkedinWrapper
@@ -10,10 +11,10 @@ const ButtonLinkedin = () => (
   >
     <Icons
       icon="linkedin"
-      href="google.com.br"
+      href={`/${LINK_LINKEDIN}`}
       iconStyles={{
         size: '3',
-        sizeInDesktop: '2.5'
+        sizeInDesktop: '3'
       }}
     />
   </S.ButtonLinkedinWrapper>

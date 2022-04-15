@@ -9,6 +9,8 @@ import { Linkedin } from '@styled-icons/boxicons-logos/Linkedin'
 import Icons from 'components/atoms/Icons'
 import theme from 'styles/theme'
 import { Button } from 'components/atoms/Button/styles'
+import ButtonGithub from 'components/molecules/ButtonGithub'
+import ButtonLinkedin from 'components/molecules/ButtonLinkedin'
 
 const AsideLeftDesktop = () => (
   <S.AsideLeftDesktopWrapper data-component-aside-left-desktop>
@@ -21,25 +23,11 @@ const AsideLeftDesktop = () => (
 
     <S.SocialLinksWrapper>
       <li>
-        <Button aria-label="Ir para o meu Github">
-          <Icons
-            icon="github"
-            iconStyles={{
-              size: '3'
-            }}
-          />
-        </Button>
+        <ButtonGithub />
       </li>
 
       <li>
-        <Button aria-label="Ir para o meu Linkedin">
-          <Icons
-            icon="linkedin"
-            iconStyles={{
-              size: '3'
-            }}
-          />
-        </Button>
+        <ButtonLinkedin />
       </li>
     </S.SocialLinksWrapper>
 
