@@ -13,6 +13,7 @@ import theme, { themeColors } from 'styles/theme'
 import { useEffect, useState } from 'react'
 import { ChangeThemeProvider } from 'hooks/useChangeTheme'
 import { getStorageItem } from 'helpers/localStorage'
+import NextNProgress from 'nextjs-progressbar'
 
 function App({ Component, pageProps }: AppProps) {
   const [isDarkTheme, setIsDarkTheme] = useState<boolean>(false)
@@ -44,6 +45,13 @@ function App({ Component, pageProps }: AppProps) {
             </Head>
             <GlobalStyles />
             <Component {...pageProps} />
+            <NextNProgress
+              color="#F231A5"
+              startPosition={0.3}
+              stopDelayMs={200}
+              height={5}
+              showSpinner={false}
+            />
           </MenuMobileProvider>
         </ThemeProvider>
       </ChangeThemeProvider>
