@@ -14,6 +14,7 @@ const Icons = ({
   iconStyles = iconPropsDefault,
   ariaLabel,
   href,
+  openLinkInOtherPage,
   dataName,
   defaultStyle = true
 }: IIconsProps) => (
@@ -21,7 +22,7 @@ const Icons = ({
   <S.Wrapper
     data-component-icons
     aria-label={ariaLabel}
-    {...tagWrapperResolved(href)}
+    {...tagWrapperResolved(href, openLinkInOtherPage)}
     {...dataNameResolved(dataName)}
     {...iconStyles}
     defaultStyle={defaultStyle}

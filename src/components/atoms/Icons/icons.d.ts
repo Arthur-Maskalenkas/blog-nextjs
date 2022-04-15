@@ -7,6 +7,7 @@ export interface IIconsProps {
 
   iconStyles?: IIconStyle
   href?: string
+  openLinkInOtherPage?: boolean
 
   ariaLabel?: string
   dataName?: string

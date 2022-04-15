@@ -12,6 +12,7 @@ const ButtonLinkedin = () => (
     <Icons
       icon="linkedin"
       href={`/${LINK_LINKEDIN}`}
+      openLinkInOtherPage={true}
       iconStyles={{
         size: '3',
         sizeInDesktop: '3'

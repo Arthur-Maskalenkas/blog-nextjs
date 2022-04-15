@@ -12,6 +12,7 @@ const ButtonGithub = () => (
     <Icons
       icon="github"
       href={`/${LINK_GITHUB}`}
+      openLinkInOtherPage={true}
       iconStyles={{
         size: '3'
       }}
