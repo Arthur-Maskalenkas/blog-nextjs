@@ -11,6 +11,7 @@ const ButtonGithub = () => (
     <Icons
       icon="github"
       href={`/${LINK_GITHUB}`}
+      ariaLabel="Vá para o meu github Github"
       openLinkInOtherPage={true}
       iconStyles={{
         size: '3'
