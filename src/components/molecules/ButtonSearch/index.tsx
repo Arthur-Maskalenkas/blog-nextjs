@@ -9,11 +9,11 @@ const ButtonSearch = () => {
 
   return (
     <Link href={`/search`}>
-      <a
-        aria-label="Pesquisar postagem no blog"
-        onClick={() => changeMenuVisibility(false)}
-      >
-        <S.ButtonSearchWrapper data-component-button-search>
+      <a onClick={() => changeMenuVisibility(false)}>
+        <S.ButtonSearchWrapper
+          data-component-button-search
+          aria-label="Pesquisar postagem no blog"
+        >
           <Icons
             icon="search"
             iconStyles={{
