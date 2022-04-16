@@ -8,6 +8,7 @@
     "postbuild": "next-sitemap --config next-generate-sitemap.js",
     "generateAlgoliaSearch": "node ./scripts/build-search.js",
     "start": "next start",
+    "analyze": "next build",
     "lint": "eslint src --max-warnings=0",
     "test": "jest --maxWorkers=50%",
     "test:watch": "jest --watch --maxWorkers=25%",
@@ -57,6 +58,7 @@
     "styled-media-query": "^2.1.2"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^12.1.5",
     "@storybook/addon-essentials": "6.4.17",
     "@storybook/builder-webpack5": "^6.4.17",
     "@storybook/manager-webpack5": "^6.4.17",
