@@ -21,7 +21,10 @@ function App({ Component, pageProps }: AppProps) {
             <title>Arthur Maskalenkas</title>
             <link rel="shortcut icon" href="/img/icon-512.png" />
             <link rel="apple-touch-icon" href="/img/icon-512.png" />
-            <link rel="manifest" href="/manifest.json" />
+            <meta
+              name="google-site-verification"
+              content="PPIg2wixcpEochLiH2neIh7mqTRUhC00DTBzcnmlhjA"
+            />
           </Head>
           <GlobalStyles />
           <Component {...pageProps} />
