@@ -1,4 +1,3 @@
-import { ReactNode } from 'react'
 import { IIconStyle } from 'types/globald'
 import { IIconsList } from './iconsCollection'
 

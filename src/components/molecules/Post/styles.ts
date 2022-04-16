@@ -2,7 +2,7 @@ import { customMedia } from 'helpers/customMedia'
 import styled, { css } from 'styled-components'
 
 export const Link = styled.a`
-  ${({ theme }) => css`
+  ${() => css`
     & {
       ${Tag},
       ${Date},
@@ -23,7 +23,7 @@ export const Link = styled.a`
 `
 
 export const PostWrapper = styled.article`
-  ${({ theme }) => css`
+  ${() => css`
     padding: 3.2rem 1.6rem;
 
     border-bottom: 1px solid var(--borders);
@@ -87,7 +87,7 @@ export const Tag = styled.p<ITagStyleProps>`
 `
 
 export const Date = styled.p`
-  ${({ theme }) => css`
+  ${() => css`
     font-size: 1.4rem;
     line-height: 1.4rem;
     font-weight: 400;
@@ -98,7 +98,7 @@ export const Date = styled.p`
 `
 
 export const Title = styled.h1`
-  ${({ theme }) => css`
+  ${() => css`
     font-size: 2.56rem;
     line-height: 2.56rem;
     font-weight: 700;
@@ -109,7 +109,7 @@ export const Title = styled.h1`
 `
 
 export const ShortText = styled.h2`
-  ${({ theme }) => css`
+  ${() => css`
     font-size: 1.92rem;
     line-height: 2.3rem;
     font-weight: 300;

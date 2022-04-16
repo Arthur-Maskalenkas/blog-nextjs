@@ -10,7 +10,7 @@ const WrapperModifier = {
       width: ${sizeInDesktop}
     `}
   `,
-  defaultStyleResolved: (theme: DefaultTheme) => css`
+  defaultStyleResolved: () => css`
     color: var(--texts);
 
     &:hover {

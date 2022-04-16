@@ -1,8 +1,5 @@
 import * as S from './styles'
 import React from 'react'
-import { Button } from 'components/atoms/Button/styles'
-import Icons from 'components/atoms/Icons'
-import theme from 'styles/theme'
 import ButtonGithub from 'components/molecules/ButtonGithub'
 import ButtonLinkedin from 'components/molecules/ButtonLinkedin'
 import ButtonGoToHome from 'components/molecules/ButtonGoToHome'

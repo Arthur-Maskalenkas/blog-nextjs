@@ -2,8 +2,6 @@ import * as S from './styles'
 import React from 'react'
 import { useMenuMobile } from 'hooks/useMenuMobile'
 import MenuLinkGroup from 'components/molecules/MenuLinkGroup'
-import Icons from 'components/atoms/Icons'
-import theme from 'styles/theme'
 import ButtonGithub from 'components/molecules/ButtonGithub'
 import ButtonLinkedin from 'components/molecules/ButtonLinkedin'
 

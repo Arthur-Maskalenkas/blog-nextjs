@@ -18,19 +18,15 @@ export const AsideRightDesktopWrapper = styled.aside`
 `
 
 export const FirstColumn = styled.ul`
-  ${({ theme }) => css`
-    padding-bottom: 3.52rem;
+  padding-bottom: 3.52rem;
 
-    & > li:not(:last-child) {
-      margin-bottom: 3.52rem;
-    }
-  `}
+  & > li:not(:last-child) {
+    margin-bottom: 3.52rem;
+  }
 `
 
 export const SecondColumn = styled.ul`
-  ${({ theme }) => css`
-    & > li:not(:last-child) {
-      margin-bottom: 3.52rem;
-    }
-  `}
+  & > li:not(:last-child) {
+    margin-bottom: 3.52rem;
+  }
 `

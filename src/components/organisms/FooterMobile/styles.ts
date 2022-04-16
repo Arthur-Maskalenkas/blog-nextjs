@@ -15,28 +15,26 @@ export const FooterMobileWrapper = styled.footer`
 `
 
 export const ListIcons = styled.ul`
-  ${({ theme }) => css`
-    display: grid;
+  display: grid;
 
-    grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 
-    justify-items: center;
-    align-items: center;
+  justify-items: center;
+  align-items: center;
 
-    & > li {
-      display: flex;
-      width: 100%;
-      justify-content: center;
+  & > li {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  & > li > button {
+    width: 100%;
+  }
+
+  & > li > button:hover {
+    & [data-component-icons] {
+      color: var(--highlight);
     }
-
-    & > li > button {
-      width: 100%;
-    }
-
-    & > li > button:hover {
-      & [data-component-icons] {
-        color: var(--highlight);
-      }
-    }
-  `}
+  }
 `

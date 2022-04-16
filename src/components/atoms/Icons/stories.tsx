@@ -1,8 +1,6 @@
 import { Story, Meta } from '@storybook/react'
 import React from 'react'
 
-import { Zap } from '@styled-icons/octicons'
-
 import { IIconsProps } from './icons'
 
 import Icons from '.'

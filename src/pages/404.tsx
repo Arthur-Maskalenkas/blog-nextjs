@@ -25,14 +25,12 @@ const ErrorPageWrapper = styled.div`
 `
 
 const Description = styled.p`
-  ${({ theme }) => css`
-    color: var(--texts);
-    font-size: 3.5rem;
+  color: var(--texts);
+  font-size: 3.5rem;
 
-    text-align: center;
+  text-align: center;
 
-    margin-bottom: 2rem;
-  `}
+  margin-bottom: 2rem;
 `
 
 const GifContainer = styled.div`

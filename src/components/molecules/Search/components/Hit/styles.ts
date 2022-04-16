@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 
 export const HitWrapper = styled.div`
-  ${({ theme }) => css`
+  ${() => css`
     .ais-Highlight-highlighted {
       background: var(--highlight);
       color: var(--withSelection);

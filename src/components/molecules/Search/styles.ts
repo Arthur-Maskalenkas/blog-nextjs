@@ -1,78 +1,74 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 export const SearchWrapper = styled.div`
-  ${({ theme }) => css`
-    .ais-SearchBox {
-      margin-bottom: 1.6rem;
-    }
+  .ais-SearchBox {
+    margin-bottom: 1.6rem;
+  }
 
-    .ais-SearchBox-submit,
-    .ais-SearchBox-reset {
-      display: none;
-    }
+  .ais-SearchBox-submit,
+  .ais-SearchBox-reset {
+    display: none;
+  }
 
-    form {
-      position: relative;
-    }
+  form {
+    position: relative;
+  }
 
-    input {
-      background: transparent;
-      outline: none;
-      border: none;
+  input {
+    background: transparent;
+    outline: none;
+    border: none;
 
-      border-bottom: 1px solid var(--borders);
-      width: 100%;
-      max-width: 100%;
+    border-bottom: 1px solid var(--borders);
+    width: 100%;
+    max-width: 100%;
 
-      padding-left: 0.8rem;
-      padding-right: 0.8rem;
-      padding-bottom: 0.8rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    padding-bottom: 0.8rem;
 
-      color: var(--texts);
+    color: var(--texts);
 
-      font-size: 2.6rem;
-      line-height: 2.6rem;
-      font-weight: 400;
-    }
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+    font-weight: 400;
+  }
 
-    // * metodos não documentados para sumir com o x do Algolia, presente no input
-    form::after {
-      content: '';
+  // * metodos não documentados para sumir com o x do Algolia, presente no input
+  form::after {
+    content: '';
 
-      position: absolute;
-      right: 1rem;
-      top: 0.8rem;
+    position: absolute;
+    right: 1rem;
+    top: 0.8rem;
 
-      color: red;
-      font-size: 12px;
-      background-color: var(--background);
+    color: red;
+    font-size: 12px;
+    background-color: var(--background);
 
-      cursor: text;
+    cursor: text;
 
-      width: 2rem;
-      height: 2rem;
-    }
-  `}
+    width: 2rem;
+    height: 2rem;
+  }
 `
 
 export const SearchStatsAndTitleWrapper = styled.div`
-  ${({ theme }) => css`
-    display: flex;
+  display: flex;
 
-    justify-content: space-between;
-    align-items: center;
+  justify-content: space-between;
+  align-items: center;
 
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
 
-    // * "resultados encontrados em ..."
-    .ais-Stats-text {
-      font-size: 1.6rem;
-      line-height: 1.6rem;
-      font-weight: 400;
-      color: var(--texts);
-    }
-  `}
+  // * "resultados encontrados em ..."
+  .ais-Stats-text {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+    color: var(--texts);
+  }
 `
 
 export const PoweredByAlgoliaTextWrapper = styled.div`
@@ -82,12 +78,10 @@ export const PoweredByAlgoliaTextWrapper = styled.div`
 `
 
 export const SearchTitle = styled.h1`
-  ${({ theme }) => css`
-    font-size: 1.6rem;
-    line-height: 1.6rem;
-    font-weight: 700;
-    color: var(--texts);
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  font-weight: 700;
+  color: var(--texts);
 
-    margin-right: 1rem;
-  `}
+  margin-right: 1rem;
 `

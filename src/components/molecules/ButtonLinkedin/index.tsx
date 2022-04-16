@@ -1,7 +1,6 @@
 import * as S from './styles'
 import React from 'react'
 import Icons from 'components/atoms/Icons'
-import theme from 'styles/theme'
 import { LINK_LINKEDIN } from 'helpers/links'
 
 const ButtonLinkedin = () => (

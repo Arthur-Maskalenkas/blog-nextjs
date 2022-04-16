@@ -2,7 +2,7 @@ import { customMedia } from 'helpers/customMedia'
 import styled, { css, DefaultTheme } from 'styled-components'
 
 const LayoutModifier = {
-  resolvePositionInMobileScreen: (theme: DefaultTheme, isOpen: boolean) => css`
+  resolvePositionInMobileScreen: (theme: DefaultTheme) => css`
     padding-top: ${theme.heightContainerAroundScreens.headerMobile};
     padding-bottom: ${theme.heightContainerAroundScreens.footerMobile};
 
@@ -62,13 +62,9 @@ const LayoutModifier = {
   `
 }
 
-interface ILayoutWrapperStyleProps {
-  isOpen: boolean
-}
-
-export const LayoutWrapper = styled.div<ILayoutWrapperStyleProps>`
-  ${({ theme, isOpen }) => css`
-    ${LayoutModifier.resolvePositionInMobileScreen(theme, isOpen)}
+export const LayoutWrapper = styled.div`
+  ${({ theme }) => css`
+    ${LayoutModifier.resolvePositionInMobileScreen(theme)}
     ${LayoutModifier.excludeAllELementsDesktopInMobileScreen()}
 
   ${customMedia.greaterThan('desktop')`

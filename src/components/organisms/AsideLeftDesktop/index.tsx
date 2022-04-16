@@ -3,12 +3,6 @@ import React from 'react'
 import ProfileContainer from 'components/molecules/ProfileContainer'
 import MenuLinkGroup from 'components/molecules/MenuLinkGroup'
 
-import { Github } from '@styled-icons/boxicons-logos/Github'
-import { Linkedin } from '@styled-icons/boxicons-logos/Linkedin'
-
-import Icons from 'components/atoms/Icons'
-import theme from 'styles/theme'
-import { Button } from 'components/atoms/Button/styles'
 import ButtonGithub from 'components/molecules/ButtonGithub'
 import ButtonLinkedin from 'components/molecules/ButtonLinkedin'
 

@@ -9,7 +9,7 @@ import { ThemeProvider } from 'styled-components'
 import GlobalStyles from 'styles/global'
 
 import { MenuMobileProvider } from 'hooks/useMenuMobile'
-import theme, { themeColors } from 'styles/theme'
+import theme from 'styles/theme'
 import NextNProgress from 'nextjs-progressbar'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
