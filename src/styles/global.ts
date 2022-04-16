@@ -26,6 +26,13 @@ const GlobalStyles: GlobalStyleComponent<
     }
   }
 
+  button, h1, h2, h3, h4, h5, a, header, footer, div {
+    ${({ theme }) => css`
+      transition: background ${theme.transition.fast},
+        color ${theme.transition.fast};
+    `}
+  }
+
   a {
     text-decoration: none;
   }
