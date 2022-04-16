@@ -25,6 +25,11 @@ function App({ Component, pageProps }: AppProps) {
               name="google-site-verification"
               content="PPIg2wixcpEochLiH2neIh7mqTRUhC00DTBzcnmlhjA"
             />
+            <meta
+              name="description"
+              content="Um blog de um desenvolvedor extremamente apaixonado por tecnologias."
+            />
+            <meta name="theme-color" content="#06092B" />
           </Head>
           <GlobalStyles />
           <Component {...pageProps} />
