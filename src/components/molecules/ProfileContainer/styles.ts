@@ -15,8 +15,8 @@ export const ProfileContainerWrapper = styled.a`
 `
 
 export const ImageWrapper = styled.div`
-  height: 3.2rem;
-  width: 3.2rem;
+  height: 4.2rem;
+  width: 4.2rem;
 
   margin-right: 1rem;
 
@@ -30,9 +30,9 @@ export const ImageWrapper = styled.div`
   }
 
   ${customMedia.greaterThan('desktop')`
-    width: 6.4rem;
-    height: 6.4rem;
-    margin-bottom: .8rem;
+    width: 12.4rem;
+    height: 12.4rem;
+    margin-bottom: 1.2rem;
   `}
 `
 
