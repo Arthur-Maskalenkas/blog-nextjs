@@ -33,6 +33,6 @@ export const Wrapper = styled.span<IWrapperStyleProps>`
 
     ${!!size && WrapperModifier.sizeResolved(theme, `${size}rem`)}
     ${!!sizeInDesktop && WrapperModifier.sizeInDesktop(`${sizeInDesktop}rem`)}
-    ${!!defaultStyle && WrapperModifier.defaultStyleResolved(theme)}
+    ${!!defaultStyle && WrapperModifier.defaultStyleResolved()}
   `}
 `
