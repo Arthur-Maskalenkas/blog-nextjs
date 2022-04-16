@@ -21,7 +21,7 @@ const Search = () => {
           <SearchBox
             translations={{
               placeholder:
-                'Pesquise por titulo, por subtitulos e pela tag. Só pesquise!.'
+                'Pesquise por titulos, subtitulos e tags. Não tenha medo.'
             }}
             autoFocus={true}
           />
