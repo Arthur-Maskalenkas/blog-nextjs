@@ -31,19 +31,20 @@ const SobreMimTemplate = () => {
 
           <p>
             Cursei Analise em desenvolvimento de sistemas no final de 2020,
-            porém parei assim que finalizei o primeiro semestre eu acabei
-            parando por conta que estava faltando tempo para estudar as
-            disciplinas que a faculdade queria, sendo que eu estava trabalhando
-            em algo que NÃO era da minha area (balconista de farmacia) e
-            precisava estudar sobre as tecnologias utilizada no mundo
-            corporativo para entrar o quanto antes.
+            porém parei assim que finalizei o primeiro semestre.O motivo é por
+            conta que estava faltando tempo para estudar as disciplinas que a
+            faculdade queria, sendo que eu estava trabalhando em algo que NÃO
+            era da minha area (balconista de farmacia) e precisava estudar sobre
+            as tecnologias utilizada no mundo corporativo para entrar o quanto
+            antes.
           </p>
 
           <p>
             Por que Programação? Por conta que eu acho incrivel o fato de poder
             criar qualquer coisa e aprender cada dia mais, fora que com esse
             blog eu espero poder ajudar uma grande quantidade de pessoas com o
-            meu conhecimento, e de consequencia me sentir realizado diariamente.
+            meu conhecimento e as dicas que eu vou pegando dia após dia, e de
+            consequencia me sentir realizado diariamente.
           </p>
 
           <h2>Contato</h2>
