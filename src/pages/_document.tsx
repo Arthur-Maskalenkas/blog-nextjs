@@ -47,7 +47,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body>
+        <body className="dark">
           <Main />
           <NextScript />
           <script
@@ -61,7 +61,9 @@ export default class MyDocument extends Document {
                   document.body.className = newTheme;
                   window.__onThemeChange(newTheme);
                 }
+
                 var preferredTheme;
+                
                 try {
                   preferredTheme = localStorage.getItem('theme');
                 } catch (err) { }

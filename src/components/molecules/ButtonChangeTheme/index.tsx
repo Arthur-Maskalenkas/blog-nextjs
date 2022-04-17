@@ -10,14 +10,14 @@ const ButtonChangeTheme = () => {
 
   const isDarkMode = theme === 'dark'
 
-  const toggleTheme = () => {
-    window.__setPreferredTheme(isDarkMode ? 'light' : 'dark')
-  }
-
   useEffect(() => {
     setTheme(window.__theme)
     window.__onThemeChange = () => setTheme(window.__theme)
   }, [])
+
+  const toggleTheme = () => {
+    window.__setPreferredTheme(isDarkMode ? 'light' : 'dark')
+  }
 
   const currentIcon = isDarkMode ? 'lightOff' : 'lightOn'
 
