@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 
 export const FooterMobileWrapper = styled.footer`
   ${({ theme }) => css`
-    padding: ${theme.spacings.sp2.s2};
+    padding: 1.4rem;
 
     z-index: ${theme.layers.footerMobile};
 

@@ -3,12 +3,12 @@ import styled, { css } from 'styled-components'
 export const AsideLeftDesktopWrapper = styled.div`
   ${({ theme }) => css`
     background-color: var(--mediumBackground);
-    padding: ${theme.spacings.sp4.s1};
+    padding: 3.2rem;
 
     border-right: 1px solid var(--borders);
 
     [data-component-profile-container] {
-      margin-bottom: ${theme.spacings.sp3.s2};
+      margin-bottom: 2.4rem;
     }
 
     [data-component-icon-group] {
@@ -25,7 +25,7 @@ export const AsideLeftDesktopWrapper = styled.div`
     }
 
     [data-component-menu-link-group] a:not(:last-child) {
-      margin-bottom: ${theme.spacings.sp2.s3};
+      margin-bottom: 1.6rem;
     }
   `}
 `
@@ -40,7 +40,7 @@ export const ProfileDescription = styled.p`
 
     color: var(--texts);
 
-    margin-bottom: ${theme.spacings.sp4.s1};
+    margin-bottom: 3.2rem;
   `}
 `
 
@@ -50,7 +50,7 @@ export const SocialLinksWrapper = styled.ul`
 
     justify-content: center;
 
-    margin-bottom: ${theme.spacings.sp4.s1};
+    margin-bottom: 3.2rem;
 
     & > li:not(:last-child) {
       margin-right: 2rem;

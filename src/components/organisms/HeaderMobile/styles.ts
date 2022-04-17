@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 
 export const HeaderMobileWrapper = styled.header`
   ${({ theme }) => css`
-    padding: ${theme.spacings.sp2.s3};
+    padding: 1.6rem;
 
     background-color: var(--mediumBackground);
 

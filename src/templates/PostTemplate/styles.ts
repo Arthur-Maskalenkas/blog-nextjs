@@ -245,7 +245,7 @@ export const LinkBack = styled(textWithHighlightGlobalStyle).attrs({ as: 'a' })`
     font-weight: 400;
     color: var(--texts);
 
-    margin-bottom: ${theme.spacings.sp3.s2};
+    margin-bottom: 2.4rem;
 
     display: inline-block;
   `}
@@ -258,7 +258,7 @@ export const PostDate = styled.p`
     font-weight: 100;
     color: var(--postColor);
 
-    margin-bottom: ${theme.spacings.sp2.s3};
+    margin-bottom: 1.6rem;
 
     ${customMedia.greaterThan('desktop')`
       font-size: 1.7rem;
@@ -274,7 +274,7 @@ export const PostTitle = styled.h1`
     font-weight: 700;
     color: var(--postColor);
 
-    margin-bottom: ${theme.spacings.sp2.s3};
+    margin-bottom: 1.6rem;
 
     ${customMedia.greaterThan('desktop')`
       font-size: 6.4rem;

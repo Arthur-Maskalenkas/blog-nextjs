@@ -7,7 +7,7 @@ export const AsideRightDesktopWrapper = styled.aside`
 
     height: 100vh;
 
-    padding: ${theme.spacings.sp2.s2} ${theme.spacings.sp2.s4};
+    padding: 1.4rem 1.8rem;
 
     display: flex;
     flex-direction: column;

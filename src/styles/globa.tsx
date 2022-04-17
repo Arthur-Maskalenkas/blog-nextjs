@@ -14,8 +14,7 @@ export const textWithHighlightGlobalStyle = styled.p`
 
 export const ContainerPageBlogGlobalStyle = styled.div`
   ${({ theme }) => css`
-    padding: ${theme.spacings.sp5.s2} ${theme.spacings.sp2.s3} 6.239rem
-      ${theme.spacings.sp2.s3};
+    padding: 4.4rem 1.6rem 6.239rem 1.6rem;
 
     ${customMedia.greaterThan('desktop')`
       max-width: 112rem;
