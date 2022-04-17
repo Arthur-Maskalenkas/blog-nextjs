@@ -15,7 +15,7 @@ const SobreMimTemplate = () => {
   return (
     <Layout>
       <NextSeo
-        title="Home | Arthur Maskalenkas"
+        title="Sobre Mim | Arthur Maskalenkas"
         description="Prazer, o meu nome é Arthur Maskalenkas, nasci em 15 de maio de
         2000, em São Caetano Do Sul"
         openGraph={{

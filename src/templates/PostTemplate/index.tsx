@@ -15,10 +15,9 @@ const PostTemplate = ({ post }: IPostTemplateProps) => {
   return (
     <Layout>
       <NextSeo
-        title={`${post.title} - Willian Justen`}
+        title={`${post.title} - Arthur Maskalenkas`}
         description={post.shortText}
         openGraph={{
-          url: `https://willianjusten.com.br/${post.slug}`,
           title: `${post.title} - Arthur Maskalenkas`,
           description: post.shortText,
           images: [
