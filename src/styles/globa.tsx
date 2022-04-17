@@ -2,7 +2,7 @@ import { customMedia } from 'helpers/customMedia'
 import styled, { css } from 'styled-components'
 
 export const textWithHighlightGlobalStyle = styled.p`
-  ${({ theme }) => css`
+  ${() => css`
     color: var(--texts);
     cursor: pointer;
 
@@ -13,7 +13,7 @@ export const textWithHighlightGlobalStyle = styled.p`
 `
 
 export const ContainerPageBlogGlobalStyle = styled.div`
-  ${({ theme }) => css`
+  ${() => css`
     padding: 4.4rem 1.6rem 6.239rem 1.6rem;
 
     ${customMedia.greaterThan('desktop')`
@@ -27,7 +27,7 @@ export const ContainerPageBlogGlobalStyle = styled.div`
 `
 
 export const ContainerContentPageBlogGlobalStyle = styled.section`
-  ${({ theme }) => css`
+  ${() => css`
     h2,
     h2 a {
       font-size: 2.2rem;
