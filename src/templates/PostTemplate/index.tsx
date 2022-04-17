@@ -22,11 +22,7 @@ const PostTemplate = ({ post }: IPostTemplateProps) => {
           description: post.shortText,
           images: [
             {
-              url: `https://og-image.vercel.app/Arthur%20Maskalenkas%20-%20${post.title
-                .split(' ')
-                .join(
-                  '%20'
-                )}.png?theme=dark&md=0&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-white-logo.svg`,
+              url: `https://res.cloudinary.com/dezwlfeyb/image/upload/v1650211858/graph-imagem-postagem_kdo5fd.png`,
               alt: `${post.title}`
             }
           ]

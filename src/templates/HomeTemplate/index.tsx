@@ -50,7 +50,7 @@ const HomeTemplate = ({ posts }: IHomeTemplateProps) => {
         openGraph={{
           images: [
             {
-              url: 'https://og-image.vercel.app/Arthur%20Maskalenkas%20Blog.png?theme=dark&md=0&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-white-logo.svg',
+              url: 'https://res.cloudinary.com/dezwlfeyb/image/upload/v1650211704/graph-imagem-padrao-blog_qrzonj.png',
               alt: 'Arthur Maskalenkas Blog'
             }
           ]
