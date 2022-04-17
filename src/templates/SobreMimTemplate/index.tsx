@@ -1,13 +1,9 @@
 import Button from 'components/atoms/Button'
 import Icons from 'components/atoms/Icons'
-import { SocialLinksWrapper } from 'components/organisms/AsideLeftDesktop/styles'
 import Layout from 'components/organisms/Layout'
 import { NextSeo } from 'next-seo'
 import React from 'react'
-import {
-  ContainerContentPageBlogGlobalStyle,
-  ContainerPageBlogGlobalStyle
-} from 'styles/globa'
+import { ContainerContentPageBlogGlobalStyle } from 'styles/globa'
 
 import * as S from './styles'
 
@@ -27,7 +23,7 @@ const SobreMimTemplate = () => {
           ]
         }}
       />
-      <ContainerPageBlogGlobalStyle>
+      <S.SobreMimTemplateWrapper>
         <ContainerContentPageBlogGlobalStyle>
           <p>
             Prazer, o meu nome é Arthur Maskalenkas, nasci em 15 de maio de
@@ -91,7 +87,7 @@ const SobreMimTemplate = () => {
             </li>
           </S.SocialLinksWrappers>
         </ContainerContentPageBlogGlobalStyle>
-      </ContainerPageBlogGlobalStyle>
+      </S.SobreMimTemplateWrapper>
     </Layout>
   )
 }
