@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 
 export const AsideRightDesktopWrapper = styled.aside`
-  ${({ theme }) => css`
+  ${() => css`
     background-color: var(--mediumBackground);
     border-left: 1px solid var(--borders);
 

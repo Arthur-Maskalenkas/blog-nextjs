@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 
 export const AsideLeftDesktopWrapper = styled.div`
-  ${({ theme }) => css`
+  ${() => css`
     background-color: var(--mediumBackground);
     padding: 3.2rem;
 
@@ -31,7 +31,7 @@ export const AsideLeftDesktopWrapper = styled.div`
 `
 
 export const ProfileDescription = styled.p`
-  ${({ theme }) => css`
+  ${() => css`
     font-size: 1.6rem;
     line-height: 2.2rem;
     font-weight: 300;
@@ -45,7 +45,7 @@ export const ProfileDescription = styled.p`
 `
 
 export const SocialLinksWrapper = styled.ul`
-  ${({ theme }) => css`
+  ${() => css`
     display: flex;
 
     justify-content: center;
