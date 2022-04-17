@@ -2,6 +2,7 @@ import Button from 'components/atoms/Button'
 import Icons from 'components/atoms/Icons'
 import { SocialLinksWrapper } from 'components/organisms/AsideLeftDesktop/styles'
 import Layout from 'components/organisms/Layout'
+import { NextSeo } from 'next-seo'
 import React from 'react'
 import {
   ContainerContentPageBlogGlobalStyle,
@@ -13,6 +14,19 @@ import * as S from './styles'
 const SobreMimTemplate = () => {
   return (
     <Layout>
+      <NextSeo
+        title="Home | Arthur Maskalenkas"
+        description="Prazer, o meu nome é Arthur Maskalenkas, nasci em 15 de maio de
+        2000, em São Caetano Do Sul"
+        openGraph={{
+          images: [
+            {
+              url: 'https://og-image.vercel.app/Arthur%20Maskalenkas%20-%20Sobre%20mim.png?theme=dark&md=0&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-white-logo.svg',
+              alt: 'Arthur Maskalenkas - Sobre mim'
+            }
+          ]
+        }}
+      />
       <ContainerPageBlogGlobalStyle>
         <ContainerContentPageBlogGlobalStyle>
           <p>

@@ -19,13 +19,13 @@ Como é o primeiro post e eu não queria dormir sem antes deixar a primeira marc
 
 - O design do blog foi inteiramente inspirado no blog do [Willian Justen](https://www.linkedin.com/in/willianjusten/). (o cara é fera, recomendo seguir)
 
-- Esse blog utiliza markdown na estrutura dos posts e graças a lib [remark](https://www.npmjs.com/package/remark) eu consigo transformar todo o conteúdo markdown em HTML e fazer as devidas estilizações com os seletores do css nas postagens. O blog poderia utilizar algum cms como um Strapi da vida? poderia, porém eu queria testar algo novo, e parece que essa estrutura de markdown foi mais que o suficiente para essa ideia.
+- Esse blog utiliza arquivos de markdown na estrutura dos posts e graças a lib [remark](https://www.npmjs.com/package/remark) eu consigo transformar todo o conteúdo markdown em HTML e fazer as devidas estilizações com os seletores do css nas postagens. O blog poderia utilizar algum cms como um Strapi da vida que evitaria todo esse processo ao criar posts? poderia, porém eu queria testar algo novo, e parece que essa estrutura foi mais que o suficiente para essa ideia.
 
 - Ainda falta MUITAAAAAA coisa (seções no menu, otimizar ainda mais o codigo e etc...) - pretendo criar um post exclusivamente para falar sobre as metas de 2022.
 
 - Atualmente o blog esta batendo 100% de performance - e isso é assunto para posts futuros.
 
-- ![nota 99% de performance, 100% de acessibilidade, 100% de melhores praticas, 100% de seo](/assets/posts/next-perf.png)
+- ![nota 99% de performance, 100% de acessibilidade, 100% de melhores praticas, 100% de seo](https://res.cloudinary.com/dezwlfeyb/image/upload/v1650174203/performance_hltji2.png)
  
 ## Conclusão
 

@@ -23,7 +23,11 @@ const PostTemplate = ({ post }: IPostTemplateProps) => {
           description: post.shortText,
           images: [
             {
-              url: 'https://media-exp1.licdn.com/dms/image/C4E03AQFqB1Rqj4qrUQ/profile-displayphoto-shrink_800_800/0/1624322488984?e=1652918400&v=beta&t=B8d24_pORoAjlrlw3baOE0Bo-fb0L-zZrQEJSj4250c',
+              url: `https://og-image.vercel.app/Arthur%20Maskalenkas%20-%20${post.title
+                .split(' ')
+                .join(
+                  '%20'
+                )}.png?theme=dark&md=0&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-white-logo.svg`,
               alt: `${post.title}`
             }
           ]

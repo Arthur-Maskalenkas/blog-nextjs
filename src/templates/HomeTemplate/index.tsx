@@ -46,11 +46,11 @@ const HomeTemplate = ({ posts }: IHomeTemplateProps) => {
     <Layout>
       <NextSeo
         title="Home | Arthur Maskalenkas"
-        description="Um blog de um desenvolvedor front-end extremamente apaxionado por js e todo o seu ecossistema."
+        description="Um blog de um desenvolvedor front-end extremamente apaixonado por js e todo o seu ecossistema."
         openGraph={{
           images: [
             {
-              url: 'https://media-exp1.licdn.com/dms/image/C4E03AQFqB1Rqj4qrUQ/profile-displayphoto-shrink_800_800/0/1624322488984?e=16POSTS_PER_LOADING2918400&v=beta&t=B8d24_pORoAjlrlw3baOE0Bo-fb0L-zZrQEJSj42POSTS_PER_LOADING0c',
+              url: 'https://og-image.vercel.app/Arthur%20Maskalenkas%20Blog.png?theme=dark&md=0&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-white-logo.svg',
               width: 1200,
               height: 630,
               alt: 'Arthur Maskalenkas Blog'
