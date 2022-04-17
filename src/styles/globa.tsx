@@ -14,11 +14,11 @@ export const textWithHighlightGlobalStyle = styled.p`
 
 export const ContainerPageBlogGlobalStyle = styled.div`
   ${() => css`
-    padding: 4.4rem 1.6rem 6.239rem 1.6rem;
+    padding: 1.4rem 1.6rem 6.239rem 1.6rem;
 
     ${customMedia.greaterThan('desktop')`
       max-width: 112rem;
-      padding: 8rem 8rem 0 8rem;
+      padding: 2rem 8rem 0 8rem;
 
       margin-left: auto;
       margin-right: auto;
@@ -48,7 +48,6 @@ export const ContainerContentPageBlogGlobalStyle = styled.section`
       `}
     }
 
-    ,
     h3,
     h3 a {
       font-size: 1.8rem;
@@ -76,6 +75,8 @@ export const ContainerContentPageBlogGlobalStyle = styled.section`
       color: var(--postColor);
 
       margin-bottom: 2.5rem;
+
+      overflow-wrap: break-word;
     }
 
     img {
@@ -98,6 +99,58 @@ export const ContainerContentPageBlogGlobalStyle = styled.section`
       color: var(--highlight);
 
       border-bottom: 1px dashed var(--highlight);
+    }
+
+    ul,
+    ol {
+      list-style: disc;
+      padding-left: 2.5rem;
+      margin: 0 auto 1.6rem;
+    }
+
+    li {
+      position: relative;
+
+      padding-left: 1rem;
+
+      & > ul {
+        margin-bottom: 0;
+      }
+
+      &::before {
+        content: '';
+
+        position: absolute;
+        left: -2.2rem;
+
+        top: 50%;
+        transform: translateY(-50%);
+
+        width: 1rem;
+        height: 1rem;
+
+        border-radius: 50%;
+
+        background-color: white;
+      }
+    }
+
+    .anchor {
+      position: relative;
+      border: 0;
+      color: var(--postColor);
+      text-decoration: none;
+
+      &:before {
+        content: '#';
+        position: absolute;
+        left: -35px;
+        opacity: 0;
+      }
+
+      &:hover:before {
+        opacity: 1;
+      }
     }
   `}
 `
