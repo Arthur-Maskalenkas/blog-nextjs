@@ -9,17 +9,6 @@ export default {
   transition: {
     fast: '.2s'
   },
-  colors: {
-    borders: '',
-    texts: '',
-    postColor: '',
-    highlight: '',
-    mediumBackground: '',
-    background: '',
-    white: '',
-    black: '',
-    withSelection: ''
-  },
   heightContainerAroundScreens: {
     footerMobile: '6.239rem',
     headerMobile: '6.817rem'
@@ -78,24 +67,3 @@ export default {
     }
   }
 } as const
-
-export const themeColors = {
-  light: {
-    texts: '#555555',
-    highlight: '#F231A5',
-    mediumBackground: '#f0f0f3',
-    background: '#fff',
-    white: '#fff',
-    black: '#222',
-    withSelection: '#b4f231'
-  },
-  dark: {
-    texts: '#8899a6',
-    highlight: '#F231A5',
-    mediumBackground: '#0a0c21',
-    background: '#030518',
-    white: '#fff',
-    black: '#222',
-    withSelection: '#b4f231'
-  }
-}

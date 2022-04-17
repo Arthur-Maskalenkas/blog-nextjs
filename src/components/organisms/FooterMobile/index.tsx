@@ -2,7 +2,6 @@ import * as S from './styles'
 import React from 'react'
 
 import ButtonGoToTopPage from 'components/molecules/ButtonGoToTopPage'
-import ButtonChangeTheme from 'components/molecules/ButtonChangeTheme'
 import ButtonSearch from 'components/molecules/ButtonSearch'
 import ButtonGoToHome from 'components/molecules/ButtonGoToHome'
 import ButtonOpenMenuMobile from 'components/molecules/ButtonOpenMenuMobile'
@@ -19,9 +18,6 @@ const FooterMobile = () => {
         </li>
         <li>
           <ButtonOpenMenuMobile />
-        </li>
-        <li>
-          <ButtonChangeTheme />
         </li>
         <li>
           <ButtonGoToTopPage />

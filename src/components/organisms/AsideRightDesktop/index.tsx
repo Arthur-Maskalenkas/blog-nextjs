@@ -4,7 +4,6 @@ import ButtonGithub from 'components/molecules/ButtonGithub'
 import ButtonLinkedin from 'components/molecules/ButtonLinkedin'
 import ButtonGoToHome from 'components/molecules/ButtonGoToHome'
 import ButtonSearch from 'components/molecules/ButtonSearch'
-import ButtonChangeTheme from 'components/molecules/ButtonChangeTheme'
 import ButtonGoToTopPage from 'components/molecules/ButtonGoToTopPage'
 
 const AsideRightDesktop = () => (
@@ -25,9 +24,6 @@ const AsideRightDesktop = () => (
     </S.FirstColumn>
 
     <S.SecondColumn>
-      <li>
-        <ButtonChangeTheme />
-      </li>
       <li>
         <ButtonGoToTopPage />
       </li>
