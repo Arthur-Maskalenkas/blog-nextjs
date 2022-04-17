@@ -1,9 +1,8 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true'
-})
+const withPWA = require('next-pwa')
+const isProd = process.env.NODE_ENV === 'production'
 
-module.exports = withBundleAnalyzer({
+module.exports = withPWA({
   webpack: (config, { dev, isServer }) => {
     // Replace React with Preact only in client production build
     if (!dev && !isServer) {
@@ -20,5 +19,9 @@ module.exports = withBundleAnalyzer({
   experimental: {
     // Enables the styled-components SWC transform
     styledComponents: true
+  },
+  pwa: {
+    dest: 'public',
+    disable: !isProd
   }
 })
