@@ -78,6 +78,19 @@ export const ContainerContentPageBlogGlobalStyle = styled.section`
       margin-bottom: 2.5rem;
     }
 
+    img {
+      display: block;
+      width: auto;
+      max-width: 100%;
+      margin: 1.875rem auto;
+    }
+    blockquote {
+      color: var(--postColor);
+      border-left: 0.3rem solid var(--highlight);
+      padding: 0 1.875rem;
+      margin: 3.125rem auto;
+    }
+
     a {
       font-size: 2rem;
       line-height: 3.4rem;
