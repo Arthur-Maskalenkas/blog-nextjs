@@ -1,9 +1,9 @@
 ---
 title: "Revertendo um git reset hard"
 date: '2022-04-23 13:50:00'
-tag: css
+tag: git
 
-shortText: "Resetou sem querer um commit? Apagou uma branch local? Vamos resolver isso."
+shortText: "Utilizou git reset hard sem querer? Vamos reverter isso."
 ---
 
 
