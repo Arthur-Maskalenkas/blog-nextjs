@@ -3,7 +3,7 @@ title: "Primeiro post do blog"
 date: '2022-04-17 01:43:00'
 tag: misc
 
-shortText: "Blz pessoal? Eu não consigo descrever a emoção de estar escrevendo esse post 04:00 da manhã de um sábado, e eu não poderia dormir sem escrever alguma coisa para o blog."
+shortText: "Algumas curiosidades"
 ---
 
 
