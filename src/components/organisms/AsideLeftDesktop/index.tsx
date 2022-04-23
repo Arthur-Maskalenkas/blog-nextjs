@@ -3,8 +3,8 @@ import React from 'react'
 import ProfileContainer from 'components/molecules/ProfileContainer'
 import MenuLinkGroup from 'components/molecules/MenuLinkGroup'
 
-import ButtonGithub from 'components/molecules/ButtonGithub'
-import ButtonLinkedin from 'components/molecules/ButtonLinkedin'
+import ButtonGithub from 'components/ButtonsMenu/ButtonGithub'
+import ButtonLinkedin from 'components/ButtonsMenu/ButtonLinkedin'
 
 const AsideLeftDesktop = () => (
   <S.AsideLeftDesktopWrapper data-component-aside-left-desktop>

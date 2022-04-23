@@ -1,10 +1,10 @@
 import * as S from './styles'
 import React from 'react'
 
-import ButtonGoToTopPage from 'components/molecules/ButtonGoToTopPage'
-import ButtonSearch from 'components/molecules/ButtonSearch'
-import ButtonGoToHome from 'components/molecules/ButtonGoToHome'
-import ButtonOpenMenuMobile from 'components/molecules/ButtonOpenMenuMobile'
+import ButtonGoToTopPage from 'components/ButtonsMenu/ButtonGoToTopPage'
+import ButtonSearch from 'components/ButtonsMenu/ButtonSearch'
+import ButtonGoToHome from 'components/ButtonsMenu/ButtonGoToHome'
+import ButtonOpenMenuMobile from 'components/ButtonsMenu/ButtonOpenMenuMobile'
 
 const FooterMobile = () => {
   return (

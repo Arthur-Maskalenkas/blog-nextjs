@@ -1,10 +1,10 @@
 import * as S from './styles'
 import React from 'react'
-import ButtonGithub from 'components/molecules/ButtonGithub'
-import ButtonLinkedin from 'components/molecules/ButtonLinkedin'
-import ButtonGoToHome from 'components/molecules/ButtonGoToHome'
-import ButtonSearch from 'components/molecules/ButtonSearch'
-import ButtonGoToTopPage from 'components/molecules/ButtonGoToTopPage'
+import ButtonGithub from 'components/ButtonsMenu/ButtonGithub'
+import ButtonLinkedin from 'components/ButtonsMenu/ButtonLinkedin'
+import ButtonGoToHome from 'components/ButtonsMenu/ButtonGoToHome'
+import ButtonSearch from 'components/ButtonsMenu/ButtonSearch'
+import ButtonGoToTopPage from 'components/ButtonsMenu/ButtonGoToTopPage'
 
 const AsideRightDesktop = () => (
   <S.AsideRightDesktopWrapper data-component-aside-right-desktop>
