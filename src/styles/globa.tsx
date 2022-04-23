@@ -108,10 +108,19 @@ export const ContainerContentPageBlogGlobalStyle = styled.section`
       margin: 0 auto 1.6rem;
     }
 
+    li::marker {
+      color: transparent;
+    }
+
     li {
       position: relative;
 
       padding-left: 1rem;
+
+      font-size: 20px;
+      line-height: 34px;
+      font-weight: 300;
+      color: white;
 
       & > ul {
         margin-bottom: 0;
