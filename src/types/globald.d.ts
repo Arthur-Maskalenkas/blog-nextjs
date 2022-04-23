@@ -13,6 +13,7 @@ export interface IGlobalTags {
   dev: ITag
   css: ITag
   misc: ITag
+  git: ITag
 }
 
 export interface IGlobalTag {

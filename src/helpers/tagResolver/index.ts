@@ -4,7 +4,8 @@ const tags: IGlobalTags = {
   css: { color: 'white', text: 'CSS', background: '#47650B' },
   dev: { color: 'white', text: 'DEV', background: '#61728F' },
   js: { color: 'black', text: 'JS', background: '#D6BA32' },
-  misc: { color: 'white', text: 'MISC', background: '#24809E' }
+  misc: { color: 'white', text: 'MISC', background: '#24809E' },
+  git: { color: 'white', text: 'GIT', background: '#AAB7B8' }
 }
 
 export function TagResolved(tag: keyof IGlobalTags): IGlobalTag {
