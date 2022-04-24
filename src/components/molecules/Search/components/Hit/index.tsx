@@ -4,6 +4,12 @@ import Post from 'components/molecules/Post'
 
 import { Highlight } from 'react-instantsearch-dom'
 
+/**
+ *
+ * É basicamente o wrapper de cada resultado de busca
+ *
+ */
+
 const Hit = (props: any) => {
   const {
     hit: { date, slug, tag }
