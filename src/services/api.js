@@ -53,3 +53,9 @@ export function getAllPosts(fields) {
 
   return posts
 }
+
+export function getAllPostsWithAllData() {
+  const allData = getAllPosts(['title', 'tag', 'shortText', 'slug', 'date'])
+
+  return allData
+}
