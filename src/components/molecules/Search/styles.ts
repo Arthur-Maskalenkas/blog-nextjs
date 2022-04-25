@@ -12,26 +12,28 @@ export const SearchWrapper = styled.div`
 
   form {
     position: relative;
-  }
 
-  input {
-    background: transparent;
-    outline: none;
-    border: none;
+    > {
+      input {
+        background: transparent;
+        outline: none;
+        border: none;
 
-    border-bottom: 1px solid var(--borders);
-    width: 100%;
-    max-width: 100%;
+        border-bottom: 1px solid var(--borders);
+        width: 100%;
+        max-width: 100%;
 
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
-    padding-bottom: 0.8rem;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+        padding-bottom: 0.8rem;
 
-    color: var(--texts);
+        color: var(--texts);
 
-    font-size: 2.6rem;
-    line-height: 2.6rem;
-    font-weight: 400;
+        font-size: 2.6rem;
+        line-height: 2.6rem;
+        font-weight: 400;
+      }
+    }
   }
 
   // * metodos não documentados para sumir com o x do Algolia, presente no input
