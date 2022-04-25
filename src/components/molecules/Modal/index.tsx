@@ -17,13 +17,13 @@ const Modal: React.ForwardRefRenderFunction<IRefModalProps, IModalProps> = (
     isOpen
   }))
 
-  const resolveClassIfIsOpen = isOpen
-    ? { 'data-modal-is-open': true }
-    : { 'data-modal-is-close': true }
-
   return (
-    <S.ModalWrapper data-component-modal {...resolveClassIfIsOpen}>
-      {children}
+    <S.ModalWrapper isOpen={isOpen} data-component-modal>
+      <S.Overlay data-overlay aria-hidden={!isOpen} />
+
+      <S.ContentWrapper role="presentation" aria-hidden={!isOpen} data-content>
+        {children}
+      </S.ContentWrapper>
     </S.ModalWrapper>
   )
 }
