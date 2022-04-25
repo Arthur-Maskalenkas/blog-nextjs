@@ -1,7 +1,7 @@
 import Modal from 'components/molecules/Modal'
 import { IRefModalProps } from 'components/molecules/Modal/Modal'
 import React, { useRef } from 'react'
-import { CustomRefinementList } from './custom'
+import { CustomRefinementList } from './custom/custom'
 
 import * as S from './styles'
 
