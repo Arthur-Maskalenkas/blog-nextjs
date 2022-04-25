@@ -6,7 +6,7 @@ const Modal: React.ForwardRefRenderFunction<IRefModalProps, IModalProps> = (
   { children },
   ref
 ) => {
-  const [isOpen, setIsOpen] = useState<boolean>(true)
+  const [isOpen, setIsOpen] = useState<boolean>(false)
 
   const onOpen = () => setIsOpen(true)
   const onClose = () => setIsOpen(false)
@@ -17,9 +17,17 @@ const Modal: React.ForwardRefRenderFunction<IRefModalProps, IModalProps> = (
     isOpen
   }))
 
+  const overlayHandleClick = () => {
+    onClose()
+  }
+
   return (
     <S.ModalWrapper isOpen={isOpen} data-component-modal>
-      <S.Overlay data-overlay aria-hidden={!isOpen} />
+      <S.Overlay
+        data-overlay
+        aria-hidden={!isOpen}
+        onClick={() => overlayHandleClick()}
+      />
 
       <S.ContentWrapper role="presentation" aria-hidden={!isOpen} data-content>
         {children}

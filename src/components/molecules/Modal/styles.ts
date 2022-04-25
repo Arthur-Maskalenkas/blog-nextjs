@@ -34,7 +34,7 @@ export const ModalWrapper = styled.div<IContentWrapperProps>`
   ${({ isOpen }) => css`
     [data-content],
     [data-overlay] {
-      transition: 1s all;
+      transition: 0.2s all;
     }
 
     ${isOpen ? wrapperModalModifiers.open() : wrapperModalModifiers.close()}
@@ -44,15 +44,14 @@ export const ModalWrapper = styled.div<IContentWrapperProps>`
 export const ContentWrapper = styled.div`
   ${() => css`
     position: absolute;
-
     width: 80%;
-
+    height: 80%;
     left: 50%;
     top: 50%;
-
     transform: translate3d(-50%, -50%, 0);
-
     z-index: 120;
+
+    background-color: white;
   `}
 `
 
