@@ -7,6 +7,7 @@ import { InstantSearch, SearchBox, Hits } from 'react-instantsearch-dom'
 import Hit from './components/Hit'
 import Icons from 'components/atoms/Icons'
 import Stats from './components/Stats'
+import RefinementListLinks from './components/RefinementListLinks'
 
 const Search = () => {
   const searchClient = algoliasearch(
@@ -18,13 +19,17 @@ const Search = () => {
     <S.SearchWrapper data-component-search>
       <InstantSearch indexName="dev_posts" searchClient={searchClient}>
         <div>
-          <SearchBox
-            translations={{
-              placeholder:
-                'Pesquise por titulos, subtitulos e tags. Não tenha medo.'
-            }}
-            autoFocus={true}
-          />
+          <S.SearchBoxWithWidgetsWrapper>
+            <SearchBox
+              translations={{
+                placeholder:
+                  'Pesquise por titulos, subtitulos e tags. Não tenha medo.'
+              }}
+              autoFocus={true}
+            />
+            <RefinementListLinks />
+          </S.SearchBoxWithWidgetsWrapper>
+
           <S.SearchStatsAndTitleWrapper>
             <Stats />
             <S.PoweredByAlgoliaTextWrapper>
@@ -32,6 +37,7 @@ const Search = () => {
               <Icons icon="algolia" defaultStyle iconStyles={{ size: '1.6' }} />
             </S.PoweredByAlgoliaTextWrapper>
           </S.SearchStatsAndTitleWrapper>
+
           <Hits hitComponent={Hit} />
         </div>
       </InstantSearch>

@@ -71,6 +71,12 @@ export const SearchStatsAndTitleWrapper = styled.div`
   }
 `
 
+export const SearchBoxWithWidgetsWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 70px;
+  align-items: center;
+`
+
 export const PoweredByAlgoliaTextWrapper = styled.div`
   display: flex;
   justify-content: end;
