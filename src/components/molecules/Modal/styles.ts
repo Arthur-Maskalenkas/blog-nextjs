@@ -34,7 +34,7 @@ export const ModalWrapper = styled.div<IContentWrapperProps>`
   ${({ isOpen }) => css`
     [data-content],
     [data-overlay] {
-      transition: 0.2s all;
+      transition: 0.5s all;
     }
 
     ${isOpen ? wrapperModalModifiers.open() : wrapperModalModifiers.close()}

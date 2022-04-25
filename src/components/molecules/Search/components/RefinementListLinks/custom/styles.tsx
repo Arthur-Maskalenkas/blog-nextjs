@@ -2,13 +2,8 @@ import styled, { css } from 'styled-components'
 
 export const WrapperRefinementList = styled.ul`
   ${() => css`
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-items: center;
+  ${OptionWrapper}:not(:last-child) {
+    margin-bottom: 2.5rem;
   `}
 `
 
@@ -19,60 +14,72 @@ export const OptionWrapper = styled.li`
     align-items: center;
   `}
 `
-export const OptionLabel = styled.a`
-  ${() => css`
+
+interface IOptionLabel {
+  isRefined: boolean
+}
+
+export const OptionLabel = styled.a<IOptionLabel>`
+  ${({ theme, isRefined }) => css`
     cursor: pointer;
 
     font-size: 3.5rem;
-    line-height: 4rem;
+    line-height: 3.5rem;
     font-weight: 500;
 
-    color: var(--highlight);
+    color: ${isRefined ? theme.colors.highlight : theme.colors.texts.normal};
+
+    position: relative;
+    bottom: 0.5rem;
+
+    transition: 0.3s all;
   `}
 `
 
 export const OptionCheckBox = styled.input`
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  appearance: none;
-  width: 1.8rem;
-  height: 1.8rem;
+  ${({ theme }) => css`
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    appearance: none;
+    width: 2rem;
+    height: 2rem;
 
-  border: 1px solid var(--highlight);
+    margin-right: 2rem;
 
-  border-radius: 0.2rem;
+    border: 1px solid ${theme.colors.texts.normal};
 
-  transition: background border 0.2s;
-  position: relative;
-  outline: none;
+    border-radius: 0.2rem;
 
-  &:before {
-    content: '';
-    width: 0.6rem;
-    height: 0.9rem;
-    border: 0.2rem solid black;
-    border-top: 0;
-    border-left: 0;
-    transform: rotate(45deg);
-    position: absolute;
-    top: 0.1rem;
-    opacity: 0;
-    transition: 0.2s all;
-  }
-  &:focus {
-    box-shadow: 0 0 0.5rem red;
-  }
-  &:hover {
-    border-color: green;
-    transition: 0.2s all;
-  }
-  &:checked {
-    border-color: red;
-    background: black;
+    transition: all 0.3s;
+    position: relative;
+    outline: none;
+
     &:before {
-      opacity: 1;
+      content: '';
+      width: 1rem;
+      height: 1rem;
+
+      background: ${theme.colors.highlight};
+      border-radius: 50%;
+
+      opacity: 0;
+      transition: 0.3s all;
     }
-  }
+    &:focus {
+      box-shadow: 0 0 0.5rem ${theme.colors.highlight};
+    }
+    &:hover {
+      border-color: ${theme.colors.highlight};
+      transition: 0.2s all;
+    }
+    &:checked {
+      border-color: ${theme.colors.highlight};
+      background: transparent;
+      &:before {
+        opacity: 1;
+      }
+    }
+  `}
 `

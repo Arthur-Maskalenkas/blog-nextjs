@@ -13,17 +13,10 @@ interface IItems {
 interface IRefinementList {
   items: IItems[]
   currentRefinement: string[]
-  isFromSearch: boolean
   refine: (v: any) => any
-  createURL: (v: any) => any
 }
 
-const RefinementList = ({
-  items,
-  isFromSearch,
-  refine,
-  createURL
-}: IRefinementList) => {
+const RefinementList = ({ items, refine }: IRefinementList) => {
   const handleClickCheckBox = (
     e: React.ChangeEvent<HTMLInputElement>,
     item: IItems
@@ -49,7 +42,7 @@ const RefinementList = ({
             onChange={(e) => handleClickCheckBox(e, item)}
           />
           <S.OptionLabel
-            style={{ fontWeight: item.isRefined ? 'bold' : '' }}
+            isRefined={item.isRefined}
             onClick={(e) => {
               handleClickOption(e, item)
             }}
