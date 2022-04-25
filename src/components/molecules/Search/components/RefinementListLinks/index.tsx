@@ -1,7 +1,8 @@
 import Modal from 'components/molecules/Modal'
 import { IRefModalProps } from 'components/molecules/Modal/Modal'
 import React, { useRef } from 'react'
-import { RefinementList } from 'react-instantsearch-dom'
+import { CustomRefinementList } from './custom'
+
 import * as S from './styles'
 
 /**
@@ -18,7 +19,7 @@ const RefinementListLinks = () => {
       <button onClick={() => refModal.current?.onOpen()}> abrir</button>
 
       <Modal ref={refModal}>
-        <RefinementList attribute="tag" />
+        <CustomRefinementList attribute="tag" />
       </Modal>
     </S.RefinementListLinks>
   )
