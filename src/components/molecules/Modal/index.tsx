@@ -22,16 +22,19 @@ const Modal: React.ForwardRefRenderFunction<IRefModalProps, IModalProps> = (
   }
 
   return (
-    <S.ModalWrapper isOpen={isOpen} data-component-modal>
+    <S.ModalWrapper
+      isOpen={isOpen}
+      data-component-modal
+      role="presentation"
+      aria-hidden={!isOpen}
+    >
       <S.Overlay
         data-overlay
         aria-hidden={!isOpen}
         onClick={() => overlayHandleClick()}
       />
 
-      <S.ContentWrapper role="presentation" aria-hidden={!isOpen} data-content>
-        {children}
-      </S.ContentWrapper>
+      <S.ContentWrapper data-content>{children}</S.ContentWrapper>
     </S.ModalWrapper>
   )
 }
