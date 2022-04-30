@@ -7,7 +7,8 @@ export default {
     radius: '0.4rem'
   },
   transition: {
-    fast: '.2s'
+    fast: '.2s',
+    modal: '.5s'
   },
   heightContainerAroundScreens: {
     footerMobile: '6.239rem',

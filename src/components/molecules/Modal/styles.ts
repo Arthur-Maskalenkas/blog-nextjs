@@ -6,14 +6,9 @@ interface IContentWrapperProps {
 
 const wrapperModalModifiers = {
   open: () => css`
-    [data-content],
-    [data-overlay] {
+    [data-content] {
       pointer-events: auto;
       visibility: visible;
-    }
-
-    [data-overlay] {
-      opacity: 0.7;
     }
 
     [data-content] {
@@ -21,8 +16,7 @@ const wrapperModalModifiers = {
     }
   `,
   close: () => css`
-    [data-content],
-    [data-overlay] {
+    [data-content] {
       opacity: 0;
       pointer-events: none;
       visibility: hidden;
@@ -31,10 +25,9 @@ const wrapperModalModifiers = {
 }
 
 export const ModalWrapper = styled.div<IContentWrapperProps>`
-  ${({ isOpen }) => css`
-    [data-content],
-    [data-overlay] {
-      transition: 0.5s all;
+  ${({ isOpen, theme }) => css`
+    [data-content] {
+      transition: ${theme.transition.modal} all;
     }
 
     ${isOpen ? wrapperModalModifiers.open() : wrapperModalModifiers.close()}
@@ -53,11 +46,4 @@ export const ContentWrapper = styled.div`
 
     background-color: white;
   `}
-`
-
-export const Overlay = styled.div`
-  position: absolute;
-  background-color: black;
-  z-index: 110;
-  inset: 0 0 0 0;
 `
