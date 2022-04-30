@@ -34,8 +34,8 @@ const RefinementList = ({ items, refine }: IRefinementList) => {
 
   return (
     <S.WrapperRefinementList>
-      {items.map((item) => (
-        <S.OptionWrapper key={item.label}>
+      {items.map((item, index) => (
+        <S.OptionWrapper key={item.label} index={index + 1}>
           <S.OptionCheckBox
             type="checkbox"
             checked={item.isRefined}
