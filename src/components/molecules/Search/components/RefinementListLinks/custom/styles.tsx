@@ -7,37 +7,11 @@ export const WrapperRefinementList = styled.ul`
   `}
 `
 
-const TIME_TO_SHOW_EACH_OPTION = 0.2
-
-const makeAnimation = (index: number) => css`
-  a,
-  input {
-    animation: slideInLeft ${`${TIME_TO_SHOW_EACH_OPTION * index}s`} both;
-  }
-
-  @keyframes slideInLeft {
-    0% {
-      transform: translateX(-100%);
-      visibility: visible;
-    }
-    100% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-    }
-  }
-`
-
-interface OptionWrapperProps {
-  index?: number
-}
-
-export const OptionWrapper = styled.li<OptionWrapperProps>`
-  ${({ index }) => css`
+export const OptionWrapper = styled.li`
+  ${() => css`
     display: flex;
 
     align-items: center;
-
-    ${!!index && makeAnimation(index)}
   `}
 `
 

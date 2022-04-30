@@ -10,7 +10,6 @@ const wrapperModalModifiers = {
     [data-content],
     [data-button-close-modal] {
       pointer-events: auto;
-      visibility: visible;
       animation: fadeIn ${theme.transition.modal} both;
     }
 
@@ -70,6 +69,8 @@ export const ModalWrapper = styled.div<IContentWrapperProps>`
 
 export const ContentWrapper = styled.div`
   ${() => css`
+    opacity: 0;
+    pointer-events: none;
     position: absolute;
     width: ${widthContent};
     height: ${heightContent};

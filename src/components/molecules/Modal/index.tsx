@@ -15,6 +15,10 @@ const Modal: React.ForwardRefRenderFunction<IRefModalProps, IModalProps> = (
 
   const refOverlay = useRef<IRefOverlayProps>(null)
 
+  const timeInMsDurationAnimation = Number(
+    theme.transition.modal.replace('ms', '')
+  )
+
   const onOpen = () => {
     setIsOpen(true)
     refOverlay.current?.onOpen()
@@ -27,7 +31,7 @@ const Modal: React.ForwardRefRenderFunction<IRefModalProps, IModalProps> = (
       setIsOpen(false)
 
       setComponentIsClosing(false)
-    }, Number(theme.transition.modal.replace('ms', '')))
+    }, timeInMsDurationAnimation)
   }
 
   useImperativeHandle(ref, () => ({
@@ -49,22 +53,20 @@ const Modal: React.ForwardRefRenderFunction<IRefModalProps, IModalProps> = (
         ref={refOverlay}
         beforeCloseParent={{
           beforeCloseParent: setComponentIsClosing,
-          timeToClose: Number(theme.transition.modal.replace('ms', ''))
+          timeToClose: timeInMsDurationAnimation
         }}
       />
 
-      {isOpen && (
-        <S.ContentWrapper data-content>
-          <Button
-            dataName="button-close-modal"
-            ariaLabel="Close Modal"
-            onClick={() => onClose()}
-          >
-            X
-          </Button>
-          {children}
-        </S.ContentWrapper>
-      )}
+      <S.ContentWrapper data-content>
+        <Button
+          dataName="button-close-modal"
+          ariaLabel="Close Modal"
+          onClick={() => onClose()}
+        >
+          X
+        </Button>
+        {children}
+      </S.ContentWrapper>
     </S.ModalWrapper>
   )
 }
