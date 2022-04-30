@@ -19,6 +19,7 @@ const RefinementListLinks = () => {
   return (
     <S.RefinementListLinks data-component-refinement-list-link>
       <Button
+        ariaLabel="Abrir filtro"
         dataName="button-filter"
         onClick={() => refModal.current?.openComponent()}
       >

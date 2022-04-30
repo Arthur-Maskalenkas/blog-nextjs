@@ -11,13 +11,16 @@ import RefinementListLinks from './components/RefinementListLinks'
 
 const Search = () => {
   const searchClient = algoliasearch(
-    '1V75PQ9KBN',
-    '5d6fedafa2412df7746cb70eb1964fe7'
+    process.env.NEXT_PUBLIC_ALGOLIA_APP_ID!,
+    process.env.NEXT_PUBLIC_ALGOLIA_SEARCH_API_KEY!
   )
 
   return (
     <S.SearchWrapper data-component-search>
-      <InstantSearch indexName="dev_posts" searchClient={searchClient}>
+      <InstantSearch
+        indexName={process.env.NEXT_PUBLIC_ALGOLIA_INDEX_NAME!}
+        searchClient={searchClient}
+      >
         <div>
           <S.SearchBoxWithWidgetsWrapper>
             <SearchBox
