@@ -5,8 +5,8 @@ import { IButtonProps } from './button'
 
 import dataNameResolved from 'helpers/dataNameResolver'
 
-const Button = ({ children, dataName, ariaLabel }: IButtonProps) => (
-  <S.Button aria-label={ariaLabel} {...dataNameResolved(dataName)}>
+const Button = ({ children, dataName, ariaLabel, ...props }: IButtonProps) => (
+  <S.Button aria-label={ariaLabel} {...dataNameResolved(dataName)} {...props}>
     {children}
   </S.Button>
 )

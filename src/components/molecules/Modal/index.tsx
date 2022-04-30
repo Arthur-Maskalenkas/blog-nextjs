@@ -3,6 +3,7 @@ import React, { forwardRef, useImperativeHandle, useRef, useState } from 'react'
 import { IModalProps, IRefModalProps } from './Modal'
 import { IRefOverlayProps } from 'components/atoms/Overlay/overlay'
 import Overlay from 'components/atoms/Overlay'
+import Button from 'components/atoms/Button'
 
 const Modal: React.ForwardRefRenderFunction<IRefModalProps, IModalProps> = (
   { children },
@@ -35,6 +36,13 @@ const Modal: React.ForwardRefRenderFunction<IRefModalProps, IModalProps> = (
       aria-hidden={!isOpen}
     >
       <Overlay closeParent={setIsOpen} ref={refOverlay} />
+      <Button
+        dataName="button-close-modal"
+        ariaLabel="Close Modal"
+        onClick={() => onClose()}
+      >
+        X
+      </Button>
       <S.ContentWrapper data-content>{children}</S.ContentWrapper>
     </S.ModalWrapper>
   )
