@@ -58,6 +58,8 @@ const Modal: React.ForwardRefRenderFunction<IRefModalProps, IModalProps> = (
       />
 
       <S.ContentWrapper data-content>
+        <h2 data-title-modal>Tags</h2>
+
         <Button
           dataName="button-close-modal"
           ariaLabel="Close Modal"

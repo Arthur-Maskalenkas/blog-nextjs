@@ -1,3 +1,4 @@
+import { customMedia } from 'helpers/customMedia'
 import styled, { css, DefaultTheme } from 'styled-components'
 
 interface IContentWrapperProps {
@@ -50,6 +51,25 @@ const widthContent = transformInPercentage(WIDTH_CONTENT)
 
 export const ModalWrapper = styled.div<IContentWrapperProps>`
   ${({ isOpen, theme, componentIsClosing }) => css`
+    [data-title-modal] {
+      font-size: 3rem;
+      color: ${theme.colors.highlight};
+      font-weight: 700;
+
+      text-transform: uppercase;
+
+      position: absolute;
+      top: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+
+      letter-spacing: .2rem;
+
+      ${customMedia.greaterThan('desktop')`
+        font-size: 5rem;
+      `}
+    }
+
     [data-button-close-modal] {
       right: 2rem;
       top: 2rem;
@@ -60,6 +80,10 @@ export const ModalWrapper = styled.div<IContentWrapperProps>`
       color: ${theme.colors.texts.normal};
 
       font-size: 4rem;
+
+      &:hover {
+        color ${theme.colors.highlight}
+      }
     }
 
     ${isOpen && wrapperModalModifiers.open(theme)}
@@ -80,5 +104,11 @@ export const ContentWrapper = styled.div`
     z-index: 120;
 
     background-color: white;
+
+    ${customMedia.greaterThan('desktop')`
+      width: 100%;
+
+      max-width: 90rem;
+    `}
   `}
 `
