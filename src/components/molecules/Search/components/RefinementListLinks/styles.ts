@@ -5,6 +5,9 @@ export const RefinementListLinks = styled.div`
     display: flex;
     align-items: center;
 
+    [data-button-filter] {
+    }
+
     [data-component-modal] [data-content] {
       display: flex;
       align-items: center;

@@ -7,6 +7,7 @@ import { Github } from '@styled-icons/boxicons-logos/Github'
 import { LightbulbOff } from '@styled-icons/bootstrap/LightbulbOff'
 import { Linkedin } from '@styled-icons/boxicons-logos/Linkedin'
 import { Algolia } from '@styled-icons/fa-brands/Algolia'
+import { Filter } from '@styled-icons/fa-solid/Filter'
 
 import { ReactNode } from 'react'
 
@@ -20,6 +21,7 @@ export interface IIconsList {
   linkedin: ReactNode
   menu: ReactNode
   algolia: ReactNode
+  filter: ReactNode
 }
 
 export const IconsCollection: IIconsList = {
@@ -31,5 +33,6 @@ export const IconsCollection: IIconsList = {
   github: <Github />,
   linkedin: <Linkedin />,
   menu: <Menu />,
-  algolia: <Algolia />
+  algolia: <Algolia />,
+  filter: <Filter />
 }

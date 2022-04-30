@@ -22,8 +22,7 @@ const Search = () => {
           <S.SearchBoxWithWidgetsWrapper>
             <SearchBox
               translations={{
-                placeholder:
-                  'Pesquise por titulos, subtitulos e tags. Não tenha medo.'
+                placeholder: 'Pesquise por titulos e subtitulos.'
               }}
               autoFocus={true}
             />

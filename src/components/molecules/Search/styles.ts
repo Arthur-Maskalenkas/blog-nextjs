@@ -1,10 +1,6 @@
 import styled from 'styled-components'
 
 export const SearchWrapper = styled.div`
-  .ais-SearchBox {
-    margin-bottom: 1.6rem;
-  }
-
   .ais-SearchBox-submit,
   .ais-SearchBox-reset {
     display: none;
@@ -74,8 +70,9 @@ export const SearchStatsAndTitleWrapper = styled.div`
 `
 
 export const SearchBoxWithWidgetsWrapper = styled.div`
+  margin-bottom: 1.6rem;
   display: grid;
-  grid-template-columns: 1fr 70px;
+  grid-template-columns: 1fr 7rem;
   align-items: center;
 `
 

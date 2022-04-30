@@ -1,3 +1,5 @@
+import Button from 'components/atoms/Button'
+import Icons from 'components/atoms/Icons'
 import Modal from 'components/molecules/Modal'
 import { IRefModalProps } from 'components/molecules/Modal/Modal'
 import React, { useRef } from 'react'
@@ -16,7 +18,12 @@ const RefinementListLinks = () => {
 
   return (
     <S.RefinementListLinks data-component-refinement-list-link>
-      <button onClick={() => refModal.current?.openComponent()}> abrir</button>
+      <Button
+        dataName="button-filter"
+        onClick={() => refModal.current?.openComponent()}
+      >
+        <Icons icon="filter" iconStyles={{ size: '2' }} />
+      </Button>
 
       <Modal ref={refModal}>
         <CustomRefinementList attribute="tag" />
