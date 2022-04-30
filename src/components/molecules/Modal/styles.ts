@@ -31,20 +31,8 @@ const transformInPercentage = (v: number) => `${v}%`
 const HEIGHT_CONTENT = 80
 const WIDTH_CONTENT = 80
 
-// lados = cima baixo | esquerda direita
-const NUMBER_SIDES = 2
-
-const TOTAL_WIDTH = 100
-const TOTAL_HEIGHT = 100
-
-const REST_HEIGHT_IN_TOP = (TOTAL_HEIGHT - HEIGHT_CONTENT) / NUMBER_SIDES
-const REST_WIDTH_IN_RIGHT = (TOTAL_WIDTH - WIDTH_CONTENT) / NUMBER_SIDES
-
 const heightContent = transformInPercentage(HEIGHT_CONTENT)
 const widthContent = transformInPercentage(WIDTH_CONTENT)
-
-const positionTopInContent = transformInPercentage(REST_HEIGHT_IN_TOP)
-const positionRightInContent = transformInPercentage(REST_WIDTH_IN_RIGHT)
 
 export const ModalWrapper = styled.div<IContentWrapperProps>`
   ${({ isOpen, theme }) => css`
@@ -54,8 +42,8 @@ export const ModalWrapper = styled.div<IContentWrapperProps>`
     }
 
     [data-button-close-modal] {
-      right: calc(${positionRightInContent} + 20px);
-      top: calc(${positionTopInContent} + 20px);
+      right: 2rem;
+      top: 2rem;
 
       z-index: 121;
       position: absolute;

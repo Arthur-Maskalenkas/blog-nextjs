@@ -36,14 +36,18 @@ const Modal: React.ForwardRefRenderFunction<IRefModalProps, IModalProps> = (
       aria-hidden={!isOpen}
     >
       <Overlay closeParent={setIsOpen} ref={refOverlay} />
-      <Button
-        dataName="button-close-modal"
-        ariaLabel="Close Modal"
-        onClick={() => onClose()}
-      >
-        X
-      </Button>
-      <S.ContentWrapper data-content>{children}</S.ContentWrapper>
+
+      <S.ContentWrapper data-content>
+        {' '}
+        <Button
+          dataName="button-close-modal"
+          ariaLabel="Close Modal"
+          onClick={() => onClose()}
+        >
+          X
+        </Button>
+        {children}
+      </S.ContentWrapper>
     </S.ModalWrapper>
   )
 }
