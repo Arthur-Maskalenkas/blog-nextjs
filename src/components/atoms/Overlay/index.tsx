@@ -6,25 +6,25 @@ import { IOverlayProps, IRefOverlayProps } from './overlay'
 const Overlay: React.ForwardRefRenderFunction<
   IRefOverlayProps,
   IOverlayProps
-> = ({ closeParent, beforeCloseParent }, ref) => {
+> = ({ parentIsOpen, beforeCloseParent }, ref) => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
-  const onOpen = () => setIsOpen(true)
-  const onClose = () => setIsOpen(false)
+  const openComponent = () => setIsOpen(true)
+  const closeComponent = () => setIsOpen(false)
 
   useImperativeHandle(ref, () => ({
-    onOpen,
-    onClose,
+    openComponent,
+    closeComponent,
     isOpen
   }))
 
   const overlayHandleClick = () => {
-    beforeCloseParent?.beforeCloseParent(true)
-    onClose()
+    beforeCloseParent?.theParentIsClosing(true)
+    closeComponent()
     setTimeout(() => {
-      closeParent(false)
-      beforeCloseParent?.beforeCloseParent(false)
-    }, beforeCloseParent?.timeToClose ?? 0)
+      parentIsOpen(false)
+      beforeCloseParent?.theParentIsClosing(false)
+    }, beforeCloseParent?.timeToCloseParent ?? 0)
   }
 
   return (

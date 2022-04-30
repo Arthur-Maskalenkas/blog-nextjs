@@ -5,7 +5,7 @@ export interface IModalProps {
 }
 
 export interface IRefModalProps {
-  onOpen: () => void
-  onClose: () => void
+  openComponent: () => void
+  closeComponent: () => void
   isOpen: boolean
 }

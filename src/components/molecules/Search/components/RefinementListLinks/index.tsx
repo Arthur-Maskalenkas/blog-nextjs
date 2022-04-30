@@ -16,7 +16,7 @@ const RefinementListLinks = () => {
 
   return (
     <S.RefinementListLinks data-component-refinement-list-link>
-      <button onClick={() => refModal.current?.onOpen()}> abrir</button>
+      <button onClick={() => refModal.current?.openComponent()}> abrir</button>
 
       <Modal ref={refModal}>
         <CustomRefinementList attribute="tag" />
