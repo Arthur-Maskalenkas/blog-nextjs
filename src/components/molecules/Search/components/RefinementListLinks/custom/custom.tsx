@@ -1,5 +1,5 @@
 import React from 'react'
-import { Highlight, connectRefinementList } from 'react-instantsearch-dom'
+import { connectRefinementList } from 'react-instantsearch-dom'
 
 import * as S from './styles'
 

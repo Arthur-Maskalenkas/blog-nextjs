@@ -29,6 +29,10 @@ export const OptionLabel = styled.a<IOptionLabel>`
 
     color: ${isRefined ? theme.colors.highlight : theme.colors.texts.normal};
 
+    &:hover {
+      color: ${theme.colors.highlight};
+    }
+
     position: relative;
     bottom: 0.5rem;
 
