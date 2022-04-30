@@ -1,27 +1,42 @@
-import styled, { css } from 'styled-components'
+import styled, { css, DefaultTheme } from 'styled-components'
 
 interface IContentWrapperProps {
   isOpen: boolean
+  componentIsClosing: boolean
 }
 
 const wrapperModalModifiers = {
-  open: () => css`
+  open: (theme: DefaultTheme) => css`
     [data-content],
     [data-button-close-modal] {
       pointer-events: auto;
       visibility: visible;
+      animation: fadeIn ${theme.transition.modal} both;
     }
 
-    [data-content] {
-      opacity: 1;
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
     }
   `,
-  close: () => css`
+  close: (theme: DefaultTheme) => css`
     [data-content],
     [data-button-close-modal] {
-      opacity: 0;
       pointer-events: none;
-      visibility: hidden;
+      animation: fadeOut ${theme.transition.modal} both;
+    }
+
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
     }
   `
 }
@@ -35,12 +50,7 @@ const heightContent = transformInPercentage(HEIGHT_CONTENT)
 const widthContent = transformInPercentage(WIDTH_CONTENT)
 
 export const ModalWrapper = styled.div<IContentWrapperProps>`
-  ${({ isOpen, theme }) => css`
-    [data-content],
-    [data-button-close-modal] {
-      transition: ${theme.transition.modal} all;
-    }
-
+  ${({ isOpen, theme, componentIsClosing }) => css`
     [data-button-close-modal] {
       right: 2rem;
       top: 2rem;
@@ -53,7 +63,8 @@ export const ModalWrapper = styled.div<IContentWrapperProps>`
       font-size: 4rem;
     }
 
-    ${isOpen ? wrapperModalModifiers.open() : wrapperModalModifiers.close()}
+    ${isOpen && wrapperModalModifiers.open(theme)}
+    ${componentIsClosing && wrapperModalModifiers.close(theme)}
   `}
 `
 

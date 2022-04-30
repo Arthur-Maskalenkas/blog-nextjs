@@ -8,7 +8,7 @@ export default {
   },
   transition: {
     fast: '.2s',
-    modal: '.5s'
+    modal: '300ms'
   },
   heightContainerAroundScreens: {
     footerMobile: '6.239rem',
