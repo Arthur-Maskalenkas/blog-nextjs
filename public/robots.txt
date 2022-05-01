@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://teste.com
+Host: https://www.maskalenkas.dev/
 
 # Sitemaps
-Sitemap: https://teste.com/sitemap.xml
+Sitemap: https://www.maskalenkas.dev/sitemap.xml
