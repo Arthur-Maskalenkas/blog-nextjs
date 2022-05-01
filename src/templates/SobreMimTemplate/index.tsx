@@ -65,25 +65,37 @@ const SobreMimTemplate = () => {
 
           <S.SocialLinksWrappers>
             <li>
-              <Button aria-label="Ir para o meu Github">
-                <Icons
-                  icon="github"
-                  iconStyles={{
-                    size: '3'
-                  }}
-                />
-              </Button>
+              <a
+                href="https://github.com/Arthur-Maskalenkas"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button aria-label="Ir para o meu Github">
+                  <Icons
+                    icon="github"
+                    iconStyles={{
+                      size: '3'
+                    }}
+                  />
+                </Button>
+              </a>
             </li>
 
             <li>
-              <Button aria-label="Ir para o meu Linkedin">
-                <Icons
-                  icon="linkedin"
-                  iconStyles={{
-                    size: '3'
-                  }}
-                />
-              </Button>
+              <a
+                href="https://www.linkedin.com/in/arthur-maskalenkas-915431214/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button aria-label="Ir para o meu Linkedin">
+                  <Icons
+                    icon="linkedin"
+                    iconStyles={{
+                      size: '3'
+                    }}
+                  />
+                </Button>
+              </a>
             </li>
           </S.SocialLinksWrappers>
         </ContainerContentPageBlogGlobalStyle>

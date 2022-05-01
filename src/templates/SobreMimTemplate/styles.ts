@@ -1,6 +1,6 @@
 import { SocialLinksWrapper } from 'components/organisms/AsideLeftDesktop/styles'
 import { customMedia } from 'helpers/customMedia'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import { ContainerPageBlogGlobalStyle } from 'styles/globa'
 
 export const SobreMimTemplateWrapper = styled(ContainerPageBlogGlobalStyle)`
@@ -15,11 +15,14 @@ export const SocialLinksWrappers = styled(SocialLinksWrapper)`
   list-style: none;
 
   padding-left: unset !important;
-  li {
-    padding-left: unset;
+
+  list-style: none !important;
+
+  a {
+    border: none;
   }
 
-  li:before {
-    display: none;
+  li {
+    padding-left: unset;
   }
 `

@@ -108,10 +108,6 @@ export const ContainerContentPageBlogGlobalStyle = styled.section`
       margin: 0 auto 1.6rem;
     }
 
-    li::marker {
-      color: transparent;
-    }
-
     li {
       position: relative;
 
@@ -124,23 +120,6 @@ export const ContainerContentPageBlogGlobalStyle = styled.section`
 
       & > ul {
         margin-bottom: 0;
-      }
-
-      &::before {
-        content: '';
-
-        position: absolute;
-        left: -2.2rem;
-
-        top: 50%;
-        transform: translateY(-50%);
-
-        width: 1rem;
-        height: 1rem;
-
-        border-radius: 50%;
-
-        background-color: white;
       }
     }
 
