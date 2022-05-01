@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'https://teste.com',
+  siteUrl: 'https://www.maskalenkas.dev/',
   generateRobotsTxt: true,
   sitemapSize: 7000
 }
