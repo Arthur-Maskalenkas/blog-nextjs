@@ -79,6 +79,10 @@ export const ContainerContentPageBlogGlobalStyle = styled.section`
       overflow-wrap: break-word;
     }
 
+    hr {
+      margin: 3rem 0;
+    }
+
     img {
       display: block;
       width: auto;
