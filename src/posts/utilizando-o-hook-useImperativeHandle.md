@@ -9,20 +9,22 @@ shortText: "Ja pensou em passar funções do componente filho para o componente 
 
 ## Introdução
 
-Imagina só ter que criar um estado 'isOpen' a cada vez que for instanciar um modal e passar esse estado para dentro do mesmo. Cansativo né?
+Imagina só ter que criar um estado 'isOpen' booleano e precisar passar esse estado para dentro do componente filho a cada vez que você instanciar ele. Cansativo né? É o que eu mais vejo em codigos que utilizam algum modal por exemplo.
 
 Hoje eu vou apresentar o hook useImperativeHandle que visa acabar com a duplicação de codigo ou as famosas gambiarras na hora de se criar um componente filho que precisa de alguma forma ser manipulado pelo componente pai.
 
-### Qual a diferença entre criar um modal da forma tradicional ou criar da forma utilizando o hook?
+### Qual a diferença entre criar um modal da forma tradicional ou criar da forma utilizando o hook mencionado?
 
-Simples, com o hook toda a responsabilidade de abrir/fechar o modal e o seu estado ficam atrelados ao componente filho, fornecendo algumas funções ao componente pai para que ele use como bem entender, deixando a manipulação a partir do componente pai bem mais facil.
+Simples, com o hook toda a responsabilidade de criar um estado booleano e alternar com alguma lógica esse estado ficam atrelados ao componente filho, fornecendo algumas funções ao componente pai para que ele use como bem entender, deixando a manipulação a partir do componente pai bem mais facil.
 
 ## Criando o modal da maneira tradicional
 
-Bom, normalmente você quer ter controle total do modal e por isso desenvolve um componente bem basico chamado modal que só recebe uma props de isOpen, e caso seja verdadeiro, renderiza o componente. Todo o controle é feito através do componente pai, e dentro dele possui um estado 'isOpen' e funções para alternar esse estado.
+Bom, normalmente quando queremos ter o controle total de um componente filho que abre e fecha criamos um estado booleano chamado isOpen, algumas funções handlers para alternar esse estado e jogamos isso como props dentro do filho, e la de dentro ele faz toda a tratativa caso seja verdadeiro/falso.
+
+Perceba que todo o controle é feito através do componente pai, porém para isso ele precisa criar um estado e criar funções que alternem com esse estado, deixando ele um pouco... Sobrecarregado?
 
 ### Diagrama
-![diagrama sem o uso do hook](https://res.cloudinary.com/dezwlfeyb/image/upload/v1651492327/Blog/diagrama-sem-o-uso-do-imperative-hook.drawio_2_ytckbh.png)
+![diagrama sem o uso do hook](https://res.cloudinary.com/dezwlfeyb/image/upload/v1651579126/Blog/diagrama-sem-o-uso-do-imperative-hook.drawio_1_j81knf.png)
 
 ### Codigo
 
@@ -41,7 +43,7 @@ export const AnyComponent = () => {
   const handleClose = () => {
     setIsOpen(false)
   }
-  
+
   return (
     <div>
       <div>
@@ -91,12 +93,11 @@ Perceba que a cada vez que eu for instanciar o modal, eu no minimo vou ter que c
 
 ## Criando o modal utilizando o hook useImperativeHandle
 
-Com o hook useImperativeHandle a lógica acaba mudando um pouco. Agora todas as funções de abrir/fechar vão estar presentes no componente filho, junto com o estado. O unico trabalho do componente pai sera de criar uma ref e passar essa ref para o componente filho. Depois de feito isso, o componente pai ja consegue utilizar as funções passadas via hook useImperativeHandle pelo componente filho sem problema algum.
-
+Com o hook useImperativeHandle a lógica acaba mudando um pouco. Agora todas as funções que alternam o estado de abrir/fechar vão estar presentes no componente filho, junto com o estado. O unico trabalho do componente pai sera de criar uma ref e passar essa ref para o componente filho. Depois de feito isso, o componente pai ja consegue utilizar as funções passadas via hook useImperativeHandle pelo componente filho sem problema algum.
 
 ### Diagrama
 
-![diagrama com o uso do hook](https://res.cloudinary.com/dezwlfeyb/image/upload/v1651492408/Blog/diagrama-com-o-uso-do-imperative-hook.drawio_1_jahb7f.png)
+![diagrama com o uso do hook](https://res.cloudinary.com/dezwlfeyb/image/upload/v1651579126/Blog/diagrama-com-o-uso-do-imperative-hook-Page-1.drawio_2_wdgrm6.png)
 
 ### Codigo
 
@@ -113,11 +114,11 @@ export const AnyComponent = () => {
    const handleClose = () => {
      refModal.current?.closeComponent();
    };
- 
+
    const handleOpen = () => {
      refModal.current?.openComponent();
    };
- 
+
    return (
      <>
        <div>
@@ -178,4 +179,4 @@ Resultado:
 
 ## Conclusão
 
-O seu uso não é uma bala de prata, pode haver  casos que seja mais viavel utilizar de outras soluções, porém isso é só uma demonstração de uma das infinitas possibilidades de se utilizar esse hook.
+O seu uso não é uma bala de prata, pode haver  casos que seja mais viavel utilizar de outras soluções, porém isso é só uma demonstração de uma das infinitas possibilidades de se utilizar esse incrivel hook.
