@@ -127,6 +127,33 @@ export const ContainerContentPageBlogGlobalStyle = styled.section`
       }
     }
 
+    #diagrama,
+    #diagrama-1,
+    #diagrama-2,
+    #diagrama-3,
+    #diagrama + p,
+    #diagrama-1 + p,
+    #diagrama-2 + p,
+    #diagrama-3 + p {
+      display: none;
+    }
+
+    ${customMedia.greaterThan('xlDesktop')`
+        font-size: 3.3rem;
+        line-height: 4.7rem;
+
+        #diagrama,
+        #diagrama-1,
+        #diagrama-2,
+        #diagrama-3,
+        #diagrama + p,
+        #diagrama-1 + p,
+        #diagrama-2 + p,
+        #diagrama-3 + p {
+          display: block;
+        }
+      `}
+
     .anchor {
       position: relative;
       border: 0;
