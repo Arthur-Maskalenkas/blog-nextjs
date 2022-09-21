@@ -82,8 +82,8 @@ export const MenuMobileLinksWrapper = styled.div<IMenuMobileLinksWrapperStylePro
     }
 
     ${isOpen
-      ? MenuMobileLinksWrapperModifier.open()
-      : MenuMobileLinksWrapperModifier.close()}
+    ? MenuMobileLinksWrapperModifier.open()
+    : MenuMobileLinksWrapperModifier.close()}
   `}
 
   ${customMedia.greaterThan('desktop')`
