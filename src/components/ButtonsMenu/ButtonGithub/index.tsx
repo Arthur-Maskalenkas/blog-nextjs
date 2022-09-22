@@ -1,5 +1,7 @@
-import * as S from './styles'
 import React from 'react'
+
+import * as S from './styles'
+
 import Icons from 'components/atoms/Icons'
 import { LINK_GITHUB } from 'helpers/links'
 

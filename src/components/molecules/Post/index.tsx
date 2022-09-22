@@ -1,8 +1,9 @@
-import * as S from './styles'
 import React from 'react'
-
-import { IPostProps } from './post'
 import Link from 'next/link'
+
+import * as S from './styles'
+import { IPostProps } from './post'
+
 import { TagResolved } from 'helpers/tagResolver'
 
 const Post = ({ date, shortText, tag, title, slug }: IPostProps) => {

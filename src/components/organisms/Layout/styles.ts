@@ -1,5 +1,6 @@
-import { customMedia } from 'helpers/customMedia'
 import styled, { css, DefaultTheme } from 'styled-components'
+
+import { customMedia } from 'helpers/customMedia'
 
 const LayoutModifier = {
   resolvePositionInMobileScreen: (theme: DefaultTheme) => css`

@@ -1,6 +1,7 @@
+import matter from 'gray-matter'
+
 import fs from 'fs'
 import { join } from 'path'
-import matter from 'gray-matter'
 
 /**
  * Primeiros definimos a rota onde estão
@@ -8,7 +9,7 @@ import matter from 'gray-matter'
  */
 const postsDirectory = join(process.cwd(), 'src/posts')
 
-function getMarkdownsFiles() {
+function getMarkdownsFiles () {
   /**
    * Essa função diz, leia o nome de
    * todos os arquivos dentro da pasta
@@ -19,7 +20,7 @@ function getMarkdownsFiles() {
   return fs.readdirSync(postsDirectory)
 }
 
-export function getPost(slugOrFilename, fields = []) {
+export function getPost (slugOrFilename, fields = []) {
   // Remover o .md do fim do arquivo
   const slug = slugOrFilename.replace(/\.md$/, '')
   // Buscando pelo nome do arquivo markdown, com o .md
@@ -44,7 +45,7 @@ export function getPost(slugOrFilename, fields = []) {
   return post
 }
 
-export function getAllPosts(fields) {
+export function getAllPosts (fields) {
   const slugs = getMarkdownsFiles()
 
   const posts = slugs
@@ -54,7 +55,7 @@ export function getAllPosts(fields) {
   return posts
 }
 
-export function getAllPostsWithAllData() {
+export function getAllPostsWithAllData () {
   const allData = getAllPosts(['title', 'tag', 'shortText', 'slug', 'date'])
 
   return allData

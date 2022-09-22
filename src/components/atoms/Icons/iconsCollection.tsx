@@ -8,7 +8,6 @@ import { LightbulbOff } from '@styled-icons/bootstrap/LightbulbOff'
 import { Linkedin } from '@styled-icons/boxicons-logos/Linkedin'
 import { Algolia } from '@styled-icons/fa-brands/Algolia'
 import { Filter } from '@styled-icons/fa-solid/Filter'
-
 import { ReactNode } from 'react'
 
 export interface IIconsList {

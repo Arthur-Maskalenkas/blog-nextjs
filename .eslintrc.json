@@ -4,13 +4,10 @@
     "es2021": true,
     "node": true
   },
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
-  },
   "extends": [
-    "eslint:recommended",
+    "plugin:react/recommended",
+    "standard",
+    "next",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
@@ -21,16 +18,20 @@
     "ecmaFeatures": {
       "jsx": true
     },
-    "ecmaVersion": 11,
+    "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "react-hooks", "@typescript-eslint", "unused-imports"],
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "react-hooks",
+    "unused-imports"
+  ],
   "rules": {
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "react/jsx-uses-react": "error",
+    "import/no-anonymous-default-export": "off",
     "react/jsx-uses-vars": "error",
     "unused-imports/no-unused-imports": "error",
     "no-tabs": "off",
@@ -54,7 +55,5 @@
     "react/react-in-jsx-scope": "off",
 
     "import/order": ["error",  {"newlines-between": "always","groups": ["external","index", "sibling", "parent", "internal", "builtin"]}]
-
-
   }
 }

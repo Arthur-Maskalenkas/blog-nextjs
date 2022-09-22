@@ -1,10 +1,10 @@
 import SearchTemplate from 'templates/SearchTemplate'
 
-export default function Page() {
+export default function Page () {
   return <SearchTemplate />
 }
 
-export function getStaticProps() {
+export function getStaticProps () {
   return {
     props: {}
   }

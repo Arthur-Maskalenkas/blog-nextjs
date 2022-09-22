@@ -8,7 +8,7 @@ const tags: IGlobalTags = {
   git: { color: 'white', text: 'GIT', background: '#AAB7B8' }
 }
 
-export function TagResolved(tag: keyof IGlobalTags): IGlobalTag {
+export function TagResolved (tag: keyof IGlobalTags): IGlobalTag {
   const tagResolved = tags[tag]
 
   return tagResolved

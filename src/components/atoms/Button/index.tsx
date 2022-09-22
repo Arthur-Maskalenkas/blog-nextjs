@@ -1,6 +1,6 @@
-import * as S from './styles'
 import React from 'react'
 
+import * as S from './styles'
 import { IButtonProps } from './button'
 
 import dataNameResolved from 'helpers/dataNameResolver'

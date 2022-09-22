@@ -1,5 +1,7 @@
-import * as S from './styles'
 import React from 'react'
+
+import * as S from './styles'
+
 import { useMenuMobile } from 'hooks/useMenuMobile'
 import MenuLinkGroup from 'components/molecules/MenuLinkGroup'
 import ButtonGithub from 'components/ButtonsMenu/ButtonGithub'

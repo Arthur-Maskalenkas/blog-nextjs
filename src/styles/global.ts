@@ -1,12 +1,8 @@
-import {
-  createGlobalStyle,
-  css,
-  DefaultTheme,
-  GlobalStyleComponent
-} from 'styled-components'
+import { createGlobalStyle, css, DefaultTheme, GlobalStyleComponent } from 'styled-components'
 
 type GlobalStylesProps = {
   removeBg?: boolean
+  theme?: DefaultTheme | undefined
 }
 
 const GlobalStyles: GlobalStyleComponent<

@@ -1,5 +1,6 @@
-import { customMedia } from 'helpers/customMedia'
 import styled from 'styled-components'
+
+import { customMedia } from 'helpers/customMedia'
 import { textWithHighlightGlobalStyle } from 'styles/globa'
 
 export const ProfileContainerWrapper = styled.a`

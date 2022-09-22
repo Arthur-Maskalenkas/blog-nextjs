@@ -1,13 +1,12 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-import * as S from './styles'
 import React from 'react'
 
+import * as S from './styles'
 import { IIconsProps } from './icons'
+import { iconPropsDefault, tagWrapperResolved } from './utils'
+import { IconsCollection } from './iconsCollection'
 
 import dataNameResolved from 'helpers/dataNameResolver'
-import { iconPropsDefault, tagWrapperResolved } from './utils'
-
-import { IconsCollection } from './iconsCollection'
 
 const Icons = ({
   icon,

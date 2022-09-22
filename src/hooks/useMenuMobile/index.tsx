@@ -1,4 +1,5 @@
 import { createContext, useContext, useState } from 'react'
+
 import { IMenuMobileProps, IMenuMobileProviderProps } from './menuMobile'
 
 /**
@@ -52,7 +53,7 @@ const MenuMobileProvider = ({ children }: IMenuMobileProviderProps) => {
 
   return (
     <MenuMobileContext.Provider
-      value={{ isOpen: menuIsOpen, changeMenuVisibility: changeMenuVisibility }}
+      value={{ isOpen: menuIsOpen, changeMenuVisibility }}
     >
       {children}
     </MenuMobileContext.Provider>

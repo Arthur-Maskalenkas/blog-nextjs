@@ -1,7 +1,8 @@
-import Layout from 'components/organisms/Layout'
-import { customMedia } from 'helpers/customMedia'
 import { NextSeo } from 'next-seo'
 import styled, { css } from 'styled-components'
+
+import Layout from 'components/organisms/Layout'
+import { customMedia } from 'helpers/customMedia'
 
 const ErrorPageWrapper = styled.div`
   ${({ theme }) => css`
@@ -42,7 +43,7 @@ const GifContainer = styled.div`
   background-size: cover;
 `
 
-export default function Page() {
+export default function Page () {
   return (
     <Layout>
       <ErrorPageWrapper>

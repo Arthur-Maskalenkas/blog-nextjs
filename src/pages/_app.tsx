@@ -3,22 +3,18 @@
 
 import { AppProps } from 'next/app'
 import Head from 'next/head'
-
 import { ThemeProvider } from 'styled-components'
-
-import GlobalStyles from 'styles/global'
-
-import { MenuMobileProvider } from 'hooks/useMenuMobile'
-import theme from 'styles/theme'
 import NextNProgress from 'nextjs-progressbar'
-
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 
+import GlobalStyles from 'styles/global'
+import { MenuMobileProvider } from 'hooks/useMenuMobile'
+import theme from 'styles/theme'
 import * as gtag from 'helpers/Gtag'
 import Analytics from 'helpers/Analytics'
 
-function App({ Component, pageProps }: AppProps) {
+function App ({ Component, pageProps }: AppProps) {
   const router = useRouter()
 
   useEffect(() => {

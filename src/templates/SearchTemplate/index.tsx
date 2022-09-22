@@ -1,9 +1,10 @@
-import * as S from './styles'
 import React from 'react'
+import { NextSeo } from 'next-seo'
+
+import * as S from './styles'
 
 import SearchContainer from 'components/molecules/Search'
 import Layout from 'components/organisms/Layout'
-import { NextSeo } from 'next-seo'
 
 const SearchTemplate = () => {
   return (

@@ -1,7 +1,9 @@
-import * as S from './styles'
 import React from 'react'
-import { linkListSideBar } from './utils'
 import Link from 'next/link'
+
+import * as S from './styles'
+import { linkListSideBar } from './utils'
+
 import { useMenuMobile } from 'hooks/useMenuMobile'
 
 const MenuLinkGroup = () => {

@@ -1,8 +1,9 @@
-import * as S from './styles'
 import React from 'react'
+
+import * as S from './styles'
+
 import ProfileContainer from 'components/molecules/ProfileContainer'
 import MenuLinkGroup from 'components/molecules/MenuLinkGroup'
-
 import ButtonGithub from 'components/ButtonsMenu/ButtonGithub'
 import ButtonLinkedin from 'components/ButtonsMenu/ButtonLinkedin'
 

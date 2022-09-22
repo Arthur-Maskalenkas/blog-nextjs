@@ -1,5 +1,6 @@
-import * as S from './styles'
 import React from 'react'
+
+import * as S from './styles'
 
 import ButtonGoToTopPage from 'components/ButtonsMenu/ButtonGoToTopPage'
 import ButtonSearch from 'components/ButtonsMenu/ButtonSearch'

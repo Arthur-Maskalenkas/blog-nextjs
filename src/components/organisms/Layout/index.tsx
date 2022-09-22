@@ -1,10 +1,12 @@
-import * as S from './styles'
 import React from 'react'
+
+import * as S from './styles'
+import { ILayoutProps } from './Layout'
+
 import AsideLeftDesktop from '../AsideLeftDesktop'
 import AsideRightDesktop from '../AsideRightDesktop'
 import HeaderMobile from '../HeaderMobile'
 import FooterMobile from '../FooterMobile'
-import { ILayoutProps } from './Layout'
 import MenuMobileLinks from '../MenuMobileLinks'
 
 const Layout = ({ children }: ILayoutProps) => {

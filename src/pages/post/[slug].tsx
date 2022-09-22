@@ -3,11 +3,11 @@ import markdown from 'services/markdown.js'
 import PostTemplate from 'templates/PostTemplate'
 import { IPostTemplateProps } from 'templates/PostTemplate/postTemplate'
 
-export default function Page({ post }: IPostTemplateProps) {
+export default function Page ({ post }: IPostTemplateProps) {
   return <PostTemplate post={post} />
 }
 
-export async function getStaticProps({ params }: any) {
+export async function getStaticProps ({ params }: any) {
   /**
    * Utilizamos a função de buscar postagem
    * passando o nome da rota (ola-mundo, nesse caso)
@@ -28,7 +28,7 @@ export async function getStaticProps({ params }: any) {
   }
 }
 
-export function getStaticPaths() {
+export function getStaticPaths () {
   const posts = getAllPosts(['slug', 'date'])
 
   const paths = posts.map(({ slug }: any) => ({

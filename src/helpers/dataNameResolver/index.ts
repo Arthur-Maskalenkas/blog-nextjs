@@ -4,7 +4,7 @@
  *
  */
 
-function dataNameResolved(dataName?: string) {
+function dataNameResolved (dataName?: string) {
   if (dataName) {
     return { [`data-${dataName}`]: true }
   }

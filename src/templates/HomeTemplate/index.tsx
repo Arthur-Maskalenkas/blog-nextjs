@@ -1,11 +1,13 @@
-import * as S from './styles'
 import React, { useState } from 'react'
-import Layout from 'components/organisms/Layout'
-import { ICount, IHomeTemplateProps } from './homeTemplate'
-import Post from 'components/molecules/Post'
-import DateFormat from 'helpers/dateFormat'
 import { NextSeo } from 'next-seo'
 import InfiniteScroll from 'react-infinite-scroll-component'
+
+import * as S from './styles'
+import { ICount, IHomeTemplateProps } from './homeTemplate'
+
+import Layout from 'components/organisms/Layout'
+import Post from 'components/molecules/Post'
+import DateFormat from 'helpers/dateFormat'
 
 const HomeTemplate = ({ posts }: IHomeTemplateProps) => {
   const POSTS_PER_LOADING = 10

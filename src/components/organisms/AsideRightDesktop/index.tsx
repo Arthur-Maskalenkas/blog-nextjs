@@ -1,5 +1,7 @@
-import * as S from './styles'
 import React from 'react'
+
+import * as S from './styles'
+
 import ButtonGithub from 'components/ButtonsMenu/ButtonGithub'
 import ButtonLinkedin from 'components/ButtonsMenu/ButtonLinkedin'
 import ButtonGoToHome from 'components/ButtonsMenu/ButtonGoToHome'

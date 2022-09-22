@@ -1,8 +1,10 @@
-import * as S from './styles'
 import React from 'react'
+import Link from 'next/link'
+
+import * as S from './styles'
+
 import Icons from 'components/atoms/Icons'
 import { useMenuMobile } from 'hooks/useMenuMobile'
-import Link from 'next/link'
 
 const ButtonGoToHome = () => {
   const { changeMenuVisibility } = useMenuMobile()

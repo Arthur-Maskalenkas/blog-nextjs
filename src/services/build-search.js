@@ -1,7 +1,7 @@
 import algoliasearch from 'algoliasearch/lite'
 import slugify from 'slugify'
 
-function transformPostsToSearchObjects(posts) {
+function transformPostsToSearchObjects (posts) {
   const transformed = posts.map((post) => {
     return {
       objectID: slugify(post.title, { lower: true, strict: true }),
@@ -16,7 +16,7 @@ function transformPostsToSearchObjects(posts) {
   return transformed
 }
 
-export async function buildAlgoliaIndexes(posts) {
+export async function buildAlgoliaIndexes (posts) {
   if (
     Boolean(process.env.NEXT_PUBLIC_PROD_ALGOLIA) !== true ||
     process.env.NODE_ENV === 'development'

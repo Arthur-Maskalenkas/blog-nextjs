@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { textWithHighlightGlobalStyle } from 'styles/globa'
 
+import { textWithHighlightGlobalStyle } from 'styles/globa'
 import { customMedia } from 'helpers/customMedia'
 
 export const MenuLinkGroupWrapper = styled.nav`

@@ -1,5 +1,6 @@
-import { IIconStyle } from 'types/globald'
 import { IIconsList } from './iconsCollection'
+
+import { IIconStyle } from 'types/globald'
 
 export interface IIconsProps {
   icon: keyof IIconsList

@@ -1,5 +1,7 @@
-import * as S from './styles'
 import React from 'react'
+
+import * as S from './styles'
+
 import ProfileContainer from 'components/molecules/ProfileContainer'
 
 const HeaderMobile = () => (

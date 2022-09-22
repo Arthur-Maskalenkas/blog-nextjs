@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import * as S from './styles'
 import React from 'react'
 import Link from 'next/link'
+
+import * as S from './styles'
 
 const ProfileContainer = () => (
   <Link href={'/'} passHref>

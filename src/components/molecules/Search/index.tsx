@@ -1,24 +1,24 @@
-import * as S from './styles'
 import React from 'react'
-
 import algoliasearch from 'algoliasearch/lite'
-import { InstantSearch, SearchBox, Hits } from 'react-instantsearch-dom'
+import { Hits, InstantSearch, SearchBox } from 'react-instantsearch-dom'
 
+import * as S from './styles'
 import Hit from './components/Hit'
-import Icons from 'components/atoms/Icons'
 import Stats from './components/Stats'
 import RefinementListLinks from './components/RefinementListLinks'
 
+import Icons from 'components/atoms/Icons'
+
 const Search = () => {
   const searchClient = algoliasearch(
-    process.env.NEXT_PUBLIC_ALGOLIA_APP_ID!,
-    process.env.NEXT_PUBLIC_ALGOLIA_SEARCH_API_KEY!
+    process.env.NEXT_PUBLIC_ALGOLIA_APP_ID || '',
+    process.env.NEXT_PUBLIC_ALGOLIA_SEARCH_API_KEY || ''
   )
 
   return (
     <S.SearchWrapper data-component-search>
       <InstantSearch
-        indexName={process.env.NEXT_PUBLIC_ALGOLIA_INDEX_NAME!}
+        indexName={process.env.NEXT_PUBLIC_ALGOLIA_INDEX_NAME || ''}
         searchClient={searchClient}
       >
         <div>

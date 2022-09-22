@@ -1,6 +1,6 @@
-export function resolveMessageSearch(nbHits: number, timeSpentMS: number) {
+export function resolveMessageSearch (nbHits: number, timeSpentMS: number) {
   if (nbHits === 0) {
-    return `nenhum resultado encontrado`
+    return 'nenhum resultado encontrado'
   }
 
   if (nbHits === 1) {

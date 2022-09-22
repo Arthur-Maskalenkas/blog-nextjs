@@ -1,6 +1,8 @@
-import * as S from './styles'
 import React, { forwardRef, useImperativeHandle, useRef, useState } from 'react'
+
+import * as S from './styles'
 import { IModalProps, IRefModalProps } from './Modal'
+
 import { IRefOverlayProps } from 'components/atoms/Overlay/overlay'
 import Overlay from 'components/atoms/Overlay'
 import Button from 'components/atoms/Button'

@@ -1,11 +1,12 @@
+import { NextSeo } from 'next-seo'
+import React from 'react'
+
+import * as S from './styles'
+
 import Button from 'components/atoms/Button'
 import Icons from 'components/atoms/Icons'
 import Layout from 'components/organisms/Layout'
-import {NextSeo} from 'next-seo'
-import React from 'react'
-import {ContainerContentPageBlogGlobalStyle} from 'styles/globa'
-
-import * as S from './styles'
+import { ContainerContentPageBlogGlobalStyle } from 'styles/globa'
 
 const SobreMimTemplate = () => {
   return (

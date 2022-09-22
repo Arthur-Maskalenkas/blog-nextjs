@@ -1,7 +1,8 @@
-import {SocialLinksWrapper} from 'components/organisms/AsideLeftDesktop/styles'
-import {customMedia} from 'helpers/customMedia'
 import styled from 'styled-components'
-import {ContainerPageBlogGlobalStyle} from 'styles/globa'
+
+import { SocialLinksWrapper } from 'components/organisms/AsideLeftDesktop/styles'
+import { customMedia } from 'helpers/customMedia'
+import { ContainerPageBlogGlobalStyle } from 'styles/globa'
 
 export const SobreMimTemplateWrapper = styled(ContainerPageBlogGlobalStyle)`
   ${customMedia.greaterThan('desktop')`

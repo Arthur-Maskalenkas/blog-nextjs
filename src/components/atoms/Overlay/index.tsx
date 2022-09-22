@@ -1,6 +1,6 @@
-import * as S from './styles'
 import React, { forwardRef, useImperativeHandle, useState } from 'react'
 
+import * as S from './styles'
 import { IOverlayProps, IRefOverlayProps } from './overlay'
 
 const Overlay: React.ForwardRefRenderFunction<

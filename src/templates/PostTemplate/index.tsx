@@ -1,11 +1,12 @@
-import * as S from './styles'
 import React from 'react'
-
-import { IPostTemplateProps } from './postTemplate'
-import Layout from 'components/organisms/Layout'
 import Link from 'next/link'
-import DateFormat from 'helpers/dateFormat'
 import { NextSeo } from 'next-seo'
+
+import * as S from './styles'
+import { IPostTemplateProps } from './postTemplate'
+
+import Layout from 'components/organisms/Layout'
+import DateFormat from 'helpers/dateFormat'
 import {
   ContainerPageBlogGlobalStyle,
   ContainerContentPageBlogGlobalStyle
@@ -22,7 +23,7 @@ const PostTemplate = ({ post }: IPostTemplateProps) => {
           description: post.shortText,
           images: [
             {
-              url: `https://res.cloudinary.com/dezwlfeyb/image/upload/v1650211858/graph-imagem-postagem_kdo5fd.png`,
+              url: 'https://res.cloudinary.com/dezwlfeyb/image/upload/v1650211858/graph-imagem-postagem_kdo5fd.png',
               alt: `${post.title}`
             }
           ]

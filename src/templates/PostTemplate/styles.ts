@@ -1,9 +1,10 @@
-import { customMedia } from 'helpers/customMedia'
 import styled, { css } from 'styled-components'
+
+import { customMedia } from 'helpers/customMedia'
 import { textWithHighlightGlobalStyle } from 'styles/globa'
 
 export const ThemeCodeWrapper = styled.div`
-  ${({ theme }) => css`
+  ${() => css`
     /**
  * Dracula Theme originally by Zeno Rocha [@zenorocha]
  * https://draculatheme.com/
@@ -239,7 +240,7 @@ export const ThemeCodeWrapper = styled.div`
 `
 
 export const LinkBack = styled(textWithHighlightGlobalStyle).attrs({ as: 'a' })`
-  ${({ theme }) => css`
+  ${() => css`
     font-size: 1.6rem;
     line-height: 1.6rem;
     font-weight: 400;
@@ -252,7 +253,7 @@ export const LinkBack = styled(textWithHighlightGlobalStyle).attrs({ as: 'a' })`
 `
 
 export const PostDate = styled.p`
-  ${({ theme }) => css`
+  ${() => css`
     font-size: 1.7rem;
     line-height: 1.7rem;
     font-weight: 100;
@@ -268,7 +269,7 @@ export const PostDate = styled.p`
 `
 
 export const PostTitle = styled.h1`
-  ${({ theme }) => css`
+  ${() => css`
     font-size: 4.4rem;
     line-height: 4.9rem;
     font-weight: 700;
@@ -284,7 +285,7 @@ export const PostTitle = styled.h1`
 `
 
 export const PostSubtitle = styled.h2`
-  ${({ theme }) => css`
+  ${() => css`
     font-size: 2.5rem;
     line-height: 3.3rem;
     font-weight: 200;

@@ -1,11 +1,12 @@
+import React, { useRef } from 'react'
+
+import { CustomRefinementList } from './custom/custom'
+import * as S from './styles'
+
 import Button from 'components/atoms/Button'
 import Icons from 'components/atoms/Icons'
 import Modal from 'components/molecules/Modal'
 import { IRefModalProps } from 'components/molecules/Modal/Modal'
-import React, { useRef } from 'react'
-import { CustomRefinementList } from './custom/custom'
-
-import * as S from './styles'
 
 /**
  *

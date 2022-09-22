@@ -1,24 +1,12 @@
 import { unified } from 'unified'
-
-/*
- * Transformando em html
- * */
 import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
 import rehypeStringify from 'rehype-stringify'
-
-/*
- * adicionadno link nos headings
- * */
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
-
-/*
- * Implementando codigo no markdown
- * */
 import rehypePrism from 'rehype-prism-plus'
 
-export async function toHTML(markdown) {
+export async function toHTML (markdown) {
   // Processamos nosso conteúdo Markdown
   const result = await unified()
     .use(remarkParse)

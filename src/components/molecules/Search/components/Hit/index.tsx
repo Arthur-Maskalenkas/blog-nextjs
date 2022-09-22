@@ -1,8 +1,9 @@
-import * as S from './styles'
 import React from 'react'
-import Post from 'components/molecules/Post'
-
 import { Highlight } from 'react-instantsearch-dom'
+
+import * as S from './styles'
+
+import Post from 'components/molecules/Post'
 
 /**
  *

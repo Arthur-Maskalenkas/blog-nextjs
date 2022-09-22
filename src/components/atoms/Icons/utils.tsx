@@ -4,7 +4,7 @@ export const iconPropsDefault: IIconStyle = {
   size: '2rem'
 }
 
-export function tagWrapperResolved(
+export function tagWrapperResolved (
   href?: string,
   openLinkInOtherPage?: boolean
 ) {

@@ -1,5 +1,6 @@
-import { customMedia } from 'helpers/customMedia'
 import styled, { css } from 'styled-components'
+
+import { customMedia } from 'helpers/customMedia'
 
 export const Link = styled.a`
   ${() => css`
