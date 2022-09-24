@@ -23,8 +23,6 @@ I
 src/pages/post/[slug].tsx,a\1\a1c96e4e44f3377bba064eaf7b19e0c79449f0ed
 A
 src/pages/404.tsx,b\3\b3c2bc325769eaeb64f06db54cb6700e22e4e48c
-G
-src/pages/_document.tsx,0\5\052f85edfc3fbb9d129530f0f8b191ff6c16f7ce
 Q
 !src/hooks/useMenuMobile/index.tsx,f\c\fccc6ce51893d29ec83f6e0fe329cb83b7eafce0
 a
@@ -43,10 +41,6 @@ L
 generators/atomsGenerator.js,a\2\a2c4dfbfbcd514e12022736c9e103d89afb00559
 C
 src/services/api.js,f\b\fbbdd259a63c246e936c6ea7d2be5c47f0a9da60
-C
-src/pages/index.tsx,d\2\d2d3bb60cab7e8c869b5fdf0a820b7edf2fc7859
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 V
 &src/templates/SearchTemplate/styles.ts,6\1\61b5a4702175c387f4f6357a4775564ff7cffcc1
 \
@@ -62,8 +56,6 @@ T
 $src/templates/PostTemplate/styles.ts,6\4\64aa030238a8de61adc10bf2ba072cd627eca5b7
 J
 src/posts/primeiro-post.md,7\1\718b36f8632d5bfdf352288f8ebd994c84242c4d
-=
-.eslintignore,8\8\88939cd7e826eac4f61dd9adac091b9d64277287
 Y
 )src/components/atoms/Overlay/overlay.d.ts,3\8\3813070cd3def43f42372d519589e94e2fb7f262
 H
@@ -78,3 +70,5 @@ D
 src/styles/global.ts,9\a\9a70827c1b60e6fd478d4956c0714fa09adcf5ce
 C
 src/styles/theme.ts,8\7\87f68bc4c15004e9fff37887d2f848821ca857ff
+G
+src/pages/_document.tsx,0\5\052f85edfc3fbb9d129530f0f8b191ff6c16f7ce
