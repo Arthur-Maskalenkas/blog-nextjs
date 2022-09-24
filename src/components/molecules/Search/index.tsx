@@ -11,13 +11,14 @@ import Icons from 'components/atoms/Icons'
 
 const Search = () => {
   const searchClient = algoliasearch(
-
+    'dsadsa',
+    'dsadasdsa'
   )
 
   return (
     <S.SearchWrapper data-component-search>
       <InstantSearch
-        indexName={'blog_nextjs'}
+        indexName={process.env.NEXT_PUBLIC_ALGOLIA_INDEX_NAME || ''}
         searchClient={searchClient}
       >
         <div>

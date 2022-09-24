@@ -25,8 +25,6 @@ A
 src/pages/404.tsx,b\3\b3c2bc325769eaeb64f06db54cb6700e22e4e48c
 G
 src/pages/_document.tsx,0\5\052f85edfc3fbb9d129530f0f8b191ff6c16f7ce
-D
-src/pages/search.tsx,8\8\88feef38a63624877d71a0c7cc3046a0a4caf89a
 Q
 !src/hooks/useMenuMobile/index.tsx,f\c\fccc6ce51893d29ec83f6e0fe329cb83b7eafce0
 a
@@ -78,3 +76,5 @@ L
 src/services/build-search.js,5\3\5320f432c56e4570bafd24a3304a3c393e93393c
 D
 src/styles/global.ts,9\a\9a70827c1b60e6fd478d4956c0714fa09adcf5ce
+C
+src/styles/theme.ts,8\7\87f68bc4c15004e9fff37887d2f848821ca857ff
