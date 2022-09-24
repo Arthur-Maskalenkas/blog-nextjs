@@ -71,8 +71,8 @@ export const SearchStatsAndTitleWrapper = styled.div`
 
 export const SearchBoxWithWidgetsWrapper = styled.div`
   margin-bottom: 1.6rem;
-  display: grid;
-  grid-template-columns: 1fr 7rem;
+ 	display: flex;
+	justify-content: center;
   align-items: center;
 `
 

@@ -41,8 +41,6 @@ L
 generators/atomsGenerator.js,a\2\a2c4dfbfbcd514e12022736c9e103d89afb00559
 C
 src/services/api.js,f\b\fbbdd259a63c246e936c6ea7d2be5c47f0a9da60
-V
-&src/templates/SearchTemplate/styles.ts,6\1\61b5a4702175c387f4f6357a4775564ff7cffcc1
 \
 ,src/templates/HomeTemplate/homeTemplate.d.ts,d\5\d5bd2982414bd53879a5502ef2a26463a524ea80
 :
