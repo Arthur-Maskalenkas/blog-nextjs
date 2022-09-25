@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build  && yarn postbuild",
+    "build": "yarn postbuild && next build",
     "postbuild": "next-sitemap --config next-generate-sitemap.js",
     "generateAlgoliaSearch": "node ./scripts/build-search.js",
     "start": "next start",
