@@ -1,7 +1,4 @@
-import { getAllPostsWithAllData } from '../services/api'
-
 import HomeTemplate from 'templates/HomeTemplate'
-import { buildAlgoliaIndexes } from 'services/build-search'
 import { IHomeTemplateProps } from 'templates/HomeTemplate/homeTemplate'
 
 export default function Page ({ posts }: IHomeTemplateProps) {
@@ -9,9 +6,9 @@ export default function Page ({ posts }: IHomeTemplateProps) {
 }
 
 export function getStaticProps () {
-  const posts = getAllPostsWithAllData()
+  // const posts = getAllPostsWithAllData()
 
-  buildAlgoliaIndexes(posts)
+  // buildAlgoliaIndexes(posts)
 
   return {
     props: { posts }
