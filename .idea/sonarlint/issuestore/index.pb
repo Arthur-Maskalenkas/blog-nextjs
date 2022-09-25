@@ -2,8 +2,6 @@
 V
 &src/helpers/tagResolver/tagResolver.ts,1\f\1f7e85831a21964702f719c3ebb0ff731482e705
 P
- src/helpers/tagResolver/index.ts,c\1\c1a4d02e7dcbb062172b433a4f135d23988d2f97
-P
  src/helpers/customMedia/index.ts,5\5\55ac8980379d3d3353b916f38842980d632def83
 X
 (src/templates/SobreMimTemplate/index.tsx,a\0\a066d3b51b22ee7fb2b378e0b71b537f85510c91
@@ -52,8 +50,6 @@ T
 $src/templates/HomeTemplate/index.tsx,4\c\4c3d9eb1afaa6421938e58933e0c3f1691ce6ba7
 T
 $src/templates/PostTemplate/styles.ts,6\4\64aa030238a8de61adc10bf2ba072cd627eca5b7
-J
-src/posts/primeiro-post.md,7\1\718b36f8632d5bfdf352288f8ebd994c84242c4d
 Y
 )src/components/atoms/Overlay/overlay.d.ts,3\8\3813070cd3def43f42372d519589e94e2fb7f262
 H
@@ -70,3 +66,7 @@ C
 src/styles/theme.ts,8\7\87f68bc4c15004e9fff37887d2f848821ca857ff
 G
 src/pages/_document.tsx,0\5\052f85edfc3fbb9d129530f0f8b191ff6c16f7ce
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+<
+package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a

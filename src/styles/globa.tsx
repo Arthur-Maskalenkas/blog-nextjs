@@ -69,6 +69,25 @@ export const ContainerContentPageBlogGlobalStyle = styled.section`
       `}
     }
 
+    h4,
+    h4 a {
+      font-size: 1.7rem;
+      line-height: 2.2rem;
+      font-weight: 800;
+      color: var(--postColor);
+
+      margin-top: 3.8rem;
+
+      letter-spacing: 0.3rem;
+
+      border: none;
+
+      ${customMedia.greaterThan('desktop')`
+        font-size: 2.2rem;
+        line-height: 3rem;
+      `}
+    }
+
     p {
       font-size: 2rem;
       line-height: 3.4rem;
