@@ -1,10 +1,12 @@
+const withPreact = require('next-plugin-preact')
+
 /** @type {import('next').NextConfig} */
 
-const nextConfig = {
+const nextConfig = withPreact({
   reactStrictMode: true,
   compiler: {
-    styledComponents: true,
-  },
-}
+    styledComponents: true
+  }
+})
 
 module.exports = nextConfig
