@@ -7,8 +7,6 @@ X
 (src/templates/SobreMimTemplate/index.tsx,a\0\a066d3b51b22ee7fb2b378e0b71b537f85510c91
 =
 .editorconfig,6\2\626a747c8694eaae66f2afb3d1a745b045782c70
-F
-.github/dependabot.yml,0\9\091aff741808a09242f252264b14f4a9adaa5305
 H
 .github/workflows/ci.yml,8\9\899ce9c202bf7bb5480e72836c3edc773c9c4244
 B
