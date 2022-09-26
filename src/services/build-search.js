@@ -1,6 +1,8 @@
 import algoliasearch from 'algoliasearch/lite'
 import slugify from 'slugify'
 
+import { env } from '../helpers/env'
+
 function transformPostsToSearchObjects (posts) {
   const transformed = posts.map((post) => {
     return {
@@ -18,8 +20,8 @@ function transformPostsToSearchObjects (posts) {
 
 export async function buildAlgoliaIndexes (posts) {
   if (
-    Boolean(process.env.NEXT_PUBLIC_PROD_ALGOLIA) !== true ||
-    process.env.NODE_ENV === 'development'
+    Boolean(env.algolia.isProd) !== true ||
+    env.node.env === 'development'
   ) {
     return
   }
@@ -29,11 +31,11 @@ export async function buildAlgoliaIndexes (posts) {
 
     if (posts.length > 0) {
       const client = algoliasearch(
-        process.env.NEXT_PUBLIC_ALGOLIA_APP_ID,
-        process.env.ALGOLIA_ADMIN_KEY
+        env.algolia.appId,
+        env.algolia.adminKey
       )
 
-      const index = client.initIndex(process.env.NEXT_PUBLIC_ALGOLIA_INDEX_NAME)
+      const index = client.initIndex(env.algolia.indexName)
       const algoliaResponse = await index.saveObjects(transformedPosts)
 
       console.log(

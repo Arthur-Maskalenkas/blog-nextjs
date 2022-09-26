@@ -7,18 +7,20 @@ import Hit from './components/Hit'
 import Stats from './components/Stats'
 import RefinementListLinks from './components/RefinementListLinks'
 
+import { env } from '../../../helpers/env'
+
 import Icons from 'components/atoms/Icons'
 
 const Search = () => {
   const searchClient = algoliasearch(
-    'dsadsa',
-    'dsadasdsa'
+    env.algolia.appId,
+    env.algolia.searchOnlyApiKey
   )
 
   return (
     <S.SearchWrapper data-component-search>
       <InstantSearch
-        indexName={process.env.NEXT_PUBLIC_ALGOLIA_INDEX_NAME || ''}
+        indexName={env.algolia.indexName}
         searchClient={searchClient}
       >
         <div>

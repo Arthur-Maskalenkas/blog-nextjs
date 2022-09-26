@@ -7,16 +7,15 @@ import { IPostTemplateProps } from './postTemplate'
 
 import Layout from 'components/organisms/Layout'
 import DateFormat from 'helpers/dateFormat'
-import {
-  ContainerPageBlogGlobalStyle,
-  ContainerContentPageBlogGlobalStyle
-} from 'styles/globa'
+import { ContainerContentPageBlogGlobalStyle, ContainerPageBlogGlobalStyle } from 'styles/globa'
 
 const PostTemplate = ({ post }: IPostTemplateProps) => {
+  console.log(post)
+
   return (
     <Layout>
       <NextSeo
-        title={`${post.title} - Arthur Maskalenkas`}
+        title={`${post.title}`}
         description={post.shortText}
         openGraph={{
           title: `${post.title} - Arthur Maskalenkas`,
