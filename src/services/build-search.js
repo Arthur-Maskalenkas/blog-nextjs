@@ -4,7 +4,7 @@ import slugify from 'slugify'
 import { env } from '../helpers/env'
 
 function transformPostsToSearchObjects (posts) {
-  const transformed = posts.map((post) => {
+  return posts.map((post) => {
     return {
       objectID: slugify(post.title, { lower: true, strict: true }),
       title: post.title,
@@ -14,8 +14,6 @@ function transformPostsToSearchObjects (posts) {
       tag: post.tag
     }
   })
-
-  return transformed
 }
 
 export async function buildAlgoliaIndexes (posts) {

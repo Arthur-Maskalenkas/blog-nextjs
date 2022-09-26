@@ -50,8 +50,6 @@ D
 src/styles/global.ts,9\a\9a70827c1b60e6fd478d4956c0714fa09adcf5ce
 C
 src/styles/theme.ts,8\7\87f68bc4c15004e9fff37887d2f848821ca857ff
-G
-src/pages/_document.tsx,0\5\052f85edfc3fbb9d129530f0f8b191ff6c16f7ce
 9
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 Y
@@ -84,9 +82,5 @@ B
 src/pages/_app.tsx,2\e\2eefa41a18ed6ea3f58b3748f9e5559a28e77646
 D
 public/sitemap-0.xml,f\6\f680fb6c02042ab4b3c5a563043d56fe58fd32bc
-C
-src/pages/index.tsx,d\2\d2d3bb60cab7e8c869b5fdf0a820b7edf2fc7859
-<
-package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a
 I
 src/pages/post/[slug].tsx,a\1\a1c96e4e44f3377bba064eaf7b19e0c79449f0ed
