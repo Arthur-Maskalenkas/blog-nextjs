@@ -1,4 +1,4 @@
-import { getPost, getAllPosts } from 'services/api.js'
+import { getAllPosts, getPost } from 'services/api.js'
 import markdown from 'services/markdown.js'
 import PostTemplate from 'templates/PostTemplate'
 import { IPostTemplateProps } from 'templates/PostTemplate/postTemplate'
@@ -15,10 +15,10 @@ export async function getStaticProps ({ params }: any) {
    */
   const post: any = getPost(params.slug, [
     'title',
-    'title',
     'date',
     'shortText',
-    'content'
+    'content',
+    'slug'
   ])
 
   post.content = await markdown.toHTML(post.content)

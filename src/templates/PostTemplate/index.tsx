@@ -5,16 +5,20 @@ import { NextSeo } from 'next-seo'
 import * as S from './styles'
 import { IPostTemplateProps } from './postTemplate'
 
+import { canonicalTagResolved } from '../../helpers/canonicalTagResolve'
+
 import Layout from 'components/organisms/Layout'
 import DateFormat from 'helpers/dateFormat'
 import { ContainerContentPageBlogGlobalStyle, ContainerPageBlogGlobalStyle } from 'styles/globa'
 
 const PostTemplate = ({ post }: IPostTemplateProps) => {
+  console.log(post)
   return (
     <Layout>
       <NextSeo
         title={`${post.title}`}
         description={post.shortText}
+        canonical={canonicalTagResolved('post', post.slug)}
         openGraph={{
           title: `${post.title} - Arthur Maskalenkas`,
           description: post.shortText,

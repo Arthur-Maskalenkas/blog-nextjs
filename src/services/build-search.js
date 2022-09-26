@@ -45,7 +45,6 @@ export async function buildAlgoliaIndexes (posts) {
       )
     }
   } catch (error) {
-    console.log('error!')
     console.log(error)
   }
 }

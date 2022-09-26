@@ -1,18 +1,12 @@
 
 V
 &src/helpers/tagResolver/tagResolver.ts,1\f\1f7e85831a21964702f719c3ebb0ff731482e705
-P
- src/helpers/customMedia/index.ts,5\5\55ac8980379d3d3353b916f38842980d632def83
-X
-(src/templates/SobreMimTemplate/index.tsx,a\0\a066d3b51b22ee7fb2b378e0b71b537f85510c91
 =
 .editorconfig,6\2\626a747c8694eaae66f2afb3d1a745b045782c70
 H
 .github/workflows/ci.yml,8\9\899ce9c202bf7bb5480e72836c3edc773c9c4244
 B
 public/sitemap.xml,2\f\2fe7f218c8d47bee56d71bed3b5f461be878d1d6
-A
-src/pages/404.tsx,b\3\b3c2bc325769eaeb64f06db54cb6700e22e4e48c
 Q
 !src/hooks/useMenuMobile/index.tsx,f\c\fccc6ce51893d29ec83f6e0fe329cb83b7eafce0
 a
@@ -29,8 +23,6 @@ Y
 )src/components/organisms/Layout/index.tsx,b\f\bf6fb1574d40a7661f1920818e2150a1e87a0b24
 L
 generators/atomsGenerator.js,a\2\a2c4dfbfbcd514e12022736c9e103d89afb00559
-C
-src/services/api.js,f\b\fbbdd259a63c246e936c6ea7d2be5c47f0a9da60
 \
 ,src/templates/HomeTemplate/homeTemplate.d.ts,d\5\d5bd2982414bd53879a5502ef2a26463a524ea80
 :
@@ -38,8 +30,6 @@ C
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 9
 	yarn.lock,5\3\53585a096fe3a3b96321113856ae62602995a33b
-T
-$src/templates/HomeTemplate/index.tsx,4\c\4c3d9eb1afaa6421938e58933e0c3f1691ce6ba7
 Y
 )src/components/atoms/Overlay/overlay.d.ts,3\8\3813070cd3def43f42372d519589e94e2fb7f262
 H
@@ -54,16 +44,12 @@ C
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 Y
 )src/components/molecules/Search/styles.ts,5\1\519b8e78a27d16a246bb5e02832a99fb5e90c334
-V
-&src/templates/SearchTemplate/styles.ts,6\1\61b5a4702175c387f4f6357a4775564ff7cffcc1
 J
 src/posts/primeiro-post.md,7\1\718b36f8632d5bfdf352288f8ebd994c84242c4d
 \
 ,src/posts/como-reverter-um-git-reset-hard.md,f\7\f7f05142bbb12edec5c2bd505d09f2d62eb83265
 b
 2src/posts/utilizando-o-hook-useImperativeHandle.md,c\c\cc56bd78171ca6b6ba460f92ed9d8485ed2d533f
-P
- src/helpers/tagResolver/index.ts,c\1\c1a4d02e7dcbb062172b433a4f135d23988d2f97
 D
 src/styles/globa.tsx,2\c\2c4ad2899ce0bdd7dca7e25ede091a42c3c755e7
 b
@@ -78,9 +64,5 @@ F
 .github/dependabot.yml,0\9\091aff741808a09242f252264b14f4a9adaa5305
 W
 'src/components/molecules/Post/index.tsx,8\0\80f5d9c3465d931ddf2b4c54075f8de4d1055874
-B
-src/pages/_app.tsx,2\e\2eefa41a18ed6ea3f58b3748f9e5559a28e77646
 D
 public/sitemap-0.xml,f\6\f680fb6c02042ab4b3c5a563043d56fe58fd32bc
-I
-src/pages/post/[slug].tsx,a\1\a1c96e4e44f3377bba064eaf7b19e0c79449f0ed

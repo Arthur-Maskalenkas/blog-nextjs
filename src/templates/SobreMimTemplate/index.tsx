@@ -3,6 +3,8 @@ import React from 'react'
 
 import * as S from './styles'
 
+import { canonicalTagResolved } from '../../helpers/canonicalTagResolve'
+
 import Button from 'components/atoms/Button'
 import Icons from 'components/atoms/Icons'
 import Layout from 'components/organisms/Layout'
@@ -13,6 +15,7 @@ const SobreMimTemplate = () => {
     <Layout>
       <NextSeo
         title="Sobre Mim | Arthur Maskalenkas"
+        canonical={canonicalTagResolved('default', 'sobre-mim')}
         description="Prazer, o meu nome é Arthur Maskalenkas, nasci em 15 de maio de
 2000, em São Caetano Do Sul"
         openGraph={{

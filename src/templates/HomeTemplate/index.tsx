@@ -5,6 +5,8 @@ import InfiniteScroll from 'react-infinite-scroll-component'
 import * as S from './styles'
 import { ICount, IHomeTemplateProps } from './homeTemplate'
 
+import { canonicalTagResolved } from '../../helpers/canonicalTagResolve'
+
 import Layout from 'components/organisms/Layout'
 import Post from 'components/molecules/Post'
 import DateFormat from 'helpers/dateFormat'
@@ -49,6 +51,7 @@ const HomeTemplate = ({ posts }: IHomeTemplateProps) => {
       <NextSeo
         title="Home | Arthur Maskalenkas"
         description="Um blog de um desenvolvedor front-end extremamente apaixonado por js e todo o seu ecossistema."
+        canonical={canonicalTagResolved('index')}
         openGraph={{
           images: [
             {
