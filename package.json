@@ -49,14 +49,14 @@
     "remark-html": "^15.0.1",
     "remark-rehype": "^10.1.0",
     "slugify": "^1.6.5",
-    "styled-components": "5.3.5",
+    "styled-components": "5.3.6",
     "styled-icons": "^10.45.0",
     "styled-media-query": "^2.1.2"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^12.1.5",
     "@next/eslint-plugin-next": "^12.3.1",
-    "@types/node": "^18.7.21",
+    "@types/node": "^18.8.0",
     "@types/react": "^18.0.20",
     "@types/styled-components": "^5.1.21",
     "@typescript-eslint/eslint-plugin": "^5.38.0",
