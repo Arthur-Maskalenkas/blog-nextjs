@@ -3,8 +3,6 @@ V
 &src/helpers/tagResolver/tagResolver.ts,1\f\1f7e85831a21964702f719c3ebb0ff731482e705
 =
 .editorconfig,6\2\626a747c8694eaae66f2afb3d1a745b045782c70
-H
-.github/workflows/ci.yml,8\9\899ce9c202bf7bb5480e72836c3edc773c9c4244
 B
 public/sitemap.xml,2\f\2fe7f218c8d47bee56d71bed3b5f461be878d1d6
 a
@@ -54,8 +52,6 @@ b
 tsconfig.json,6\1\61ebb9fd6e8cf9082658121d5d81e297791dacd0
 H
 next-generate-sitemap.js,5\e\5e8eae8d9888a373110c4da843f34ccaac3d0297
-F
-.github/dependabot.yml,0\9\091aff741808a09242f252264b14f4a9adaa5305
 W
 'src/components/molecules/Post/index.tsx,8\0\80f5d9c3465d931ddf2b4c54075f8de4d1055874
 D
