@@ -24,10 +24,14 @@ const Modal: React.ForwardRefRenderFunction<IRefModalProps, IModalProps> = (
   const openComponent = () => {
     setIsOpen(true)
     refOverlay.current?.openComponent()
+
+    document.body.style.overflow = 'hidden'
   }
   const closeComponent = () => {
     setComponentIsClosing(true)
     refOverlay.current?.closeComponent()
+
+    document.body.style.overflow = 'unset'
 
     setTimeout(() => {
       setIsOpen(false)

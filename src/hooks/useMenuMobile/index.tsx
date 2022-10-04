@@ -48,6 +48,12 @@ const MenuMobileProvider = ({ children }: IMenuMobileProviderProps) => {
    * Disponiblizando as funções
    * */
   const changeMenuVisibility = (isOpen: boolean) => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
+
     setMenuIsOpen(isOpen)
   }
 
