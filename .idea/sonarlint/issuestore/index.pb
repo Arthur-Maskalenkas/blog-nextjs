@@ -78,22 +78,14 @@ O
 src/helpers/dateFormat/index.ts,b\7\b7104ed7cdc83cddab6344ea30440a2fb0b2e47b
 P
  src/helpers/tagResolver/index.ts,c\1\c1a4d02e7dcbb062172b433a4f135d23988d2f97
-B
-src/pages/_app.tsx,2\e\2eefa41a18ed6ea3f58b3748f9e5559a28e77646
 C
 src/pages/index.tsx,d\2\d2d3bb60cab7e8c869b5fdf0a820b7edf2fc7859
-T
-$src/templates/HomeTemplate/index.tsx,4\c\4c3d9eb1afaa6421938e58933e0c3f1691ce6ba7
 C
 src/services/api.js,f\b\fbbdd259a63c246e936c6ea7d2be5c47f0a9da60
-R
-"src/helpers/canonicalTagResolve.ts,0\a\0a16c419ff64470b39584626996b3466dfdb1b54
 D
 src/helpers/links.ts,d\2\d2e75da663f65ed203eb4618bba6d3b5814fc925
 G
 src/pages/sobre-mim.tsx,6\f\6f326857da4748e5dfacfc58ecc679016a26ef93
-X
-(src/templates/SobreMimTemplate/index.tsx,a\0\a066d3b51b22ee7fb2b378e0b71b537f85510c91
 V
 &src/templates/SearchTemplate/styles.ts,6\1\61b5a4702175c387f4f6357a4775564ff7cffcc1
 T
@@ -104,3 +96,9 @@ L
 src/services/build-search.js,5\3\5320f432c56e4570bafd24a3304a3c393e93393c
 T
 $src/components/atoms/Icons/index.tsx,d\f\df75f09bbea7b092cd7f3622c75b393200fac31d
+_
+/src/components/organisms/HeaderMobile/index.tsx,b\2\b2cd4562c972f59b6523f61e08c5b3cc463c36f8
+_
+/src/components/organisms/FooterMobile/index.tsx,7\2\72beb49dd63207f4f9c2ce8e82327d675de3a3c8
+f
+6src/components/ButtonsMenu/ButtonGoToTopPage/index.tsx,7\f\7f432dfe63eda14aa4c6b73d790c071ea86265cb

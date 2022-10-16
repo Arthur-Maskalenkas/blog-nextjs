@@ -36,10 +36,6 @@ function App ({ Component, pageProps }: AppProps) {
             <link rel="shortcut icon" href="/img/icon-512.png" />
             <link rel="apple-touch-icon" href="/img/icon-512.png" />
             <meta
-              name="google-site-verification"
-              content="PPIg2wixcpEochLiH2neIh7mqTRUhC00DTBzcnmlhjA"
-            />
-            <meta
               name="description"
               content="Um blog de um desenvolvedor extremamente apaixonado por tecnologias."
             />
