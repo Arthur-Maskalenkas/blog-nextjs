@@ -7,26 +7,26 @@ shortText: "Ja pensou em passar funções do componente filho para o componente 
 ---
 
 
-## Introdução
+### Introdução
 
 Imagina só ter que criar um estado 'isOpen' booleano e precisar passar esse estado para dentro do componente filho a cada vez que você instanciar ele. Cansativo né? É o que eu mais vejo em codigos que utilizam algum modal por exemplo.
 
 Hoje eu vou apresentar o hook useImperativeHandle que visa acabar com a duplicação de codigo ou as famosas gambiarras na hora de se criar um componente filho que precisa de alguma forma ser manipulado pelo componente pai.
 
-### Qual a diferença entre criar um modal da forma tradicional ou criar da forma utilizando o hook mencionado?
+#### Qual a diferença entre criar um modal da forma tradicional ou criar da forma utilizando o hook mencionado?
 
 Simples, com o hook toda a responsabilidade de criar um estado booleano e alternar com alguma lógica esse estado ficam atrelados ao componente filho, fornecendo algumas funções ao componente pai para que ele use como bem entender, deixando a manipulação a partir do componente pai bem mais facil.
 
-## Criando o modal da maneira tradicional
+### Criando o modal da maneira tradicional
 
 Bom, normalmente quando queremos ter o controle total de um componente filho que abre e fecha criamos um estado booleano chamado isOpen, algumas funções handlers para alternar esse estado e jogamos isso como props dentro do filho, e la de dentro ele faz toda a tratativa caso seja verdadeiro/falso.
 
 Perceba que todo o controle é feito através do componente pai, porém para isso ele precisa criar um estado e criar funções que alternem com esse estado, deixando ele um pouco... Sobrecarregado?
 
-### Diagrama
+#### Diagrama
 ![diagrama sem o uso do hook](https://res.cloudinary.com/dezwlfeyb/image/upload/v1651579126/Blog/diagrama-sem-o-uso-do-imperative-hook.drawio_1_j81knf.png)
 
-### Codigo
+#### Codigo
 
 Componente Pai
 ```javascript
@@ -91,15 +91,15 @@ Resultado:
 
 Perceba que a cada vez que eu for instanciar o modal, eu no minimo vou ter que criar um estado isOpen de dentro do componente pai caso eu queira manipular o filho de alguma forma.
 
-## Criando o modal utilizando o hook useImperativeHandle
+### Criando o modal utilizando o hook useImperativeHandle
 
 Com o hook useImperativeHandle a lógica acaba mudando um pouco. Agora todas as funções que alternam o estado de abrir/fechar vão estar presentes no componente filho, junto com o estado. O unico trabalho do componente pai sera de criar uma ref e passar essa ref para o componente filho. Depois de feito isso, o componente pai ja consegue utilizar as funções passadas via hook useImperativeHandle pelo componente filho sem problema algum.
 
-### Diagrama
+#### Diagrama
 
 ![diagrama com o uso do hook](https://res.cloudinary.com/dezwlfeyb/image/upload/v1651579126/Blog/diagrama-com-o-uso-do-imperative-hook-Page-1.drawio_2_wdgrm6.png)
 
-### Codigo
+#### Codigo
 
 Componente Pai
 ```javascript
@@ -177,6 +177,6 @@ export default forwardRef(Modal);
 Resultado:
 ![Abrindo e fechando o modal](https://res.cloudinary.com/dezwlfeyb/image/upload/v1651488549/Blog/GIF_02-05-2022_07-37-00_jdtysv.gif)
 
-## Conclusão
+### Conclusão
 
 O seu uso não é uma bala de prata, pode haver  casos que seja mais viavel utilizar de outras soluções, porém isso é só uma demonstração de uma das infinitas possibilidades de se utilizar esse incrivel hook.

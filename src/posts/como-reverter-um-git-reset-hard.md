@@ -7,11 +7,11 @@ shortText: "Utilizou git reset hard sem querer? Vamos reverter isso."
 ---
 
 
-## Introdução
+### Introdução
 
 Recentemente eu passei pela dor de cabeça de dar um git reset em uns 5 commits anteriores, e isso é uma coisa que eu não desejo ao meu pior inimigo. No total, eu teria perdido pelo menos umas 2 horas facilmente, porém pesquisando maneiras de recuperar eu encontrei um comando super simples mas super poderoso: o git reflog.
 
-## Afinal, qual a diferença do git reflog e do git log?
+### Afinal, qual a diferença do git reflog e do git log?
 
 Bom, basicamente o git log mostra apenas a arvore que a gente tem atualmente de commits, ja o git reflog mostra todas as referencias de trabalho do git.
 
@@ -19,7 +19,7 @@ Bom, basicamente o git log mostra apenas a arvore que a gente tem atualmente de 
 
 Começa a ficar interessante quando você descobre que até mesmo quando você reseta um commit, é guardado uma hash dessa ação de modo que seja possivel reverter até mesmo o reset hard, e é isso que eu vou ensinar hoje.
 
-## Revertendo um reset --hard
+### Revertendo um reset --hard
 
 Como esse é um guia focado em como reverter um git reset --hard, eu vou criar os arquivos via terminal e explicar cada ação.
 
@@ -140,6 +140,6 @@ Date:   Sat Apr 23 15:18:14 2022 -0300
 
 ```
 
-## Conclusão
+### Conclusão
 
 Não é magica, é o git reflog em ação. Também é possivel recuperar branchs deletadas localmente, porém isso é assunto para outro post.

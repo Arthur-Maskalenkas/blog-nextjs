@@ -7,13 +7,13 @@ shortText: "Como incluir props condicionais no ReactJS"
 ---
 
 
-## Introdução
+### Introdução
 
 Opa, blz? Ja passou pela situação de ter que colocar mais de um return para um componente por conta que ele pode ou não receber x props? Se não passou, eu ja passei, e isso deixou o codigo muito poluido, e lembrando disso eu decidi compartilhar e qual foi a maneira que eu encontrei de resolver isso sem ter que retrabalhar completamente as props recebidas e a lógica do componente.
 
 É bem simples para falar a verdade, e evita muitas dores de cabeça em determinadas situações.
 
-## Contexto que vamos criar para se utilizar as props condicionais
+### Contexto que vamos criar para se utilizar as props condicionais
 
 Para criar um contexto para o artigo vamos supor que você queira criar um input generico, e que ele pode ser usado em diversos lugares da sua aplicação, porém contendo a seguinte lógica dentro dele:
 
@@ -45,7 +45,7 @@ export default App
 
 ```
 
-## Criando o input sem props condicionais
+### Criando o input sem props condicionais
 
 ### Input
 
@@ -74,7 +74,7 @@ export default Input
 
 Até então esta funcionando tudo perfeitamente... Porém no segundo input você percebe que o id do input esta sendo usado para... nada? é ai que entram as props condicionais. Eu quero que somente quando for passado um label como props o atributo id exista dentro do input. 
 
-## Criando o input com as props condicionais
+### Criando o input com as props condicionais
 
 ### Input
 
@@ -132,6 +132,6 @@ export default Input
 
 ```
 
-## Conclusão
+### Conclusão
 
 O seu uso é bem raro e acredito que em 90% dos casos de uso é possivel fazer de uma maneira mais limpa isso, seguindo outra metodologia ou refatorando o componente, porém conhecimento nunca é demais.

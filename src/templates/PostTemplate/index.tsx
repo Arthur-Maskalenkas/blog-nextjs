@@ -12,7 +12,6 @@ import DateFormat from 'helpers/dateFormat'
 import { ContainerContentPageBlogGlobalStyle, ContainerPageBlogGlobalStyle } from 'styles/globa'
 
 const PostTemplate = ({ post }: IPostTemplateProps) => {
-  console.log(post)
   return (
     <Layout>
       <NextSeo

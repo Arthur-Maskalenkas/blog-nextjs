@@ -6,7 +6,6 @@
     "dev": "next dev",
     "build": "next build  && yarn postbuild",
     "postbuild": "next-sitemap --config next-generate-sitemap.js",
-    "generateAlgoliaSearch": "node ./scripts/build-search.js",
     "start": "next start",
     "analyze": "next build",
     "lint": "eslint src --max-warnings=0",

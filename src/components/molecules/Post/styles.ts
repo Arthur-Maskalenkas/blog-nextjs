@@ -98,7 +98,7 @@ export const Date = styled.p`
   `}
 `
 
-export const Title = styled.h1`
+export const Title = styled.h3`
   ${() => css`
     font-size: 2.56rem;
     line-height: 2.56rem;

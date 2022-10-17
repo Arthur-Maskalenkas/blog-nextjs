@@ -13,7 +13,7 @@ export const textWithHighlightGlobalStyle = styled.p`
   `}
 `
 
-export const ContainerPageBlogGlobalStyle = styled.div`
+export const ContainerPageBlogGlobalStyle = styled.main`
   ${() => css`
     padding: 1.4rem 1.6rem 6.239rem 1.6rem;
 
@@ -70,7 +70,9 @@ export const ContainerContentPageBlogGlobalStyle = styled.section`
     }
 
     h4,
-    h4 a {
+    h4 a,
+    h5,
+    h5 a{
       font-size: 1.7rem;
       line-height: 2.2rem;
       font-weight: 800;
@@ -86,6 +88,10 @@ export const ContainerContentPageBlogGlobalStyle = styled.section`
         font-size: 2.2rem;
         line-height: 3rem;
       `}
+    }
+    
+    h5 > a.anchor {
+      color: var(--highlight);
     }
 
     p {

@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { customMedia } from 'helpers/customMedia'
+
 export const SearchWrapper = styled.div`
   .ais-SearchBox-submit,
   .ais-SearchBox-reset {
@@ -53,19 +55,31 @@ export const SearchWrapper = styled.div`
 
 export const SearchStatsAndTitleWrapper = styled.div`
   display: flex;
+	
+	flex-direction: column;
+	align-items: flex-start;
 
-  justify-content: space-between;
-  align-items: center;
+ 
+	${customMedia.greaterThan('midPhone')`
+		 justify-content: space-between;
+		 flex-direction: row;
+		 align-items: center;
+	`}
 
   padding-left: 1.6rem;
   padding-right: 1.6rem;
 
   // * "resultados encontrados em ..."
   .ais-Stats-text {
-    font-size: 1.6rem;
-    line-height: 1.6rem;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
     font-weight: 400;
     color: var(--texts);
+
+    ${customMedia.greaterThan('phone')`
+		font-size: 1.6rem;
+		line-height: 1.6rem;
+	`}
   }
 `
 
@@ -83,10 +97,16 @@ export const PoweredByAlgoliaTextWrapper = styled.div`
 `
 
 export const SearchTitle = styled.h1`
-  font-size: 1.6rem;
-  line-height: 1.6rem;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
   font-weight: 700;
   color: var(--texts);
 
   margin-right: 1rem;
+
+
+  ${customMedia.greaterThan('phone')`
+		font-size: 1.6rem;
+		line-height: 1.6rem;
+	`}
 `
