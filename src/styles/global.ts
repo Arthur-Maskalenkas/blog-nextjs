@@ -105,6 +105,24 @@ const GlobalStyles: GlobalStyleComponent<
     --withSelection: '#b4f231'
   }
 
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #38444d;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #F231A5;
+
+    border-radius: 50px;
+  }
+
+
 `
 
 export default GlobalStyles

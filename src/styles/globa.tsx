@@ -64,7 +64,7 @@ export const ContainerContentPageBlogGlobalStyle = styled.section`
       border: none;
 
       ${customMedia.greaterThan('desktop')`
-        font-size: 2.5rem;
+        font-size: 2.8rem;
         line-height: 3.5rem;
       `}
     }
@@ -103,6 +103,10 @@ export const ContainerContentPageBlogGlobalStyle = styled.section`
       margin-bottom: 2.5rem;
 
       overflow-wrap: break-word;
+    }
+
+    pre + p {
+      margin-top: 2.5rem;
     }
 
     hr {
