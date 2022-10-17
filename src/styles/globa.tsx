@@ -29,10 +29,20 @@ export const ContainerPageBlogGlobalStyle = styled.main`
 
 export const ContainerContentPageBlogGlobalStyle = styled.section`
   ${() => css`
+    h1,h2,h3,h4,h5,h6 {
+      a {
+        line-break: anywhere;
+      }
+    }
+    
+    
     h2,
     h2 a {
-      font-size: 2.2rem;
-      line-height: 3rem;
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      
+
+      
       font-weight: 800;
       color: var(--postColor);
 
@@ -43,6 +53,11 @@ export const ContainerContentPageBlogGlobalStyle = styled.section`
 
       border: none;
 
+      ${customMedia.greaterThan('smallPhone')`
+        font-size: 2.2rem;
+        line-height: 3rem;
+      `}
+      
       ${customMedia.greaterThan('desktop')`
         font-size: 3.3rem;
         line-height: 4.7rem;
@@ -51,8 +66,9 @@ export const ContainerContentPageBlogGlobalStyle = styled.section`
 
     h3,
     h3 a {
-      font-size: 1.8rem;
-      line-height: 2.5rem;
+      font-size: 2rem;
+      line-height: 2.8rem;
+
       font-weight: 800;
       color: var(--postColor);
 
@@ -63,18 +79,27 @@ export const ContainerContentPageBlogGlobalStyle = styled.section`
 
       border: none;
 
-      ${customMedia.greaterThan('desktop')`
-        font-size: 2.8rem;
-        line-height: 3.5rem;
+      ${customMedia.greaterThan('smallPhone')`
+        font-size: 2.5rem;
+        line-height: 3.3rem;
       `}
+
+      ${customMedia.greaterThan('desktop')`
+        font-size: 3.3rem;
+        line-height: 4.7rem;
+      `}
+    }
+    
+    h4,h4 a {
+      margin-bottom: 1.6rem;
     }
 
     h4,
     h4 a,
     h5,
     h5 a{
-      font-size: 1.7rem;
-      line-height: 2.2rem;
+      font-size: 1.5rem;
+      line-height: 2rem;
       font-weight: 800;
       color: var(--postColor);
 
@@ -84,9 +109,14 @@ export const ContainerContentPageBlogGlobalStyle = styled.section`
 
       border: none;
 
+      ${customMedia.greaterThan('smallPhone')`
+        font-size: 2rem;
+        line-height: 2.5rem;
+      `}
+
       ${customMedia.greaterThan('desktop')`
         font-size: 2.2rem;
-        line-height: 3rem;
+        line-height: 2.7rem;
       `}
     }
     
@@ -95,14 +125,20 @@ export const ContainerContentPageBlogGlobalStyle = styled.section`
     }
 
     p {
-      font-size: 2rem;
-      line-height: 3.4rem;
+      font-size: 1.7rem;
+      line-height: 3rem;
+
       font-weight: 300;
       color: var(--postColor);
 
       margin-bottom: 2.5rem;
 
       overflow-wrap: break-word;
+
+      ${customMedia.greaterThan('smallPhone')`
+        font-size: 2rem;
+        line-height: 3.4rem;
+      `}
     }
 
     pre + p {

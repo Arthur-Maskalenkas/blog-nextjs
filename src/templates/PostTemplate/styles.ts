@@ -270,13 +270,19 @@ export const PostDate = styled.p`
 
 export const PostTitle = styled.h1`
   ${() => css`
-    font-size: 4.4rem;
-    line-height: 4.9rem;
+    font-size: 3.5rem;
+    line-height: 3.9rem;
+    
     font-weight: 700;
     color: var(--postColor);
 
     margin-bottom: 1.6rem;
 
+    ${customMedia.greaterThan('smallPhone')`
+      font-size: 4.4rem;
+      line-height: 4.9rem;
+    `}
+    
     ${customMedia.greaterThan('desktop')`
       font-size: 6.4rem;
       line-height: 7rem;

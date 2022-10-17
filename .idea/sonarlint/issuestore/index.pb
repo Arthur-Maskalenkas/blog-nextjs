@@ -106,8 +106,6 @@ Y
 )src/components/molecules/Search/index.tsx,e\e\ee4adba5d2cd5ed6ef2ecc75fdf7d3f93ea034ef
 Y
 )src/components/molecules/Search/styles.ts,5\1\519b8e78a27d16a246bb5e02832a99fb5e90c334
-P
- src/helpers/customMedia/index.ts,5\5\55ac8980379d3d3353b916f38842980d632def83
 T
 $src/components/atoms/Icons/styles.ts,7\b\7b61dcd892470e8433366d73c85f708e6d81d7de
 W
